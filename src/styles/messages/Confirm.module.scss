@@ -1,0 +1,48 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background: #0005;
+  z-index: 9999;
+
+  &_container {
+    padding: 1em;
+    border-radius: 0.5em;
+    background: var.$brand_color_500;
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+  }
+
+  &_text {
+    margin-bottom: 2em;
+
+    h1 {
+      margin-bottom: 0.25em;
+    }
+  }
+
+  &_buttons {
+    display: flex;
+    // flex-direction: column;
+    gap: 0.5em;
+
+    button {
+      color: #fff;
+      width: 100%;
+
+      &:first-child {
+        background: var.$support_color_rght;
+      }
+
+      &:last-child {
+        background: var.$support_color_err;
+      }
+    }
+  }
+}

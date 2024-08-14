@@ -1,0 +1,109 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  max-width: 500px;
+  background: var.$brand_color_500;
+  box-shadow: 0 -2px 5px #0005;
+  transition: width 0.25s ease-in-out;
+  z-index: 999;
+  overflow: hidden;
+
+  &.open {
+    width: 450px;
+  }
+
+  @media (max-width: 500px) {
+    &.open {
+      width: 100%;
+    }
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+
+    .header_button {
+      button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+
+        svg {
+          font-size: 2em;
+        }
+      }
+    }
+
+    .header_title {
+      p {
+        font-size: 1.25em;
+      }
+    }
+  }
+
+  &_body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+
+    @include mix.Scroll;
+
+    .body_items {
+      display: flex;
+      flex-direction: column;
+      // gap: 1.5em;
+      padding: 1em;
+      padding-top: 0;
+      transition: 3s ease-in-out;
+    }
+  }
+
+  &_footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    background: var.$brand_color_900;
+    padding: 1em;
+    color: var.$dark_text_color;
+
+    .footer_total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+      flex-wrap: wrap;
+      margin-bottom: 1em;
+
+      p {
+        text-align: center;
+
+        &:last-child {
+          font-size: 1.5em;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .footer_button {
+      width: 100%;
+    }
+  }
+}

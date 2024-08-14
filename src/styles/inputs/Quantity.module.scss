@@ -1,0 +1,52 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.quantity {
+  display: flex;
+  border: 1px solid var.$brand_color_900;
+  width: fit-content;
+  border-radius: 0.5em;
+  overflow: hidden;
+
+  button {
+    height: inherit;
+    border: none;
+    padding: 0.5em;
+    background: transparent;
+    cursor: pointer;
+
+    svg {
+      display: block;
+      color: var.$brand_color_900;
+    }
+
+    @include mix.OnlyPc {
+      &:hover {
+        background: var.$brand_color_900;
+
+        svg {
+          color: var.$dark_text_color;
+        }
+      }
+    }
+  }
+
+  input {
+    max-width: 50px;
+    padding: 0.5em;
+    outline: none;
+    border: none;
+    text-align: center;
+    background: transparent;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &:has(input:focus) {
+    border-color: var.$sec_color;
+  }
+}

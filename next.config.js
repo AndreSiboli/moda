@@ -3,6 +3,8 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
 
-module.exports = nextConfig
+  images: { formats: ["image/webp", "image/avif"] },
+};
+
+module.exports = nextConfig;

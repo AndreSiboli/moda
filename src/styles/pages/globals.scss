@@ -1,0 +1,28 @@
+@use "@/styles/_dirs/variables" as var;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+body {
+  color: var.$dark_text_color;
+  background: var.$brand_color_500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+p,
+span {
+  font-weight: 500;
+}

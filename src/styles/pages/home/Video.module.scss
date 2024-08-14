@@ -1,0 +1,13 @@
+.video {
+  width: 100%;
+  overflow: hidden;
+  max-height: 600px;
+  margin-top: 7em;
+
+  &_mp4 {
+    background: #444;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+}

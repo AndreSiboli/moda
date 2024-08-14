@@ -1,0 +1,10 @@
+@use "@/styles/_dirs/variables" as var;
+
+.button {
+  background: transparent;
+  border-radius: none;
+  color: var.$dark_text_color;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
