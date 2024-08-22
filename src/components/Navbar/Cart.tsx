@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
+import { formatToDecimal } from "@/utils/formatter";
 import { AppDispatch, useAppSelector } from "@/redux/store";
 import {
   clearCart,
@@ -10,16 +12,11 @@ import {
 import styles from "@/styles/Navbar/Cart.module.scss";
 
 import Submit from "@/components/buttons/Submit";
+import CartCard from "@/components/cards/CartCard";
+import Purchase from "@/components/messages/Purchase";
 
 import { PiX } from "react-icons/pi";
-import { useEffect, useRef, useState } from "react";
-
-import { formatToDecimal } from "@/utils/formatter";
-
-import CartCard from "../cards/CartCard";
-
-import Purchase from "../messages/Purchase";
-import { useRouter } from "next/navigation";
+import { CartUserType } from "@/_types/CartType";
 
 interface PropsType {
   isOpen: boolean;
@@ -81,28 +78,16 @@ export default function Cart(props: PropsType) {
           </div>
         </header>
 
-        <div className={styles.cart_body}>
-          <section className={styles.body_items}>
-            {data.cart.map((item) => (
-              <CartCard
-                data={item}
-                handleDelete={deleteCartItem}
-                key={item.id}
-              />
-            ))}
-          </section>
-        </div>
-
-        <footer className={styles.cart_footer}>
-          <div className={styles.footer_total}>
-            <p>Order Total:</p>
-            <p>${formatToDecimal(data.total, 2)}</p>
+        {!data.cart.length ? (
+          <div className={styles.cart_empty}>
+            <p>You cart is empty.</p>
           </div>
-
-          <div className={styles.footer_button}>
-            <Submit text="Confirm Order" handleSubmit={submit} />
-          </div>
-        </footer>
+        ) : (
+          <>
+            <CartBody data={data.cart} handleDelete={deleteCartItem} />
+            <CartFooter total={data.total} handleSubmit={submit} />
+          </>
+        )}
       </div>
 
       {isPurchase && (
@@ -113,5 +98,49 @@ export default function Cart(props: PropsType) {
         />
       )}
     </aside>
+  );
+}
+
+interface CartBodyType {
+  data: CartUserType[];
+  handleDelete: (id: string) => void;
+}
+
+function CartBody(props: CartBodyType) {
+  const { data, handleDelete } = props;
+
+  return (
+    <div className={styles.cart_body}>
+      <section className={styles.body_items}>
+        {data.map((item) => (
+          <CartCard
+            data={item}
+            handleDelete={() => handleDelete(item.id)}
+            key={item.id}
+          />
+        ))}
+      </section>
+    </div>
+  );
+}
+
+interface CartFooterType {
+  total: number;
+  handleSubmit: () => void;
+}
+
+function CartFooter(props: CartFooterType) {
+  const { total, handleSubmit } = props;
+  return (
+    <footer className={styles.cart_footer}>
+      <div className={styles.footer_total}>
+        <p>Order Total:</p>
+        <p>${formatToDecimal(total, 2)}</p>
+      </div>
+
+      <div className={styles.footer_button}>
+        <Submit text="Confirm Order" handleSubmit={handleSubmit} />
+      </div>
+    </footer>
   );
 }

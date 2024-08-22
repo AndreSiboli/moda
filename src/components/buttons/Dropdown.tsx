@@ -2,7 +2,10 @@
 
 import styles from "@/styles/buttons/Dropdown.module.scss";
 import { ReactNode, useState } from "react";
+
 import Container from "../layout/Container";
+
+import { PiCaretDown } from "react-icons/pi";
 
 interface PropsType {
   text: string;
@@ -21,6 +24,7 @@ export default function Dropdown(props: PropsType) {
     <div className={`${styles.dropdown} ${isOpened && styles.opened}`}>
       <div className={styles.dropdown_title} onClick={defineIsOpened}>
         <p>{text}</p>
+        <PiCaretDown />
       </div>
       <div className={styles.dropdown_content}>
         <Container style={{ paddingTop: "6em" }}>

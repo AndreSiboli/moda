@@ -76,9 +76,10 @@ export default function Footer() {
                   (555) 123-4567 <br />
                   Monday to Friday | 9am to 7pm
                 </p>
-                <Link href="/help/faq">FAQ</Link>
-                <Link href={"/help/terms"}>Terms</Link>
-                <Link href={"/help/privacy-policy"}>Privacy Policy</Link>
+                <Link href="/under-construction">FAQ</Link>
+                <Link href="/under-construction">Terms</Link>
+                <Link href="/under-construction">Privacy Policy</Link>
+                <Link href="/help/mentions">Mentions</Link>
               </nav>
             </div>
 
@@ -87,9 +88,9 @@ export default function Footer() {
                 <p>About us</p>
               </div>
               <nav className={styles.links_nav}>
-                <Link href="/about/fashion-shows">Fashion Shows</Link>
-                <Link href={"/shop"}>Shop</Link>
-                <Link href={"/about/models"}>Models</Link>
+                <Link href="/under-construction">Fashion Shows</Link>
+                <Link href="/under-construction">Shop</Link>
+                <Link href="/under-construction">Models</Link>
               </nav>
             </div>
 
@@ -98,10 +99,10 @@ export default function Footer() {
                 <p>Products</p>
               </div>
               <nav className={styles.links_nav}>
-                <Link href="/collections/summer">Summer</Link>
-                <Link href="/collections/genz">Gen Z</Link>
-                <Link href="/collections/sport">Sport</Link>
-                <Link href={"/collections/spring"}>Models</Link>
+                <Link href="/under-construction">Summer</Link>
+                <Link href="/under-construction">Gen Z</Link>
+                <Link href="/under-construction">Sport</Link>
+                <Link href="/under-construction">Models</Link>
               </nav>
             </div>
           </section>

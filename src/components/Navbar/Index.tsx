@@ -20,11 +20,11 @@ export default function Navbar() {
   const links = [
     {
       text: "Women",
-      href: "/women",
+      href: "/under-construction",
     },
     {
       text: "Contact",
-      href: "/store",
+      href: "/under-construction",
     },
   ];
 

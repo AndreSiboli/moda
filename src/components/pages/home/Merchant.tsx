@@ -38,7 +38,7 @@ export default function Merchant() {
                   </p>
                 </div>
                 <div className={styles.info_button}>
-                  <LinkButton href="collections/genz" text="See collection!" />
+                  <LinkButton href="/under-construction" text="See collection!" />
                 </div>
               </div>
             </div>

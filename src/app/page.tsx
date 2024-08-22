@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero />
-      {/* <Merchant />
+      <Merchant />
       <Video />
-      <Products /> */}
+      <Products />
     </main>
   );
 }

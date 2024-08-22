@@ -16,36 +16,36 @@ export default function Store() {
     {
       src: summer,
       title: "Summer",
-      href: "/",
+      href: "/under-construction",
     },
     {
       src: sport,
       title: "Sport",
-      href: "/",
+      href: "/under-construction",
     },
     {
       src: genz,
       title: "Gen Z",
-      href: "/",
+      href: "/under-construction",
     },
     {
       src: spring,
       title: "Spring",
-      href: "/",
+      href: "/under-construction",
     },
   ];
   const links = [
     {
       text: "All models",
-      href: "/collections",
+      href: "/under-construction",
     },
     {
       text: "Events",
-      href: "/events",
+      href: "/under-construction",
     },
     {
       text: "Design your own",
-      href: "/design-your-own",
+      href: "/under-construction",
     },
   ];
 
@@ -58,7 +58,9 @@ export default function Store() {
 
         <nav className={styles.aside_nav}>
           {links.map((link) => (
-            <Link href={link.href} key={link.text}>{link.text}</Link>
+            <Link href={link.href} key={link.text}>
+              {link.text}
+            </Link>
           ))}
         </nav>
       </aside>

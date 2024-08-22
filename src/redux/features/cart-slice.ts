@@ -1,99 +1,13 @@
 import { CartUserType } from "@/_types/CartType";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+import { summer } from "@/fake-api/products";
 
 type InitalStateType = {
   cart: CartUserType[];
   total: number;
 };
 
-import image1 from "@/assets/summer/pexels-jayrinho-17950873.jpg";
-import image2 from "@/assets/summer/alexander-jawfox-zXa0Peaq30U-unsplash.jpg";
-import image3 from "@/assets/summer/sule-makaroglu-BSOVhRtTH7c-unsplash.jpg";
-import image4 from "@/assets/summer/matas-katinas-jYDRaDUfYsA-unsplash.jpg";
-import image5 from "@/assets/summer/alexander-grey-NXom4fEGDes-unsplash.jpg";
-
-const fakeCart = [
-  {
-    id: "1",
-    title: "Lorem Ipsum Dolor Sit Amet",
-    images: {
-      src: image1,
-      alt: "Lorem",
-    },
-    price: 39.9,
-    quantity: 2,
-    stock: 13,
-    rating: {
-      score: 4.7,
-      votes: 1467,
-    },
-    description: "lorem",
-  },
-  {
-    id: "2",
-    title: "Lorem Ipsum Dolor Sit Amet",
-    images: {
-      src: image2,
-      alt: "Lorem",
-    },
-    price: 39.9,
-    quantity: 2,
-    stock: 13,
-    rating: {
-      score: 3.1,
-      votes: 1030,
-    },
-    description: "lorem",
-  },
-  {
-    id: "3",
-    title: "Lorem Ipsum Dolor Sit Amet",
-    images: {
-      src: image3,
-      alt: "Lorem",
-    },
-    price: 39.9,
-    quantity: 2,
-    stock: 13,
-    rating: {
-      score: 1,
-      votes: 10,
-    },
-    description: "lorem",
-  },
-  {
-    id: "4",
-    title: "Lorem Ipsum Dolor Sit Amet",
-    images: {
-      src: image4,
-      alt: "Lorem",
-    },
-    price: 39.9,
-    quantity: 2,
-    stock: 13,
-    rating: {
-      score: 5,
-      votes: 357,
-    },
-    description: "lorem",
-  },
-  {
-    id: "5",
-    title: "Lorem Ipsum Dolor Sit Amet",
-    images: {
-      src: image5,
-      alt: "Lorem",
-    },
-    price: 39.9,
-    quantity: 2,
-    stock: 13,
-    rating: {
-      score: 5,
-      votes: 354,
-    },
-    description: "lorem",
-  },
-];
+const fakeCart = summer.map((item) => ({ ...item, quantity: 1 }));
 
 const initialState = {
   cart: fakeCart as CartUserType[],

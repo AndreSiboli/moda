@@ -3,6 +3,10 @@
 
 .dropdown {
   &.opened {
+    .dropdown_title{
+      svg{transform: rotate(180deg);}
+    }
+
     .dropdown_content {
       visibility: visible;
       height: 100%;
@@ -14,10 +18,20 @@
   }
 
   &_title {
+    display: flex;
+    gap: 0.25em;
+    align-items: center;
+    cursor: pointer;
+
     p {
       text-transform: uppercase;
       font-size: 0.9em;
-      cursor: pointer;
+    }
+
+    svg {
+      font-size: 1em;
+      color: var.$dark_text_color;
+      transition: transform .15s ease-in-out;
     }
   }
 

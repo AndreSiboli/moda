@@ -1,0 +1,24 @@
+@use "@/styles/_dirs/variables" as var;
+
+.under {
+  padding: 0 2em;
+  &_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    min-height: 100vh;
+
+    padding: 7em 0;
+  }
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

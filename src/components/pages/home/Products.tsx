@@ -22,64 +22,64 @@ export default function Products() {
     {
       mainSet: {
         src: genz1,
-        href: "/somewhere",
+        href: "/under-construction",
       },
       subSet: [
         {
           src: genz2,
-          href: "",
+          href: "/under-construction",
         },
         {
           src: genz3,
-          href: "",
+          href: "/under-construction",
         },
       ],
     },
     {
       mainSet: {
         src: summer1,
-        href: "",
+        href: "/under-construction",
       },
       subSet: [
         {
           src: summer2,
-          href: "",
+          href: "/under-construction",
         },
         {
           src: summer3,
-          href: "",
+          href: "/under-construction",
         },
       ],
     },
     {
       mainSet: {
         src: sport1,
-        href: "",
+        href: "/under-construction",
       },
       subSet: [
         {
           src: sport2,
-          href: "",
+          href: "/under-construction",
         },
         {
           src: sport3,
-          href: "",
+          href: "/under-construction",
         },
       ],
     },
     {
       mainSet: {
         src: spring1,
-        href: "",
+        href: "/under-construction",
       },
       subSet: [
         {
           src: spring2,
-          href: "",
+          href: "/under-construction",
         },
         {
           src: spring3,
-          href: "",
+          href: "/under-construction",
         },
       ],
     },

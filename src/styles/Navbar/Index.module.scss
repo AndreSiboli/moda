@@ -26,9 +26,8 @@
     }
 
     .header_logo {
-      p {
-        font-size: 1.5em;
-        line-height: 0.8em;
+      h1 {
+        font-size: 1.25em;
       }
     }
   }
@@ -43,6 +42,12 @@
     display: flex;
     gap: 4em;
     z-index: 99;
+  }
+
+  &_logo {
+    h1 {
+      font-size: 1.75em;
+    }
   }
 
   &_links {
