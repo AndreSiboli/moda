@@ -14,8 +14,8 @@ body {
 
 body {
   color: var.$dark_text_color;
-  background: var.$brand_color_500; 
-  background: #fff; 
+  background: var.$brand_color_500;
+  background: #fff;
 
   @include mix.Scroll;
 }

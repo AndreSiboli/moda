@@ -17,7 +17,7 @@
     background: var.$dark_text_color;
 
     &:hover {
-      background: transparentize($color: var.$dark_text_color, $amount: .3);
+      background: transparentize($color: var.$dark_text_color, $amount: 0.3);
     }
   }
 }

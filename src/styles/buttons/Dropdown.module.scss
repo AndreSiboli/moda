@@ -3,8 +3,10 @@
 
 .dropdown {
   &.opened {
-    .dropdown_title{
-      svg{transform: rotate(180deg);}
+    .dropdown_title {
+      svg {
+        transform: rotate(180deg);
+      }
     }
 
     .dropdown_content {
@@ -31,7 +33,7 @@
     svg {
       font-size: 1em;
       color: var.$dark_text_color;
-      transition: transform .15s ease-in-out;
+      transition: transform 0.15s ease-in-out;
     }
   }
 

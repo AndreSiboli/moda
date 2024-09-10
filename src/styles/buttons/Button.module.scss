@@ -11,10 +11,10 @@
   cursor: pointer;
   font-weight: 500;
   color: var.$brand_color_500;
-  transition: background .2s ease-in-out;
+  transition: background 0.2s ease-in-out;
 
-  @include mix.OnlyPc{
-    &:hover{
+  @include mix.OnlyPc {
+    &:hover {
       background: var.$darkest_color;
     }
   }
