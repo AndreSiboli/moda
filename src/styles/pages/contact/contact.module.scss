@@ -1,0 +1,108 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.contact {
+  &_image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    img {
+      object-position: 50% 30%;
+    }
+  }
+
+  &_container {
+    padding: 5em 1em;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 5em;
+    width: 100%;
+    margin-top: 5em;
+
+    @media (max-width: 1020px) {
+      flex-direction: column;
+      gap: 5em;
+    }
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+
+      h2 {
+        font-size: 1.25em;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &_gap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    @media (max-width: 1020px) {
+      flex: 1 1 auto;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
+
+    // &:before,
+    // &:after {
+    //   content: "";
+    //   background: var.$neutral_color_500;
+    //   height: 100px;
+    //   width: 1px;
+
+    //   @media (max-width: 1020px) {
+    //     width: 30%;
+    //     height: 1px;
+    //   }
+    // }
+
+    p {
+      color: var.$neutral_color_500;
+      transform: rotate(-90deg);
+
+      @media (max-width: 1020px) {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

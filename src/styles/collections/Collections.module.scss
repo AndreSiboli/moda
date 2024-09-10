@@ -1,0 +1,68 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.collection {
+  min-height: 500px;
+  padding: 3em 1em;
+
+  &_manager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+
+    .manager_title {z
+      p {
+        font-size: 1.25em;
+        letter-spacing: 0.25em;
+      }
+    }
+
+    .manager_end {
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+    }
+
+    .manager_sort {
+      position: relative;
+      > div {
+        height: fit-content;
+      }
+    }
+
+    .manager_radios {
+      display: flex;
+      gap: 0.5em;
+
+      @media (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+
+  &_group {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(calc(200px - 0.5em), 1fr));
+    gap: 0.5em;
+
+    @media (min-width: 1001px) {
+      &.grid-2 {
+        grid-template-columns: repeat(2, minmax(150px, calc(50% - 0.5em)));
+      }
+    }
+
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(3, minmax(150px, 1fr));
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

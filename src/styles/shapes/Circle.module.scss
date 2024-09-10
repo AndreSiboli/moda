@@ -1,0 +1,11 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.circle {
+  width: 500px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid var.$brand_color_400;
+  position: absolute;
+  z-index: -1;
+}

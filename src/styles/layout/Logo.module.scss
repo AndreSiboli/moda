@@ -1,0 +1,15 @@
+@use "@/styles/_dirs/variables" as var;
+
+.logo {
+  h1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2em;
+
+    p {
+      font-size: 1.5em;
+      font-weight: 400;
+      transition: font-size 0.1s ease-in-out, line-height 0.1s ease-in-out;
+    }
+  }
+}

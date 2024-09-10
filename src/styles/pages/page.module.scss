@@ -1,0 +1,8 @@
+@use "@/styles/_dirs/variables" as var;
+
+.main {
+  min-height: 100vh;
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+}

@@ -1,0 +1,92 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.details {
+  width: 100%;
+  transition: background 0.25s ease-in-out;
+  height: fit-content;
+  border-bottom: 1px solid var.$neutral_color_900;
+
+  &_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0.5em;
+    width: 100%;
+    cursor: pointer;
+
+    border-radius: 0.25em;
+    transition: background 0.25s ease-in-out;
+
+    @include mix.OnlyPc {
+      &:hover {
+        background: var.$neutral_color_200;
+      }
+    }
+
+    .info_wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .info_button {
+      position: relative;
+      width: 12px;
+      height: 12px;
+
+      .plus,
+      .minus {
+        width: 12px;
+        height: 1px;
+        position: absolute;
+        background: var.$neutral_color_900;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .plus {
+        height: 12px;
+        width: 1px;
+        transform-origin: left top;
+        transition: transform 0.15s ease-in-out;
+      }
+    }
+  }
+
+  &_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
+
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      padding: 1em 0.5em;
+      padding-top: 0;
+    }
+  }
+
+  &.active {
+    @include mix.OnlyPc {
+      &:hover {
+        background: var.$neutral_color_200;
+      }
+    }
+
+    .details_content {
+      max-height: 500px;
+    }
+
+    .details_info {
+      .info_button {
+        .plus {
+          transform: rotate(90deg) translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

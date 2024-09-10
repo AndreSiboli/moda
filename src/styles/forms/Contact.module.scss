@@ -1,0 +1,25 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.form {
+  max-width: 400px;
+  width: 100%;
+
+  &_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  &_button {
+    margin: 0 auto;
+    margin-top: 2em;
+    max-width: 400px;
+    width: 100%;
+
+    button {
+      background: var.$neutral_color_900;
+      color: var.$light_text_color;
+    }
+  }
+}

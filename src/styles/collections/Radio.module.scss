@@ -1,0 +1,12 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.radio {
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}

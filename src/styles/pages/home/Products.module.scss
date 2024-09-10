@@ -1,0 +1,49 @@
+@use "@/styles/_dirs/variables" as var;
+
+.products {
+  padding: 0 1em;
+
+  &_container {
+    min-height: 500px;
+    padding-top: 7em;
+    padding-bottom: 3em;
+    width: 100%;
+  }
+
+  &_header {
+    text-align: center;
+    margin-bottom: 3em;
+
+    h1 {
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      color: var.$neutral_color_700;
+    }
+  }
+
+  &_collections {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    flex-wrap: wrap;
+    width: 100%;
+
+    > * {
+      flex: 1 1 auto;
+      min-width: 400px;
+      max-width: 500px;
+
+      @media (max-width: 1024px) {
+        min-width: 350px;
+      }
+    }
+  }
+
+  &_button {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 3em;
+  }
+}

@@ -1,0 +1,71 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.item {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 11/16;
+  position: relative;
+
+  &_image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: filter 0.15s ease-in-out;
+  }
+
+  &_info {
+    @include mix.OnlyPc {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: #fffa;
+      overflow: hidden;
+      filter: blur(2px);
+      transition: 0.15s ease-in-out, filter 0.3s ease-in-out;
+      max-height: 0px;
+    }
+
+    .info_wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5em 0;
+
+      @include mix.OnlyPc {
+        padding: 1em;
+        padding-top: 2em;
+        padding-bottom: 1em;
+      }
+    }
+
+    .info_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1em;
+      margin-bottom: 0.5em;
+
+      .header_title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-clamp: 1;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  @include mix.OnlyPc {
+    &:hover {
+      .item_image {
+        filter: brightness(0.6);
+      }
+
+      .item_info {
+        max-height: 100%;
+        filter: blur(0);
+      }
+    }
+  }
+}

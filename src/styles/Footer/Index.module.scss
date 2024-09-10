@@ -1,0 +1,109 @@
+@use "@/styles/_dirs/variables" as var;
+
+.footer {
+  background: var.$dark_text_color;
+  color: var.$light_text_color;
+  padding: 0 2em;
+
+  &_container {
+    min-height: 300px;
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+  }
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var.$neutral_color_500;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .header_social,
+    .header_slogan,
+    .header_logo {
+      flex: 1 1 33.33%;
+    }
+
+    .header_social {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+
+      @media (max-width: 504px) {
+        gap: 1.5em;
+      }
+
+      a {
+        svg {
+          font-size: 1.5em;
+        }
+      }
+    }
+
+    .header_slogan {
+      display: flex;
+      justify-content: center;
+      p {
+        font-size: 1.25em;
+      }
+    }
+
+    .header_logo {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &_body {
+    display: flex;
+    gap: clamp(3em, 3em + 1.5vw, 8em);
+    flex-wrap: wrap;
+    min-height: 100px;
+    padding: 2em 0;
+    border-bottom: 1px solid var.$neutral_color_500;
+
+    .body_links {
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
+      .links_title {
+        margin-bottom: 0.5em;
+
+        p {
+          text-decoration: underline;
+        }
+      }
+
+      .links_nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        > p {
+          color: var.$neutral_color_500;
+          margin-bottom: 1em;
+        }
+
+        a {
+          font-size: 0.95em;
+        }
+      }
+    }
+  }
+
+  &_footer {
+    padding-top: 1em;
+
+    p {
+      color: var.$neutral_color_500;
+      text-align: center;
+    }
+  }
+}

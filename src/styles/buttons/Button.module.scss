@@ -1,0 +1,21 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.button {
+  background: var.$lightest_color;
+  border: none;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  border-radius: 0.1em;
+  cursor: pointer;
+  font-weight: 500;
+  color: var.$brand_color_500;
+  transition: background .2s ease-in-out;
+
+  @include mix.OnlyPc{
+    &:hover{
+      background: var.$darkest_color;
+    }
+  }
+}

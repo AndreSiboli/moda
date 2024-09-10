@@ -1,0 +1,39 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.faq {
+  &_images {
+    width: 100%;
+    background: var.$brand_color_200;
+    height: 500px;
+
+    .image_container {
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      img {
+        object-position: 50% 5%;
+      }
+    }
+  }
+
+  &_container {
+    padding: 3em 1em;
+    width: 100%;
+  }
+
+  &_title {
+    h1 {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &_wrapper {
+    margin: 0 auto;
+    margin-top: 3em;
+    max-width: 600px;
+    width: 100%;
+  }
+}
