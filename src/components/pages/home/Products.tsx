@@ -4,18 +4,18 @@ import Container from "@/components/layout/Container";
 import CollectionCard from "@/components/cards/CollectionCard";
 import LinkButton from "@/components/links/LinkButton";
 
-import genz1 from "@/assets/genz/joshua-rondeau-MCd8GU4nz8M-unsplash.jpg";
-import genz2 from "@/assets/genz/nina-hill-mqM8WHiuZPY-unsplash.jpg";
-import genz3 from "@/assets/genz/mahdi-chaghari-Z7DdU3d8UDc-unsplash.jpg";
-import summer1 from "@/assets/summer/christopher-campbell-483r_jIASq0-unsplash.jpg";
-import summer2 from "@/assets/summer/alexander-jawfox-zXa0Peaq30U-unsplash.jpg";
-import summer3 from "@/assets/summer/sule-makaroglu-pu2DMQ-Bi5s-unsplash.jpg";
-import sport1 from "@/assets/sport/sergey-sokolov-cO-5xW3uDxo-unsplash.jpg";
-import sport2 from "@/assets/sport/sergey-sokolov-z2L4PU8xZEk-unsplash.jpg";
-import sport3 from "@/assets/sport/sheldon-5mTOegXTMUM-unsplash.jpg";
-import spring1 from "@/assets/spring/bailey-burton-jN8PVzZQ9iQ-unsplash.jpg";
-import spring2 from "@/assets/spring/sam-chapman-rEA2MzwxGmY-unsplash.jpg";
-import spring3 from "@/assets/spring/sule-makaroglu-hP-aYOy1284-unsplash.jpg";
+import genz1 from "@/assets/collections/genz/joshua-rondeau-MCd8GU4nz8M-unsplash.jpg";
+import genz2 from "@/assets/collections/genz/nina-hill-mqM8WHiuZPY-unsplash.jpg";
+import genz3 from "@/assets/collections/genz/mahdi-chaghari-Z7DdU3d8UDc-unsplash.jpg";
+import summer1 from "@/assets/collections/summer/christopher-campbell-483r_jIASq0-unsplash.jpg";
+import summer2 from "@/assets/collections/summer/alexander-jawfox-zXa0Peaq30U-unsplash.jpg";
+import summer3 from "@/assets/collections/summer/sule-makaroglu-pu2DMQ-Bi5s-unsplash.jpg";
+import sport1 from "@/assets/collections/sport/sergey-sokolov-cO-5xW3uDxo-unsplash.jpg";
+import sport2 from "@/assets/collections/sport/sergey-sokolov-z2L4PU8xZEk-unsplash.jpg";
+import sport3 from "@/assets/collections/sport/sheldon-5mTOegXTMUM-unsplash.jpg";
+import spring1 from "@/assets/collections/spring/bailey-burton-jN8PVzZQ9iQ-unsplash.jpg";
+import spring2 from "@/assets/collections/spring/sam-chapman-rEA2MzwxGmY-unsplash.jpg";
+import spring3 from "@/assets/collections/spring/sule-makaroglu-hP-aYOy1284-unsplash.jpg";
 
 export default function Products() {
   const collections = [

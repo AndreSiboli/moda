@@ -4,10 +4,10 @@ import Link from "next/link";
 import Img from "@/components/utils/Img";
 import Carousel from "@/components/carousel/Carousel";
 
-import summer from "@/assets/store/matas-katinas-jYDRaDUfYsA-unsplash.jpg";
-import genz from "@/assets/store/joshua-rondeau-TG8vuPf2O-I-unsplash.jpg";
-import sport from "@/assets/store/mahdi-chaghari-C0iF9gJ3TWs-unsplash.jpg";
-import spring from "@/assets/store/pexels-vitoriasantos-3050943.jpg";
+import summer from "@/assets/collections/summer/matas-katinas-jYDRaDUfYsA-unsplash.jpg";
+import genz from "@/assets/collections/genz/joshua-rondeau-TG8vuPf2O-I-unsplash.jpg";
+import sport from "@/assets/collections/sport/mahdi-chaghari-C0iF9gJ3TWs-unsplash.jpg";
+import spring from "@/assets/collections/spring/pexels-vitoriasantos-3050943.jpg";
 
 import { PiHandSwipeLeft, PiLink } from "react-icons/pi";
 
@@ -70,7 +70,7 @@ export default function Collections() {
           <PiHandSwipeLeft /> Swipe
         </p>
 
-        <Carousel parentConfig={{  itemsLength: 4 }}>
+        <Carousel parentConfig={{ itemsLength: 4 }}>
           {images.map((image) => (
             <div className={styles.card} key={image.title}>
               <figure className={styles.card_image}>

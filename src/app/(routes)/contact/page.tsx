@@ -5,7 +5,7 @@ import Link from "next/link";
 import ContactForm from "@/components/forms/Contact";
 import Img from "@/components/utils/Img";
 
-import image from "@/assets/curly-haired-pretty-lady-red-headband-yellow-trendy-sundress-blowing-kiss-holding-glass-isolated-backdrop.jpg";
+import image from "@/assets/contact.jpg";
 
 export default function Contact() {
   return (

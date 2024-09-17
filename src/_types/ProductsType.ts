@@ -20,4 +20,5 @@ export interface ProductType {
   description: string;
   price: number;
   stock: number;
+  type: string[];
 }

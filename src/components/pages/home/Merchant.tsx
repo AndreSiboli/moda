@@ -5,9 +5,9 @@ import Container from "@/components/layout/Container";
 import Img from "@/components/utils/Img";
 import LinkButton from "@/components/links/LinkButton";
 
-import mainImage from "@/assets/genz/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg";
-import image2 from "@/assets/genz/joshua-rondeau-xFAD1brcgQk-unsplash.jpg";
-import image3 from "@/assets/genz/laurence-la-madeleine-UFx2N7b1fCw-unsplash.jpg";
+import mainImage from "@/assets/collections/genz/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg";
+import image2 from "@/assets/collections/genz/joshua-rondeau-xFAD1brcgQk-unsplash.jpg";
+import image3 from "@/assets/collections/genz/laurence-la-madeleine-UFx2N7b1fCw-unsplash.jpg";
 
 const courier = Courier_Prime({
   subsets: ["latin", "latin-ext"],

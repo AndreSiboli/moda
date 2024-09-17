@@ -1,3 +1,4 @@
+import { ProductType } from "@/_types/ProductsType";
 import jewelry1 from "@/assets/products/jewelry/angelo-pantazis-JDKTrT5pOFY-unsplash.jpg";
 import jewelry2 from "@/assets/products/jewelry/cat-han-BJ3grTerqY4-unsplash.jpg";
 import jewelry3 from "@/assets/products/jewelry/jasmin-chew-UBeNYvk6ED0-unsplash.jpg";
@@ -17,6 +18,7 @@ import dress3 from "@/assets/products/dresses/jim-romero-8cA2adqno6c-unsplash.jp
 import dress4 from "@/assets/products/dresses/pexels-shuvalova-natalia-415991090-27304863.jpg";
 import dress4p2 from "@/assets/products/dresses/pexels-shuvalova-natalia-415991090-27304894.jpg";
 import dress5 from "@/assets/products/dresses/tamara-bellis-GRfLA7aXlO4-unsplash.jpg";
+import dress6 from "@/assets/products/dresses/jesus-santos-rUSJt8Y6Alw-unsplash.jpg";
 
 import intimate1 from "@/assets/products/intimate/anna-deli-ITPsrmMweVc-unsplash.jpg";
 import intimate2 from "@/assets/products/intimate/ddddddarya-cR5w5YcwESM-unsplash.jpg";
@@ -25,8 +27,9 @@ import intimate4 from "@/assets/products/intimate/kate-tepl-bHnwsjbvIS0-unsplash
 import intimate5 from "@/assets/products/intimate/pexels-jonaorle-3828241.jpg";
 import intimate6 from "@/assets/products/intimate/semen-zhuravlev-rizSIw9QY4M-unsplash.jpg";
 import intimate6p2 from "@/assets/products/intimate/semen-zhuravlev-3Nbn4iFSffw-unsplash.jpg";
+import intimate7 from "@/assets/products/intimate/riccardo-carlo-rossi-x90HeQHJ1yE-unsplash.jpg";
 
-export const jewelry = [
+export const jewelry: ProductType[] = [
   {
     id: "A1B2C3D4",
     title: "Lorem Ipsum Dolor Sit",
@@ -233,7 +236,7 @@ export const jewelry = [
   },
 ];
 
-export const dresses = [
+export const dresses: ProductType[] = [
   {
     id: "D8E9F1G2",
     title: "Lorem Ipsum Dolor Sit",
@@ -325,23 +328,23 @@ export const dresses = [
       "Vivamus ultricies, orci ac molestie dictum, justo tortor eleifend purus, ac facilisis nulla nisi eget urna.",
     type: ["dress"],
   },
-  // {
-  //   id: "X9Y0Z1A2",
-  //   title: "Mauris Finibus",
-  //   images: {
-  //     src: dress6,
-  //     alt: "Mauris",
-  //   },
-  //   price: 41.99,
-  //   stock: 19,
-  //   rating: {
-  //     score: 4.1,
-  //     votes: 126,
-  //   },
-  //   description:
-  //     "Mauris finibus magna in nibh dictum viverra. Aenean lobortis velit in metus.",
-  //   type: ["dress"],
-  // },
+  {
+    id: "X9Y0Z1A2",
+    title: "Mauris Finibus",
+    images: {
+      src: dress6,
+      alt: "Mauris",
+    },
+    price: 41.99,
+    stock: 19,
+    rating: {
+      score: 4.1,
+      votes: 126,
+    },
+    description:
+      "Mauris finibus magna in nibh dictum viverra. Aenean lobortis velit in metus.",
+    type: ["dress"],
+  },
   // {
   //   id: "B3C4D5E6",
   //   title: "Aenean Auctor",
@@ -446,7 +449,7 @@ export const dresses = [
   // },
 ];
 
-export const intimate = [
+export const intimate: ProductType[] = [
   {
     id: "W8X9Y1Z2",
     title: "Lorem Ipsum Dolor Sit",
@@ -462,7 +465,7 @@ export const intimate = [
     },
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie magna a dui scelerisque fermentum.",
-    type: "intimate",
+    type: ["intimate", "clothes"],
   },
   {
     id: "A3B4C5D6",
@@ -479,7 +482,7 @@ export const intimate = [
     },
     description:
       "Suspendisse potenti. Sed sit amet lectus vitae ligula ultrices auctor non quis purus.",
-    type: "intimate",
+    type: ["intimate", "clothes"],
   },
   {
     id: "E7F8G9H0",
@@ -496,7 +499,7 @@ export const intimate = [
     },
     description:
       "Cras blandit arcu et turpis condimentum, vitae suscipit lorem viverra.",
-    type: "intimate",
+    type: ["intimate", "clothes"],
   },
   {
     id: "I1J2K3L4",
@@ -513,7 +516,7 @@ export const intimate = [
     },
     description:
       "Curabitur mattis mauris nec eros tempor, at suscipit arcu viverra.",
-    type: "intimate",
+    type: ["intimate", "clothes"],
   },
   {
     id: "M5N6O7P8",
@@ -530,7 +533,7 @@ export const intimate = [
     },
     description:
       "Vivamus ultricies, orci ac molestie dictum, justo tortor eleifend purus, ac facilisis nulla nisi eget urna.",
-    type: "intimate",
+    type: ["intimate", "clothes"],
   },
   {
     id: "Q9R0S1T2",
@@ -538,10 +541,12 @@ export const intimate = [
     images: {
       src: intimate6,
       alt: "Mauris",
-      subImages: [{
-        src: intimate6p2,
-      alt: "Mauris",
-      }]
+      subImages: [
+        {
+          src: intimate6p2,
+          alt: "Mauris",
+        },
+      ],
     },
     price: 32.99,
     stock: 12,
@@ -551,25 +556,25 @@ export const intimate = [
     },
     description:
       "Mauris finibus magna in nibh dictum viverra. Aenean lobortis velit in metus.",
-    type: "intimate",
+    type: ["intimate", "clothes"],
   },
-  // {
-  //   id: "U3V4W5X6",
-  //   title: "Aenean Auctor",
-  //   images: {
-  //     src: intimate7,
-  //     alt: "Aenean",
-  //   },
-  //   price: 39.5,
-  //   stock: 4,
-  //   rating: {
-  //     score: 4.3,
-  //     votes: 135,
-  //   },
-  //   description:
-  //     "Aenean auctor, metus id feugiat fermentum, magna velit dictum purus, sit amet pulvinar dolor sapien eget turpis.",
-  //   type: "intimate",
-  // },
+  {
+    id: "U3V4W5X6",
+    title: "Aenean Auctor",
+    images: {
+      src: intimate7,
+      alt: "Aenean",
+    },
+    price: 39.5,
+    stock: 4,
+    rating: {
+      score: 4.3,
+      votes: 135,
+    },
+    description:
+      "Aenean auctor, metus id feugiat fermentum, magna velit dictum purus, sit amet pulvinar dolor sapien eget turpis.",
+    type: ["intimate", "clothes"],
+  },
   // {
   //   id: "Y7Z8A9B0",
   //   title: "Donec Sodales",
@@ -585,7 +590,7 @@ export const intimate = [
   //   },
   //   description:
   //     "Donec sodales ligula ut velit varius, eget facilisis purus feugiat.",
-  //   type: "intimate",
+  //   type:[ "intimate", 'clothes'],
   // },
   // {
   //   id: "C1D2E3F4",
@@ -602,7 +607,7 @@ export const intimate = [
   //   },
   //   description:
   //     "Pellentesque fermentum, dui sed dictum consequat, dui orci iaculis odio, sed varius augue mauris eget ex.",
-  //   type: "intimate",
+  //   type:[ "intimate", 'clothes'],
   // },
   // {
   //   id: "G5H6I7J8",
@@ -619,7 +624,7 @@ export const intimate = [
   //   },
   //   description:
   //     "Aliquam pharetra dolor vitae nunc fermentum, at vulputate magna vulputate.",
-  //   type: "intimate",
+  //   type:[ "intimate", 'clothes'],
   // },
   // {
   //   id: "K9L0M1N2",
@@ -636,7 +641,7 @@ export const intimate = [
   //   },
   //   description:
   //     "Phasellus ultrices dui ac urna aliquet, sit amet dignissim magna mollis.",
-  //   type: "intimate",
+  //   type:[ "intimate", 'clothes'],
   // },
   // {
   //   id: "O3P4Q5R6",
@@ -653,6 +658,6 @@ export const intimate = [
   //   },
   //   description:
   //     "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-  //   type: "intimate",
+  //   type:[ "intimate", 'clothes'],
   // },
 ];

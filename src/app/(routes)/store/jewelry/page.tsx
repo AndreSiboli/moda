@@ -4,7 +4,7 @@ import { jewelry } from "@/fake-api/products";
 import HeroCollections from "@/components/collections/HeroCollections";
 import Collection from "@/components/collections/Collections";
 
-import wallapaper from "@/assets/katie-mukhina-1wthSXULQLU-unsplash.jpg";
+import wallapaper from "@/assets/products/jewelry.jpg";
 
 export default function Jewelry() {
   const hero = {
