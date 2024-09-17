@@ -4,47 +4,101 @@ import Link from "next/link";
 import Img from "@/components/utils/Img";
 import Carousel from "@/components/carousel/Carousel";
 
-import summer from "@/assets/store/matas-katinas-jYDRaDUfYsA-unsplash.jpg";
-import genz from "@/assets/store/joshua-rondeau-TG8vuPf2O-I-unsplash.jpg";
-import sport from "@/assets/store/mahdi-chaghari-C0iF9gJ3TWs-unsplash.jpg";
-import spring from "@/assets/store/pexels-vitoriasantos-3050943.jpg";
+import jewelry from "@/assets/natali-hordiiuk-6xUNKC6sutk-unsplash.jpg";
+import dress from "@/assets/jesus-santos-rUSJt8Y6Alw-unsplash.jpg";
+import intimate from "@/assets/riccardo-carlo-rossi-x90HeQHJ1yE-unsplash.jpg";
 
 import { PiHandSwipeLeft, PiLink } from "react-icons/pi";
 
 export default function Store() {
   const images = [
     {
-      src: summer,
-      title: "Summer",
-      href: "/collections/summer",
+      src: jewelry,
+      title: "Jewelry",
+      href: "/store/jewelry",
     },
     {
-      src: sport,
-      title: "Sport",
-      href: "/collections/sport",
+      src: dress,
+      title: "Dresses",
+      href: "/store/dress",
     },
     {
-      src: genz,
-      title: "Gen Z",
-      href: "/collections/gen-z",
-    },
-    {
-      src: spring,
-      title: "Spring",
-      href: "/collections/spring",
+      src: intimate,
+      title: "Intimate",
+      href: "/store/intimate",
     },
   ];
-  const links = [
+  const clothes = [
     {
-      text: "All models",
+      text: "Dresses",
+      href: "/store/dress",
+    },
+    {
+      text: "Skirts",
       href: "/under-construction",
     },
     {
-      text: "Events",
+      text: "Panties",
       href: "/under-construction",
     },
     {
-      text: "Design your own",
+      text: "Tops",
+      href: "/under-construction",
+    },
+    {
+      text: "Shorts",
+      href: "/under-construction",
+    },
+    {
+      text: "Jackets",
+      href: "/under-construction",
+    },
+    {
+      text: "Intimate",
+      href: "/under-construction",
+    },
+    {
+      text: "Shirts",
+      href: "/under-construction",
+    },
+  ];
+  const swim = [
+    {
+      text: "Tops",
+      href: "/under-construction",
+    },
+    {
+      text: "Bottoms",
+      href: "/under-construction",
+    },
+    {
+      text: "Sets",
+      href: "/under-construction",
+    },
+  ];
+  const accessories = [
+    {
+      text: "Necklaces",
+      href: "/under-construction",
+    },
+    {
+      text: "Rings",
+      href: "/under-construction",
+    },
+    {
+      text: "Bracelet",
+      href: "/under-construction",
+    },
+    {
+      text: "Earring",
+      href: "/under-construction",
+    },
+    {
+      text: "Hats",
+      href: "/under-construction",
+    },
+    {
+      text: "Bags",
       href: "/under-construction",
     },
   ];
@@ -52,16 +106,31 @@ export default function Store() {
   return (
     <div className={styles.store}>
       <aside className={styles.store_aside}>
-        <div className={styles.aside_title}>
-          <h2>Collections</h2>
-        </div>
-
         <nav className={styles.aside_nav}>
-          {links.map((link) => (
-            <Link href={link.href} key={link.text}>
-              {link.text}
-            </Link>
-          ))}
+          <div className={styles.nav_links}>
+            <h2>Clothes</h2>
+            {clothes.map((link) => (
+              <Link href={link.href} key={link.text}>
+                {link.text}
+              </Link>
+            ))}
+          </div>
+          <div className={styles.nav_links}>
+            <h2>Accessories</h2>
+            {accessories.map((link) => (
+              <Link href={link.href} key={link.text}>
+                {link.text}
+              </Link>
+            ))}
+          </div>
+          <div className={styles.nav_links}>
+            <h2>Swim</h2>
+            {swim.map((link) => (
+              <Link href={link.href} key={link.text}>
+                {link.text}
+              </Link>
+            ))}
+          </div>
         </nav>
       </aside>
 
@@ -70,7 +139,7 @@ export default function Store() {
           <PiHandSwipeLeft /> Swipe
         </p>
 
-        <Carousel>
+        <Carousel parentConfig={{ itemsLength: 3 }}>
           {images.map((image) => (
             <div className={styles.card} key={image.title}>
               <figure className={styles.card_image}>

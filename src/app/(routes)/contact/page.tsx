@@ -37,10 +37,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* <div className={styles.contact_gap}>
-              <p>or</p>
-            </div> */}
-
             <div className={styles.contact_form}>
               <ContactForm />
             </div>

@@ -109,6 +109,82 @@ export default function Mentions() {
       author: "Stepan Kalinin",
       href: "https://unsplash.com/pt-br/@incrprl",
     },
+    {
+      author: "Nick Pliahas",
+      href: "https://unsplash.com/pt-br/@nick_pliachas",
+    },
+    {
+      author: "Alonso Reyes",
+      href: "https://unsplash.com/pt-br/@alonsoreyes",
+    },
+    {
+      author: "Tony Luginsland",
+      href: "https://unsplash.com/pt-br/@tonyluginsland",
+    },
+    {
+      author: "Ayo Ogunseinde",
+      href: "https://unsplash.com/pt-br/@armedshutter",
+    },
+    {
+      author: "Anastase Maragos",
+      href: "https://unsplash.com/pt-br/@visualsbyroyalz",
+    },
+    {
+      author: "Shayna Douglas",
+      href: "https://unsplash.com/pt-br/@itsmaemedia",
+    },
+    {
+      author: "Dom Hill",
+      href: "https://unsplash.com/pt-br/@domjewel",
+    },
+    {
+      author: "Guilherme Caetano",
+      href: "https://unsplash.com/pt-br/@guicaetano",
+    },
+    {
+      author: "Vitalii Khodzinskyi",
+      href: "https://unsplash.com/pt-br/@khodzinskyi",
+    },
+    {
+      author: "Ophie Sköld",
+      href: "https://unsplash.com/pt-br/@sophieskold",
+    },
+    {
+      author: "Andie Gómez-Acebo",
+      href: "https://unsplash.com/pt-br/@andesany",
+    },
+    {
+      author: "Kateryna Hliznitsova",
+      href: "https://unsplash.com/pt-br/@kate_gliz",
+    },
+    {
+      author: "Max Ducourneau",
+      href: "https://unsplash.com/pt-br/@maxdcrn",
+    },
+    {
+      author: "Natali Hordiiuk",
+      href: "https://unsplash.com/pt-br/@whynotnatali",
+    },
+    {
+      author: "Nataliya Melnychuk",
+      href: "https://unsplash.com/pt-br/@natinati",
+    },
+    {
+      author: "Cat Han",
+      href: "https://unsplash.com/pt-br/@figmentprints",
+    },
+    {
+      author: "Angelo Pantazis",
+      href: "https://unsplash.com/pt-br/@angelopantazis",
+    },
+    {
+      author: "Julia Cheperis",
+      href: "https://unsplash.com/pt-br/@inception",
+    },
+    {
+      author: "Jesus Santos",
+      href: "https://unsplash.com/pt-br/@jesussantosphotography",
+    },
   ].sort((a, b) => {
     if (a.author < b.author) return -1;
     if (a.author > b.author) return 1;

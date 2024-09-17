@@ -1,853 +1,658 @@
-import { ProductType } from "@/_types/ProductsType";
-import summer1 from "@/assets/summer/alexander-grey-NXom4fEGDes-unsplash.jpg";
-import summer2 from "@/assets/summer/alexander-jawfox-zXa0Peaq30U-unsplash.jpg";
-import summer3 from "@/assets/summer/jernej-graj-8y6L01KFagQ-unsplash.jpg";
-import summer4 from "@/assets/summer/christopher-campbell-483r_jIASq0-unsplash.jpg";
-import summer5 from "@/assets/summer/matas-katinas-jYDRaDUfYsA-unsplash.jpg";
-import summer6 from "@/assets/summer/sule-makaroglu-33GgRmC_Huc-unsplash.jpg";
-import summer6p2 from "@/assets/summer/sule-makaroglu-BSOVhRtTH7c-unsplash.jpg";
-import summer7 from "@/assets/summer/sule-makaroglu-8QF8cD0T26w-unsplash.jpg";
-import summer7p2 from "@/assets/summer/sule-makaroglu-pu2DMQ-Bi5s-unsplash.jpg";
-import summer8 from "@/assets/summer/tamara-bellis-NXJMAp4csx0-unsplash.jpg";
-import summer9 from "@/assets/summer/tamara-bellis-y4eKeASlLok-unsplash.jpg";
-import summer10 from "@/assets/summer/tamara-bellis-yAsdIQKrXfU-unsplash.jpg";
-import summer11 from "@/assets/summer/stepan-kalinin-z7zHwR5v-bA-unsplash.jpg";
-import summer12 from "@/assets/summer/tudor-adrian-gloe7HNn4g4-unsplash.jpg";
+import jewelry1 from "@/assets/products/jewelry/angelo-pantazis-JDKTrT5pOFY-unsplash.jpg";
+import jewelry2 from "@/assets/products/jewelry/cat-han-BJ3grTerqY4-unsplash.jpg";
+import jewelry3 from "@/assets/products/jewelry/jasmin-chew-UBeNYvk6ED0-unsplash.jpg";
+import jewelry4 from "@/assets/products/jewelry/jasmin-chew-WdylQBZ9R1o-unsplash.jpg";
+import jewelry5 from "@/assets/products/jewelry/julia-cheperis-GFI1sRmDaCs-unsplash.jpg";
+import jewelry6 from "@/assets/products/jewelry/kateryna-hliznitsova-P6NiFTyI294-unsplash.jpg";
+import jewelry7 from "@/assets/products/jewelry/kateryna-hliznitsova-ceSCZzjTReg-unsplash.jpg";
+import jewelry8 from "@/assets/products/jewelry/kateryna-hliznitsova-pjrPWwwYx1I-unsplash.jpg";
+import jewelry9 from "@/assets/products/jewelry/kateryna-hliznitsova-vbnxgxj6cJg-unsplash.jpg";
+import jewelry10 from "@/assets/products/jewelry/max-ducourneau-6uv43p1ePrk-unsplash.jpg";
+import jewelry11 from "@/assets/products/jewelry/natali-hordiiuk-6xUNKC6sutk-unsplash.jpg";
+import jewelry12 from "@/assets/products/jewelry/nataliya-melnychuk-RZY_1SLLwKU-unsplash.jpg";
 
-import sport1 from "@/assets/sport/artem-mihailov-XGPXbVNu6e8-unsplash.jpg";
-import sport2 from "@/assets/sport/erwans-socks-LBBc6wrbYcs-unsplash.jpg";
-import sport3 from "@/assets/sport/korie-cull-3THr5zbJKPU-unsplash.jpg";
-import sport4 from "@/assets/sport/mahdi-chaghari-C0iF9gJ3TWs-unsplash.jpg";
-import sport5 from "@/assets/sport/sergey-sokolov-cO-5xW3uDxo-unsplash.jpg";
-import sport6 from "@/assets/sport/sergey-sokolov-z2L4PU8xZEk-unsplash.jpg";
-import sport7 from "@/assets/sport/sheldon-5mTOegXTMUM-unsplash.jpg";
-import sport8 from "@/assets/sport/alonso-reyes-xd4tmzR8Uog-unsplash.jpg";
-import sport9 from "@/assets/sport/anastase-maragos-J7IBavYCdUA-unsplash.jpg";
-import sport10 from "@/assets/sport/ayo-ogunseinde-0xWXyaa8bTQ-unsplash.jpg";
-import sport11 from "@/assets/sport/nick-pliahas-LiQLeo-ZhX4-unsplash.jpg";
-import sport12 from "@/assets/sport/tony-luginsland-ofaBcg1xZL0-unsplash.jpg";
+import dress1 from "@/assets/products/dresses/ali-karimiboroujeni-FZUENokiL6Y-unsplash.jpg";
+import dress2 from "@/assets/products/dresses/ernest-tarasov - WrsOZD1euY-unsplash.jpg";
+import dress3 from "@/assets/products/dresses/jim-romero-8cA2adqno6c-unsplash.jpg";
+import dress4 from "@/assets/products/dresses/pexels-shuvalova-natalia-415991090-27304863.jpg";
+import dress4p2 from "@/assets/products/dresses/pexels-shuvalova-natalia-415991090-27304894.jpg";
+import dress5 from "@/assets/products/dresses/tamara-bellis-GRfLA7aXlO4-unsplash.jpg";
 
-import genz1 from "@/assets/genz/joshua-rondeau-4o2oh185-VY-unsplash.jpg";
-import genz1p2 from "@/assets/genz/joshua-rondeau-xFAD1brcgQk-unsplash.jpg";
-import genz2 from "@/assets/genz/joshua-rondeau-MCd8GU4nz8M-unsplash.jpg";
-import genz2p2 from "@/assets/genz/joshua-rondeau-TG8vuPf2O-I-unsplash.jpg";
-import genz3 from "@/assets/genz/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg";
-import genz4 from "@/assets/genz/laurence-la-madeleine-UFx2N7b1fCw-unsplash.jpg";
-import genz4p2 from "@/assets/genz/laurence-la-madeleine-e1K3E_dTEcQ-unsplash.jpg";
-import genz5 from "@/assets/genz/mahdi-chaghari-1z6vvU_L-Yw-unsplash.jpg";
-import genz6 from "@/assets/genz/mahdi-chaghari-O6mLuklQSew-unsplash.jpg";
-import genz7 from "@/assets/genz/nina-hill-hYdBKU8Qt_Y-unsplash.jpg";
-import genz7p2 from "@/assets/genz/nina-hill-lPaN28ty33s-unsplash.jpg";
-import genz8 from "@/assets/genz/sule-makaroglu-qktiaNv700Y-unsplash.jpg";
-import genz9 from "@/assets/genz/ayo-ogunseinde-0im7yfJ3qog-unsplash.jpg";
-import genz10 from "@/assets/genz/dom-hill-nimElTcTNyY-unsplash.jpg";
-import genz11 from "@/assets/genz/guilherme-caetano-gswrotk34cw-unsplash.jpg";
-import genz12 from "@/assets/genz/lawrence-chismorie-2jNLXZfuZVA-unsplash.jpg";
+import intimate1 from "@/assets/products/intimate/anna-deli-ITPsrmMweVc-unsplash.jpg";
+import intimate2 from "@/assets/products/intimate/ddddddarya-cR5w5YcwESM-unsplash.jpg";
+import intimate3 from "@/assets/products/intimate/joe-ciciarelli-T_aDfsi8uYQ-unsplash.jpg";
+import intimate4 from "@/assets/products/intimate/kate-tepl-bHnwsjbvIS0-unsplash.jpg";
+import intimate5 from "@/assets/products/intimate/pexels-jonaorle-3828241.jpg";
+import intimate6 from "@/assets/products/intimate/semen-zhuravlev-rizSIw9QY4M-unsplash.jpg";
+import intimate6p2 from "@/assets/products/intimate/semen-zhuravlev-3Nbn4iFSffw-unsplash.jpg";
 
-import spring1 from "@/assets/spring/bailey-burton-jN8PVzZQ9iQ-unsplash.jpg";
-import spring2 from "@/assets/spring/benigno-hoyuela-kBzGRtgJhPo-unsplash.jpg";
-import spring3 from "@/assets/spring/jasmin-chew-e_fwWMPw97Y-unsplash.jpg";
-import spring4 from "@/assets/spring/jasmin-chew-txy8AZU04iw-unsplash.jpg";
-import spring5 from "@/assets/spring/lance-reis-E0DmI5Elrjs-unsplash.jpg";
-import spring6 from "@/assets/spring/lance-reis-E0DmI5Elrjs-unsplash.jpg";
-import spring7 from "@/assets/spring/pexels-anastasia-nagibina-1116204043-24342718.jpg";
-import spring8 from "@/assets/spring/pexels-gailstaters-3170390.jpg";
-import spring9 from "@/assets/spring/pexels-kowalievska-1055691.jpg";
-import spring10 from "@/assets/spring/pexels-vitoriasantos-3050943.jpg";
-import spring11 from "@/assets/spring/sam-chapman-rEA2MzwxGmY-unsplash.jpg";
-import spring12 from "@/assets/spring/vitalii-khodzinskyi-nYM9SSk7vC8-unsplash.jpg";
-
-export const summer: ProductType[] = [
+export const jewelry = [
   {
-    id: "1",
-    title: "Lorem Ipsum Dolor Sit Amet 1",
+    id: "A1B2C3D4",
+    title: "Lorem Ipsum Dolor Sit",
     images: {
-      src: summer1,
-      alt: "Lorem 1",
+      src: jewelry1,
+      alt: "Lorem",
     },
-    price: 29.9,
-    stock: 12,
+    price: 49.99,
+    stock: 20,
+    rating: {
+      score: 4.6,
+      votes: 123,
+    },
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie magna a dui scelerisque fermentum.",
+    type: ["jewelry"],
+  },
+  {
+    id: "E5F6G7H8",
+    title: "Suspendisse Potenti",
+    images: {
+      src: jewelry2,
+      alt: "Suspendisse",
+    },
+    price: 29.99,
+    stock: 15,
     rating: {
       score: 5,
-      votes: 756,
+      votes: 98,
     },
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
+      "Suspendisse potenti. Sed sit amet lectus vitae ligula ultrices auctor non quis purus.",
+    type: ["jewelry"],
   },
   {
-    id: "2",
-    title: "Lorem Ipsum Dolor Sit Amet 2",
+    id: "I9J0K1L2",
+    title: "Cras Blandit",
     images: {
-      src: summer2,
-      alt: "Lorem 2",
+      src: jewelry3,
+      alt: "Cras",
     },
-    price: 35.5,
+    price: 59.99,
+    stock: 10,
+    rating: {
+      score: 4.7,
+      votes: 200,
+    },
+    description:
+      "Cras blandit arcu et turpis condimentum, vitae suscipit lorem viverra.",
+    type: ["jewelry"],
+  },
+  {
+    id: "M3N4O5P6",
+    title: "Curabitur Mattis",
+    images: {
+      src: jewelry4,
+      alt: "Curabitur",
+    },
+    price: 39.99,
+    stock: 12,
+    rating: {
+      score: 4.1,
+      votes: 85,
+    },
+    description:
+      "Curabitur mattis mauris nec eros tempor, at suscipit arcu viverra.",
+    type: ["jewelry"],
+  },
+  {
+    id: "Q7R8S9T0",
+    title: "Vivamus Ultricies",
+    images: {
+      src: jewelry5,
+      alt: "Vivamus",
+    },
+    price: 69.99,
     stock: 8,
     rating: {
-      score: 4.5,
-      votes: 892,
+      score: 4.9,
+      votes: 300,
     },
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
+      "Vivamus ultricies, orci ac molestie dictum, justo tortor eleifend purus, ac facilisis nulla nisi eget urna.",
+    type: ["jewelry"],
   },
   {
-    id: "3",
-    title: "Lorem Ipsum Dolor Sit Amet 3",
+    id: "U1V2W3X4",
+    title: "Mauris Finibus",
     images: {
-      src: summer3,
-      alt: "Lorem 3",
+      src: jewelry6,
+      alt: "Mauris",
     },
-    price: 42.0,
+    price: 44.99,
+    stock: 16,
+    rating: {
+      score: 4.0,
+      votes: 130,
+    },
+    description:
+      "Mauris finibus magna in nibh dictum viverra. Aenean lobortis velit in metus.",
+    type: ["jewelry"],
+  },
+  {
+    id: "Y5Z6A7B8",
+    title: "Aenean Auctor",
+    images: {
+      src: jewelry7,
+      alt: "Aenean",
+    },
+    price: 55.99,
+    stock: 22,
+    rating: {
+      score: 4.2,
+      votes: 110,
+    },
+    description:
+      "Aenean auctor, metus id feugiat fermentum, magna velit dictum purus, sit amet pulvinar dolor sapien eget turpis.",
+    type: ["jewelry"],
+  },
+  {
+    id: "C9D0E1F2",
+    title: "Donec Sodales",
+    images: {
+      src: jewelry8,
+      alt: "Donec",
+    },
+    price: 35.99,
+    stock: 14,
+    rating: {
+      score: 4.2,
+      votes: 95,
+    },
+    description:
+      "Donec sodales ligula ut velit varius, eget facilisis purus feugiat.",
+    type: ["jewelry"],
+  },
+  {
+    id: "G3H4I5J6",
+    title: "Pellentesque Fermentum",
+    images: {
+      src: jewelry9,
+      alt: "Pellentesque",
+    },
+    price: 47.99,
+    stock: 18,
+    rating: {
+      score: 4.5,
+      votes: 150,
+    },
+    description:
+      "Pellentesque fermentum, dui sed dictum consequat, dui orci iaculis odio, sed varius augue mauris eget ex.",
+    type: ["jewelry"],
+  },
+  {
+    id: "K7L8M9N0",
+    title: "Aliquam Pharetra",
+    images: {
+      src: jewelry10,
+      alt: "Aliquam",
+    },
+    price: 62.99,
+    stock: 9,
+    rating: {
+      score: 4.6,
+      votes: 210,
+    },
+    description:
+      "Aliquam pharetra dolor vitae nunc fermentum, at vulputate magna vulputate.",
+    type: ["jewelry"],
+  },
+  {
+    id: "O1P2Q3R4",
+    title: "Phasellus Ultrices",
+    images: {
+      src: jewelry11,
+      alt: "Phasellus",
+    },
+    price: 54.99,
+    stock: 11,
+    rating: {
+      score: 4.4,
+      votes: 140,
+    },
+    description:
+      "Phasellus ultrices dui ac urna aliquet, sit amet dignissim magna mollis.",
+    type: ["jewelry"],
+  },
+  {
+    id: "S5T6U7V8",
+    title: "Vestibulum Ante",
+    images: {
+      src: jewelry12,
+      alt: "Vestibulum",
+    },
+    price: 48.99,
+    stock: 13,
+    rating: {
+      score: 5,
+      votes: 120,
+    },
+    description:
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    type: ["jewelry"],
+  },
+];
+
+export const dresses = [
+  {
+    id: "D8E9F1G2",
+    title: "Lorem Ipsum Dolor Sit",
+    images: {
+      src: dress1,
+      alt: "Lorem",
+    },
+    price: 45.99,
+    stock: 25,
+    rating: {
+      score: 4.5,
+      votes: 145,
+    },
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie magna a dui scelerisque fermentum.",
+    type: ["dress"],
+  },
+  {
+    id: "H3I4J5K6",
+    title: "Suspendisse Potenti",
+    images: {
+      src: dress2,
+      alt: "Suspendisse",
+    },
+    price: 32.5,
+    stock: 18,
+    rating: {
+      score: 3.9,
+      votes: 105,
+    },
+    description:
+      "Suspendisse potenti. Sed sit amet lectus vitae ligula ultrices auctor non quis purus.",
+    type: ["dress"],
+  },
+  {
+    id: "L7M8N9O0",
+    title: "Cras Blandit",
+    images: {
+      src: dress3,
+      alt: "Cras",
+    },
+    price: 52.99,
+    stock: 13,
+    rating: {
+      score: 4.8,
+      votes: 230,
+    },
+    description:
+      "Cras blandit arcu et turpis condimentum, vitae suscipit lorem viverra.",
+    type: ["dress"],
+  },
+  {
+    id: "P1Q2R3S4",
+    title: "Curabitur Mattis",
+    images: {
+      src: dress4,
+      alt: "Curabitur",
+      subImages: [
+        {
+          src: dress4p2,
+          alt: "Curabitur",
+        },
+      ],
+    },
+    price: 38.99,
+    stock: 20,
+    rating: {
+      score: 4.2,
+      votes: 112,
+    },
+    description:
+      "Curabitur mattis mauris nec eros tempor, at suscipit arcu viverra.",
+    type: ["dress"],
+  },
+  {
+    id: "T5U6V7W8",
+    title: "Vivamus Ultricies",
+    images: {
+      src: dress5,
+      alt: "Vivamus",
+    },
+    price: 65.0,
+    stock: 7,
+    rating: {
+      score: 4.9,
+      votes: 310,
+    },
+    description:
+      "Vivamus ultricies, orci ac molestie dictum, justo tortor eleifend purus, ac facilisis nulla nisi eget urna.",
+    type: ["dress"],
+  },
+  // {
+  //   id: "X9Y0Z1A2",
+  //   title: "Mauris Finibus",
+  //   images: {
+  //     src: dress6,
+  //     alt: "Mauris",
+  //   },
+  //   price: 41.99,
+  //   stock: 19,
+  //   rating: {
+  //     score: 4.1,
+  //     votes: 126,
+  //   },
+  //   description:
+  //     "Mauris finibus magna in nibh dictum viverra. Aenean lobortis velit in metus.",
+  //   type: ["dress"],
+  // },
+  // {
+  //   id: "B3C4D5E6",
+  //   title: "Aenean Auctor",
+  //   images: {
+  //     src: dress7,
+  //     alt: "Aenean",
+  //   },
+  //   price: 60.5,
+  //   stock: 24,
+  //   rating: {
+  //     score: 4.3,
+  //     votes: 119,
+  //   },
+  //   description:
+  //     "Aenean auctor, metus id feugiat fermentum, magna velit dictum purus, sit amet pulvinar dolor sapien eget turpis.",
+  //   type: ["dress"],
+  // },
+  // {
+  //   id: "F7G8H9I0",
+  //   title: "Donec Sodales",
+  //   images: {
+  //     src: dress8,
+  //     alt: "Donec",
+  //   },
+  //   price: 34.99,
+  //   stock: 11,
+  //   rating: {
+  //     score: 3.7,
+  //     votes: 87,
+  //   },
+  //   description:
+  //     "Donec sodales ligula ut velit varius, eget facilisis purus feugiat.",
+  //   type: ["dress"],
+  // },
+  // {
+  //   id: "J1K2L3M4",
+  //   title: "Pellentesque Fermentum",
+  //   images: {
+  //     src: dress9,
+  //     alt: "Pellentesque",
+  //   },
+  //   price: 46.25,
+  //   stock: 17,
+  //   rating: {
+  //     score: 4.6,
+  //     votes: 178,
+  //   },
+  //   description:
+  //     "Pellentesque fermentum, dui sed dictum consequat, dui orci iaculis odio, sed varius augue mauris eget ex.",
+  //   type: ["dress"],
+  // },
+  // {
+  //   id: "N5O6P7Q8",
+  //   title: "Aliquam Pharetra",
+  //   images: {
+  //     src: dress10,
+  //     alt: "Aliquam",
+  //   },
+  //   price: 58.99,
+  //   stock: 9,
+  //   rating: {
+  //     score: 4.5,
+  //     votes: 202,
+  //   },
+  //   description:
+  //     "Aliquam pharetra dolor vitae nunc fermentum, at vulputate magna vulputate.",
+  //   type: ["dress"],
+  // },
+  // {
+  //   id: "R9S0T1U2",
+  //   title: "Phasellus Ultrices",
+  //   images: {
+  //     src: dress11,
+  //     alt: "Phasellus",
+  //   },
+  //   price: 53.5,
+  //   stock: 14,
+  //   rating: {
+  //     score: 4.4,
+  //     votes: 136,
+  //   },
+  //   description:
+  //     "Phasellus ultrices dui ac urna aliquet, sit amet dignissim magna mollis.",
+  //   type: ["dress"],
+  // },
+  // {
+  //   id: "V3W4X5Y6",
+  //   title: "Vestibulum Ante",
+  //   images: {
+  //     src: dress12,
+  //     alt: "Vestibulum",
+  //   },
+  //   price: 49.99,
+  //   stock: 15,
+  //   rating: {
+  //     score: 4.0,
+  //     votes: 115,
+  //   },
+  //   description:
+  //     "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+  //   type: ["dress"],
+  // },
+];
+
+export const intimate = [
+  {
+    id: "W8X9Y1Z2",
+    title: "Lorem Ipsum Dolor Sit",
+    images: {
+      src: intimate1,
+      alt: "Lorem",
+    },
+    price: 29.99,
+    stock: 10,
+    rating: {
+      score: 4.2,
+      votes: 98,
+    },
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie magna a dui scelerisque fermentum.",
+    type: "intimate",
+  },
+  {
+    id: "A3B4C5D6",
+    title: "Suspendisse Potenti",
+    images: {
+      src: intimate2,
+      alt: "Suspendisse",
+    },
+    price: 34.5,
+    stock: 7,
+    rating: {
+      score: 4.4,
+      votes: 70,
+    },
+    description:
+      "Suspendisse potenti. Sed sit amet lectus vitae ligula ultrices auctor non quis purus.",
+    type: "intimate",
+  },
+  {
+    id: "E7F8G9H0",
+    title: "Cras Blandit",
+    images: {
+      src: intimate3,
+      alt: "Cras",
+    },
+    price: 41.99,
     stock: 5,
     rating: {
       score: 4.7,
-      votes: 1024,
+      votes: 183,
     },
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
+      "Cras blandit arcu et turpis condimentum, vitae suscipit lorem viverra.",
+    type: "intimate",
   },
   {
-    id: "4",
-    title: "Lorem Ipsum Dolor Sit Amet 4",
+    id: "I1J2K3L4",
+    title: "Curabitur Mattis",
     images: {
-      src: summer4,
-      alt: "Lorem 4",
-    },
-    price: 25.0,
-    stock: 9,
-    rating: {
-      score: 5,
-      votes: 670,
-    },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
-  },
-  {
-    id: "5",
-    title: "Lorem Ipsum Dolor Sit Amet 5",
-    images: {
-      src: summer5,
-      alt: "Lorem 5",
-    },
-    price: 39.9,
-    stock: 15,
-    rating: {
-      score: 4.6,
-      votes: 845,
-    },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
-  },
-  {
-    id: "6",
-    title: "Lorem Ipsum Dolor Sit Amet 6",
-    images: {
-      src: summer6,
-      alt: "Lorem 6",
-      subImages: [
-        {
-          src: summer6p2,
-          alt: "Lorem 6p2",
-        },
-      ],
-    },
-    price: 31.5,
-    stock: 7,
-    rating: {
-      score: 4.4,
-      votes: 790,
-    },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
-  },
-  {
-    id: "7",
-    title: "Lorem Ipsum Dolor Sit Amet 7",
-    images: {
-      src: summer7,
-      alt: "Lorem 7",
-      subImages: [
-        {
-          src: summer7p2,
-          alt: "Lorem 7p2",
-        },
-      ],
-    },
-    price: 28.0,
-    stock: 11,
-    rating: {
-      score: 4.2,
-      votes: 610,
-    },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
-  },
-  {
-    id: "8",
-    title: "Lorem Ipsum Dolor Sit Amet 8",
-    images: {
-      src: summer8,
-      alt: "Lorem 8",
-    },
-    price: 45.0,
-    stock: 10,
-    rating: {
-      score: 4.8,
-      votes: 950,
-    },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
-  },
-  {
-    id: "9",
-    title: "Lorem Ipsum Dolor Sit Amet 9",
-    images: {
-      src: summer9,
-      alt: "Lorem 9",
-    },
-    price: 32.9,
-    stock: 6,
-    rating: {
-      score: 4,
-      votes: 740,
-    },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
-  },
-  {
-    id: "10",
-    title: "Lorem Ipsum Dolor Sit Amet 10",
-    images: {
-      src: summer10,
-      alt: "Lorem 10",
-    },
-    price: 26.5,
-    stock: 14,
-    rating: {
-      score: 4.9,
-      votes: 580,
-    },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
-  },
-  {
-    id: "11",
-    title: "Lorem Ipsum Dolor Sit Amet 11",
-    images: {
-      src: summer11,
-      alt: "Lorem 11",
-    },
-    price: 38.0,
-    stock: 13,
-    rating: {
-      score: 5,
-      votes: 860,
-    },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
-  },
-  {
-    id: "12",
-    title: "Lorem Ipsum Dolor Sit Amet 12",
-    images: {
-      src: summer12,
-      alt: "Lorem 12",
-    },
-    price: 34.9,
-    stock: 12,
-    rating: {
-      score: 4.6,
-      votes: 920,
-    },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda voluptatem totam.",
-  },
-];
-
-export const sport: ProductType[] = [
-  {
-    id: "21",
-    title: "Lorem Ipsum Dolor Sit",
-    images: {
-      src: sport1,
-      alt: "Lorem",
-    },
-    price: 49.99,
-    stock: 20,
-    rating: {
-      score: 4.3,
-      votes: 123,
-    },
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie magna a dui scelerisque fermentum.",
-  },
-  {
-    id: "22",
-    title: "Consectetur Adipiscing Elit",
-    images: {
-      src: sport2,
-      alt: "Consectetur",
-    },
-    price: 55.9,
-    stock: 12,
-    rating: {
-      score: 4.5,
-      votes: 898,
-    },
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie magna a dui scelerisque fermentum.",
-  },
-  {
-    id: "23",
-    title: "Vestibulum Ante Ipsum",
-    images: {
-      src: sport3,
-      alt: "Vestibulum",
-    },
-    price: 39.95,
-    stock: 15,
-    rating: {
-      score: 4.0,
-      votes: 200,
-    },
-    description:
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-  },
-  {
-    id: "24",
-    title: "Integer Nec Odio",
-    images: {
-      src: sport4,
-      alt: "Integer",
-    },
-    price: 60.0,
-    stock: 18,
-    rating: {
-      score: 4.7,
-      votes: 110,
-    },
-    description:
-      "Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
-  },
-  {
-    id: "25",
-    title: "Praesent Mauris",
-    images: {
-      src: sport5,
-      alt: "Praesent",
-    },
-    price: 45.5,
-    stock: 25,
-    rating: {
-      score: 4.2,
-      votes: 340,
-    },
-    description:
-      "Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
-  },
-  {
-    id: "26",
-    title: "Sed Cursus Ante",
-    images: {
-      src: sport6,
-      alt: "Sed Cursus",
-    },
-    price: 35.99,
-    stock: 22,
-    rating: {
-      score: 4.1,
-      votes: 287,
-    },
-    description:
-      "Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-  },
-  {
-    id: "27",
-    title: "Nulla Quis Sem",
-    images: {
-      src: sport7,
-      alt: "Nulla Quis",
-    },
-    price: 29.95,
-    stock: 30,
-    rating: {
-      score: 4.5,
-      votes: 150,
-    },
-    description:
-      "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.",
-  },
-  {
-    id: "28",
-    title: "Morbi Leo Risus",
-    images: {
-      src: sport8,
-      alt: "Morbi Leo",
-    },
-    price: 42.0,
-    stock: 16,
-    rating: {
-      score: 5,
-      votes: 412,
-    },
-    description:
-      "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.",
-  },
-  {
-    id: "29",
-    title: "Cras Mattis Consectetur",
-    images: {
-      src: sport9,
-      alt: "Cras Mattis",
-    },
-    price: 37.5,
-    stock: 19,
-    rating: {
-      score: 4.3,
-      votes: 267,
-    },
-    description:
-      "Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.",
-  },
-  {
-    id: "30",
-    title: "Donec Ullamcorper",
-    images: {
-      src: sport10,
-      alt: "Donec Ullamcorper",
-    },
-    price: 50.5,
-    stock: 17,
-    rating: {
-      score: 4.4,
-      votes: 534,
-    },
-    description:
-      "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.",
-  },
-  {
-    id: "31",
-    title: "Vestibulum Id Ligula",
-    images: {
-      src: sport11,
-      alt: "Vestibulum Id",
-    },
-    price: 39.0,
-    stock: 28,
-    rating: {
-      score: 4.6,
-      votes: 189,
-    },
-    description:
-      "Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.",
-  },
-  {
-    id: "32",
-    title: "Curabitur Blandit Tempus",
-    images: {
-      src: sport12,
-      alt: "Curabitur Blandit",
-    },
-    price: 44.9,
-    stock: 21,
-    rating: {
-      score: 4.3,
-      votes: 321,
-    },
-    description:
-      "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo.",
-  },
-];
-
-export const genz: ProductType[] = [
-  {
-    id: "40",
-    title: "Lorem Ipsum Dolor Sit",
-    images: {
-      src: genz1,
-      alt: "Lorem",
-      subImages: [{ src: genz1p2, alt: "Lorem" }],
-    },
-    price: 49.99,
-    stock: 20,
-    rating: {
-      score: 4.3,
-      votes: 123,
-    },
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie magna a dui scelerisque fermentum.",
-  },
-  {
-    id: "41",
-    title: "Consectetur Adipiscing Elit",
-    images: {
-      src: genz2,
-      alt: "Consectetur",
-      subImages: [{ src: genz2p2, alt: "Lorem" }],
-    },
-    price: 55.9,
-    stock: 12,
-    rating: {
-      score: 5,
-      votes: 898,
-    },
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie magna a dui scelerisque fermentum.",
-  },
-  {
-    id: "42",
-    title: "Vestibulum Ante Ipsum",
-    images: {
-      src: genz3,
-      alt: "Vestibulum",
-    },
-    price: 39.95,
-    stock: 15,
-    rating: {
-      score: 4.0,
-      votes: 200,
-    },
-    description:
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-  },
-  {
-    id: "43",
-    title: "Integer Nec Odio",
-    images: {
-      src: genz4,
-      alt: "Integer",
-      subImages: [{ src: genz4p2, alt: "Lorem" }],
-    },
-    price: 60.0,
-    stock: 18,
-    rating: {
-      score: 4.7,
-      votes: 110,
-    },
-    description:
-      "Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
-  },
-  {
-    id: "44",
-    title: "Praesent Mauris",
-    images: {
-      src: genz5,
-      alt: "Praesent",
-    },
-    price: 45.5,
-    stock: 25,
-    rating: {
-      score: 4.2,
-      votes: 340,
-    },
-    description:
-      "Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
-  },
-  {
-    id: "45",
-    title: "Sed Cursus Ante",
-    images: {
-      src: genz6,
-      alt: "Sed Cursus",
-    },
-    price: 35.99,
-    stock: 22,
-    rating: {
-      score: 4.1,
-      votes: 287,
-    },
-    description:
-      "Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-  },
-  {
-    id: "46",
-    title: "Nulla Quis Sem",
-    images: {
-      src: genz7,
-      alt: "Nulla Quis",
-      subImages: [{ src: genz7p2, alt: "Lorem" }],
-    },
-    price: 29.95,
-    stock: 30,
-    rating: {
-      score: 3.9,
-      votes: 150,
-    },
-    description:
-      "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.",
-  },
-  {
-    id: "47",
-    title: "Morbi Leo Risus",
-    images: {
-      src: genz8,
-      alt: "Morbi Leo",
-    },
-    price: 42.0,
-    stock: 16,
-    rating: {
-      score: 4.6,
-      votes: 412,
-    },
-    description:
-      "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.",
-  },
-  {
-    id: "48",
-    title: "Cras Mattis Consectetur",
-    images: {
-      src: genz9,
-      alt: "Cras Mattis",
-    },
-    price: 37.5,
-    stock: 19,
-    rating: {
-      score: 4.4,
-      votes: 267,
-    },
-    description:
-      "Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.",
-  },
-  {
-    id: "49",
-    title: "Donec Ullamcorper",
-    images: {
-      src: genz10,
-      alt: "Donec Ullamcorper",
-    },
-    price: 50.5,
-    stock: 17,
-    rating: {
-      score: 4.8,
-      votes: 534,
-    },
-    description:
-      "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.",
-  },
-  {
-    id: "50",
-    title: "Vestibulum Id Ligula",
-    images: {
-      src: genz11,
-      alt: "Vestibulum Id",
-    },
-    price: 39.0,
-    stock: 28,
-    rating: {
-      score: 4.0,
-      votes: 189,
-    },
-    description:
-      "Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.",
-  },
-  {
-    id: "51",
-    title: "Curabitur Blandit Tempus",
-    images: {
-      src: genz12,
-      alt: "Curabitur Blandit",
-    },
-    price: 44.9,
-    stock: 21,
-    rating: {
-      score: 4.3,
-      votes: 321,
-    },
-    description:
-      "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo.",
-  },
-];
-
-export const spring: ProductType[] = [
-  {
-    id: "61",
-    title: "Consectetur Adipiscing Elit",
-    images: {
-      src: spring1,
-      alt: "Consectetur",
-    },
-    price: 55.9,
-    stock: 12,
-    rating: {
-      score: 4.5,
-      votes: 898,
-    },
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie magna a dui scelerisque fermentum.",
-  },
-  {
-    id: "62",
-    title: "Quisque Molestie Magna",
-    images: {
-      src: spring2,
-      alt: "Molestie Magna",
-    },
-    price: 60.0,
-    stock: 8,
-    rating: {
-      score: 4.7,
-      votes: 750,
-    },
-    description:
-      "Suspendisse potenti. Quisque molestie magna a dui scelerisque fermentum. Nulla facilisi.",
-  },
-  {
-    id: "63",
-    title: "Suspendisse Potenti",
-    images: {
-      src: spring3,
-      alt: "Suspendisse",
-    },
-    price: 45.3,
-    stock: 15,
-    rating: {
-      score: 4.2,
-      votes: 1200,
-    },
-    description:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse potenti.",
-  },
-  {
-    id: "64",
-    title: "Labore Et Dolore",
-    images: {
-      src: spring4,
-      alt: "Labore",
-    },
-    price: 75.2,
-    stock: 10,
-    rating: {
-      score: 4.8,
-      votes: 530,
-    },
-    description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    id: "65",
-    title: "Adipiscing Elit Nulla",
-    images: {
-      src: spring5,
-      alt: "Adipiscing",
-    },
-    price: 52.4,
-    stock: 7,
-    rating: {
-      score: 4.6,
-      votes: 670,
-    },
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-  },
-  {
-    id: "66",
-    title: "Reprehenderit In Voluptate",
-    images: {
-      src: spring6,
-      alt: "Voluptate",
-    },
-    price: 68.7,
-    stock: 9,
-    rating: {
-      score: 4.4,
-      votes: 820,
-    },
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    id: "67",
-    title: "Cupidatat Non Proident",
-    images: {
-      src: spring7,
-      alt: "Cupidatat",
-    },
-    price: 49.9,
-    stock: 14,
-    rating: {
-      score: 4.3,
-      votes: 910,
-    },
-    description:
-      "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nulla facilisi.",
-  },
-  {
-    id: "68",
-    title: "Nulla Gravida Orci",
-    images: {
-      src: spring8,
-      alt: "Gravida",
-    },
-    price: 54.1,
-    stock: 11,
-    rating: {
-      score: 4.1,
-      votes: 1050,
-    },
-    description:
-      "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Curabitur eget velit justo.",
-  },
-  {
-    id: "69",
-    title: "Curabitur Eget Velit",
-    images: {
-      src: spring9,
+      src: intimate4,
       alt: "Curabitur",
     },
-    price: 71.0,
-    stock: 13,
+    price: 37.99,
+    stock: 8,
     rating: {
-      score: 4.9,
-      votes: 490,
+      score: 4.1,
+      votes: 124,
     },
     description:
-      "Vestibulum auctor dapibus neque. Curabitur pretium tincidunt lacus. Curabitur eget velit justo.",
+      "Curabitur mattis mauris nec eros tempor, at suscipit arcu viverra.",
+    type: "intimate",
   },
   {
-    id: "70",
-    title: "Vestibulum Auctor Dapibus",
+    id: "M5N6O7P8",
+    title: "Vivamus Ultricies",
     images: {
-      src: spring10,
-      alt: "Vestibulum",
+      src: intimate5,
+      alt: "Vivamus",
     },
-    price: 66.8,
+    price: 44.0,
     stock: 6,
     rating: {
-      score: 4.7,
-      votes: 740,
-    },
-    description: "In convallis. Nunc nulla. Vestibulum auctor dapibus neque.",
-  },
-  {
-    id: "71",
-    title: "Nunc Nulla Vestibulum",
-    images: {
-      src: spring11,
-      alt: "Nunc Nulla",
-    },
-    price: 58.3,
-    stock: 16,
-    rating: {
-      score: 4.2,
-      votes: 670,
+      score: 4.8,
+      votes: 235,
     },
     description:
-      "In convallis. Nunc nulla. Nulla gravida orci a odio. Curabitur eget velit justo.",
+      "Vivamus ultricies, orci ac molestie dictum, justo tortor eleifend purus, ac facilisis nulla nisi eget urna.",
+    type: "intimate",
   },
   {
-    id: "72",
-    title: "Orci A Odio",
+    id: "Q9R0S1T2",
+    title: "Mauris Finibus",
     images: {
-      src: spring12,
-      alt: "Orci",
+      src: intimate6,
+      alt: "Mauris",
+      subImages: [{
+        src: intimate6p2,
+      alt: "Mauris",
+      }]
     },
-    price: 63.9,
-    stock: 10,
+    price: 32.99,
+    stock: 12,
     rating: {
-      score: 4.6,
-      votes: 840,
+      score: 5,
+      votes: 109,
     },
     description:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "Mauris finibus magna in nibh dictum viverra. Aenean lobortis velit in metus.",
+    type: "intimate",
   },
+  // {
+  //   id: "U3V4W5X6",
+  //   title: "Aenean Auctor",
+  //   images: {
+  //     src: intimate7,
+  //     alt: "Aenean",
+  //   },
+  //   price: 39.5,
+  //   stock: 4,
+  //   rating: {
+  //     score: 4.3,
+  //     votes: 135,
+  //   },
+  //   description:
+  //     "Aenean auctor, metus id feugiat fermentum, magna velit dictum purus, sit amet pulvinar dolor sapien eget turpis.",
+  //   type: "intimate",
+  // },
+  // {
+  //   id: "Y7Z8A9B0",
+  //   title: "Donec Sodales",
+  //   images: {
+  //     src: intimate8,
+  //     alt: "Donec",
+  //   },
+  //   price: 28.99,
+  //   stock: 9,
+  //   rating: {
+  //     score: 3.9,
+  //     votes: 85,
+  //   },
+  //   description:
+  //     "Donec sodales ligula ut velit varius, eget facilisis purus feugiat.",
+  //   type: "intimate",
+  // },
+  // {
+  //   id: "C1D2E3F4",
+  //   title: "Pellentesque Fermentum",
+  //   images: {
+  //     src: intimate9,
+  //     alt: "Pellentesque",
+  //   },
+  //   price: 33.25,
+  //   stock: 6,
+  //   rating: {
+  //     score: 4.5,
+  //     votes: 172,
+  //   },
+  //   description:
+  //     "Pellentesque fermentum, dui sed dictum consequat, dui orci iaculis odio, sed varius augue mauris eget ex.",
+  //   type: "intimate",
+  // },
+  // {
+  //   id: "G5H6I7J8",
+  //   title: "Aliquam Pharetra",
+  //   images: {
+  //     src: intimate10,
+  //     alt: "Aliquam",
+  //   },
+  //   price: 42.99,
+  //   stock: 5,
+  //   rating: {
+  //     score: 4.6,
+  //     votes: 190,
+  //   },
+  //   description:
+  //     "Aliquam pharetra dolor vitae nunc fermentum, at vulputate magna vulputate.",
+  //   type: "intimate",
+  // },
+  // {
+  //   id: "K9L0M1N2",
+  //   title: "Phasellus Ultrices",
+  //   images: {
+  //     src: intimate11,
+  //     alt: "Phasellus",
+  //   },
+  //   price: 39.5,
+  //   stock: 10,
+  //   rating: {
+  //     score: 4.4,
+  //     votes: 121,
+  //   },
+  //   description:
+  //     "Phasellus ultrices dui ac urna aliquet, sit amet dignissim magna mollis.",
+  //   type: "intimate",
+  // },
+  // {
+  //   id: "O3P4Q5R6",
+  //   title: "Vestibulum Ante",
+  //   images: {
+  //     src: intimate12,
+  //     alt: "Vestibulum",
+  //   },
+  //   price: 36.99,
+  //   stock: 11,
+  //   rating: {
+  //     score: 4.1,
+  //     votes: 105,
+  //   },
+  //   description:
+  //     "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+  //   type: "intimate",
+  // },
 ];

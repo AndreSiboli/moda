@@ -13,18 +13,29 @@ import styles from "@/styles/carousel/Carousel.module.scss";
 
 interface PropsType {
   children: ReactElement[];
+  parentConfig?: {
+    animationTime?: number;
+    parentWidth?: string;
+    margin?: number;
+    slide?: boolean;
+    itemsPerView?: number;
+    itemsAppearance?: number;
+    itemsLength?: number;
+  };
 }
 
 export default function CarouselProducts(props: PropsType) {
-  const { children } = props;
+  const { children, parentConfig } = props;
   const [config, setConfig] = useState({
     animationTime: 200,
     parentWidth: "100%",
     margin: 8,
     slide: false,
-    itemPerView: 4,
+    itemsPerView: 4,
+    itemsAppearance: 1,
+    itemsLength: 4,
+    ...parentConfig,
   });
-
   const [currentPosition, setCurrentPosition] = useState(0);
   const parentRef = useRef<HTMLDivElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -41,7 +52,8 @@ export default function CarouselProducts(props: PropsType) {
     if (width <= 768) {
       setConfig((prevState) => ({
         ...prevState,
-        itemPerView: 2,
+        itemsPerView: 2,
+        itemsAppearance: 2,
         margin: 8,
         slide: true,
       }));
@@ -50,8 +62,9 @@ export default function CarouselProducts(props: PropsType) {
 
     setConfig((prevState) => ({
       ...prevState,
-      itemPerView: 1,
+      itemsPerView: 1,
       margin: 16,
+      itemsAppearance: config.itemsLength,
       slide: false,
     }));
   }
@@ -91,11 +104,11 @@ export default function CarouselProducts(props: PropsType) {
     const childrenWidth = childElement.children[0].clientWidth;
     const marginLeftRight = config.margin;
     const itemTotalWidth = childrenWidth + marginLeftRight;
-    const movePerSlide = itemTotalWidth * config.itemPerView;
+    const movePerSlide = itemTotalWidth * config.itemsPerView;
 
     const totalItems = childElement.children.length;
-    const remainderItems = totalItems % config.itemPerView;
-    const totalSlides = totalItems / config.itemPerView - 1;
+    const remainderItems = totalItems % config.itemsPerView;
+    const totalSlides = totalItems / config.itemsPerView - 1;
     const gapItemAndSpace = 24;
 
     if (currentPos >= totalSlides && remainderItems !== 0) {
@@ -122,7 +135,7 @@ export default function CarouselProducts(props: PropsType) {
     if (!wrapperRef.current || dragging.current || allowShift.current) return;
     const nextItem = currentPosition + num;
     const children = wrapperRef.current.childNodes.length;
-    const movement = (children - 1) / config.itemPerView;
+    const movement = (children - 1) / config.itemsPerView;
 
     if (nextItem < 0 || nextItem > movement) {
       return;
@@ -258,7 +271,10 @@ export default function CarouselProducts(props: PropsType) {
       <div
         className={`${styles.carousel_wrapper}`}
         ref={wrapperRef}
-        style={{ gap: ` ${config.margin}px` }}
+        style={{
+          gap: `${config.margin}px`,
+          gridTemplateColumns: `repeat(${config.itemsLength}, calc(100% / ${config.itemsAppearance} - 1em))`,
+        }}
         onMouseDown={(e) => dragStart(e)}
         onMouseMove={(e) => dragMove(e)}
         onMouseUp={(e) => dragEnd(e)}

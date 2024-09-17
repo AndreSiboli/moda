@@ -1,0 +1,133 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.store {
+  display: flex;
+  gap: 4em;
+  height: 100%;
+
+  &_aside {
+    flex: 0 0 auto;
+    gap: 0.5em;
+
+    .aside_title {
+      margin-bottom: 2em;
+
+      h2 {
+        font-weight: 500;
+      }
+    }
+
+    .aside_nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+
+      a {
+        transition: transform 0.1s ease-in-out;
+
+        @include mix.OnlyPc {
+          &:hover {
+            transform: translate(5px, 0);
+          }
+        }
+      }
+    }
+  }
+
+  &_nav {
+    flex: 1 1 100%;
+    height: 100%;
+
+    .nav_swipe {
+      display: none;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.5em;
+      margin-bottom: 1em;
+      width: 100%;
+      color: var.$neutral_color_700;
+
+      @media (max-width: 768px) {
+        display: flex;
+      }
+
+      svg {
+        font-size: 1.25em;
+      }
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      gap: 0.5em;
+      user-select: none;
+
+      &_image {
+        flex: 1 1 100%;
+        position: relative;
+        overflow: hidden;
+        min-height: 300px;
+
+        a {
+          display: block;
+          position: absolute;
+          background: var.$neutral_color_500;
+          border-radius: 50%;
+          padding: 0.5em;
+          width: fit-content;
+          top: 5px;
+          right: 5px;
+          transition: background 0.15s ease-in-out;
+
+          svg {
+            display: block;
+            font-size: 1em;
+          }
+        }
+
+        img {
+          filter: brightness(0.7);
+          transition: transform 0.5s ease-in-out, filter 0.25s ease-in-out;
+          pointer-events: none;
+        }
+      }
+
+      p {
+        text-align: center;
+        transition: text-decoration 0.2s ease-in-out;
+      }
+
+      @include mix.OnlyPc {
+        &:hover {
+          .card_image {
+            img {
+              filter: brightness(1);
+              transform: scale(1.2);
+            }
+
+            a {
+              background: var.$neutral_color_100;
+            }
+          }
+
+          p {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  //Mobile
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1em;
+
+    .aside_title {
+      margin-bottom: 0.5em;
+    }
+  }
+}

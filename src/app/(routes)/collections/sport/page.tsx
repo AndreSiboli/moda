@@ -1,5 +1,5 @@
-import styles from "@/styles/pages/collecitions/Sport.module.scss";
-import { sport } from "@/fake-api/products";
+import styles from "@/styles/pages/collections/Sport.module.scss";
+import { sport } from "@/fake-api/collections";
 
 import HeroCollections from "@/components/collections/HeroCollections";
 import Collection from "@/components/collections/Collections";

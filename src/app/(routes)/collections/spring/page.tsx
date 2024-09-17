@@ -1,5 +1,5 @@
-import styles from "@/styles/pages/collecitions/Spring.module.scss";
-import { spring } from "@/fake-api/products";
+import styles from "@/styles/pages/collections/Spring.module.scss";
+import { spring } from "@/fake-api/collections";
 
 import HeroCollections from "@/components/collections/HeroCollections";
 import Collection from "@/components/collections/Collections";

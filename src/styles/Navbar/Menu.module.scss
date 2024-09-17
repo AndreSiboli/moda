@@ -33,26 +33,68 @@
     transition: width 0.15s ease-in-out;
   }
 
-  &_wrapper {
+  // &_wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 2em;
+  //   padding: 2em 1em;
+  //   padding-top: 0;
+  //   overflow-y: auto;
+  //   height: 100%;
+
+  //   @include mix.Scroll;
+  // }
+
+  &_navigation {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 0.5em;
     padding: 2em 1em;
     padding-top: 0;
     overflow-y: auto;
     height: 100%;
 
     @include mix.Scroll;
-  }
-
-  &_navigation {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
 
     a {
       text-transform: uppercase;
       font-size: 1.25em;
+    }
+  }
+
+  //Test
+
+  .submenu {
+    position: absolute;
+    inset: 0;
+    background: var.$neutral_color_100;
+    transform: translate(100%, 0);
+    transition: 0.25s ease-in-out;
+    padding-top: 2em;
+    z-index: 1000;
+
+    &_button {
+      button {
+        display: flex;
+        align-self: center;
+        gap: 0.25em;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        margin-left: 1em;
+      }
+    }
+
+    &_wrapper {
+      padding: 2em 1em;
+      overflow-y: auto;
+      height: 100%;
+
+      @include mix.Scroll;
+    }
+
+    &.opened {
+      transform: translate(0, 0);
     }
   }
 }

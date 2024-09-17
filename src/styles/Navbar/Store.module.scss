@@ -3,6 +3,7 @@
 
 .store {
   display: flex;
+  justify-content: space-between;
   gap: 4em;
   height: 100%;
 
@@ -10,18 +11,21 @@
     flex: 0 0 auto;
     gap: 0.5em;
 
-    .aside_title {
-      margin-bottom: 2em;
-
-      h2 {
-        font-weight: 500;
-      }
-    }
-
     .aside_nav {
       display: flex;
-      flex-direction: column;
-      gap: 0.5em;
+      gap: 4em;
+
+      .nav_links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        h2 {
+          font-size: 1.15em;
+          font-weight: 500;
+          text-decoration: underline;
+        }
+      }
 
       a {
         transition: transform 0.1s ease-in-out;

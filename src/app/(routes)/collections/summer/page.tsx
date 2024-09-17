@@ -1,5 +1,5 @@
-import styles from "@/styles/pages/collecitions/Summer.module.scss";
-import { summer } from "@/fake-api/products";
+import styles from "@/styles/pages/collections/Summer.module.scss";
+import { summer } from "@/fake-api/collections";
 
 import HeroCollections from "@/components/collections/HeroCollections";
 import Collection from "@/components/collections/Collections";

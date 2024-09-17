@@ -1,5 +1,5 @@
-import styles from "@/styles/pages/collecitions/GenZ.module.scss";
-import { genz } from "@/fake-api/products";
+import styles from "@/styles/pages/collections/GenZ.module.scss";
+import { genz } from "@/fake-api/collections";
 
 import HeroCollections from "@/components/collections/HeroCollections";
 import Collection from "@/components/collections/Collections";

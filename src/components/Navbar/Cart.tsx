@@ -63,7 +63,7 @@ export default function Cart(props: PropsType) {
       <div className={styles.cart_container}>
         <header className={styles.cart_header}>
           <div className={styles.header_button}>
-            <button onClick={handleCart}>
+            <button onClick={handleCart} aria-label="Close cart">
               <PiX />
             </button>
           </div>

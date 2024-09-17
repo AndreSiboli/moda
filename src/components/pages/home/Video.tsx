@@ -1,21 +1,20 @@
 "use client";
 
+import { useRef, useState } from "react";
 import styles from "@/styles/pages/home/Video.module.scss";
 
 import Container from "@/components/layout/Container";
-import LinkButton from "@/components/links/LinkButton";
 
 import { PiPause, PiPlay } from "react-icons/pi";
-import { useRef, useState } from "react";
 
 export default function Video() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(true);
 
   function defineIsPlaying() {
-    if(!videoRef.current) return
+    if (!videoRef.current) return;
     if (isPlaying) videoRef.current.pause();
-    else videoRef.current.play()
+    else videoRef.current.play();
     setIsPlaying((prevState) => !prevState);
   }
 
@@ -34,7 +33,7 @@ export default function Video() {
         <div className={styles.video_manager}>
           <Container>
             <div className={styles.manager_container}>
-              <button onClick={defineIsPlaying}>
+              <button onClick={defineIsPlaying} aria-label="Play/pause">
                 {isPlaying ? <PiPause /> : <PiPlay />}
               </button>
             </div>

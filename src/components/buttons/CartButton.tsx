@@ -13,6 +13,7 @@ export default function CartButton(props: PropsType) {
     <button
       className={`${styles.button} ${styles[loadingState]}`}
       onClick={handleFunction}
+      aria-label="Add to cart"
     >
       <PiBag />
 

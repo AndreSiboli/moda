@@ -9,26 +9,32 @@ import Cart from "./Cart";
 import Logo from "@/components/layout/Logo";
 import Container from "@/components/layout/Container";
 import Dropdown from "@/components/buttons/Dropdown";
-import Store from "./Store";
+import Collections from "./Collections";
 import Menu from "./Menu";
 
 import { PiShoppingCartSimple, PiUser } from "react-icons/pi";
+import Store from "./Store";
 
 export default function Navbar() {
   const path = usePathname();
   const [isOnTop, setIsOnTop] = useState(true);
   const [isLight, setIsLight] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDropOpen, setIsDropOpen] = useState(false);
+  const [isCollOpen, setIsCollOpen] = useState(false);
+  const [isStoreOpen, setIsStoreOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const links = [
+  const drops = [
     {
-      text: "Women",
-      href: "/under-construction",
+      text: "Collections",
+      isAction: isCollOpen,
+      setIsAction: defineIsCollOpen,
+      children: <Collections />,
     },
     {
-      text: "Contact",
-      href: "/contact",
+      text: "Store",
+      isAction: isStoreOpen,
+      setIsAction: defineIsStoreOpen,
+      children: <Store />,
     },
   ];
 
@@ -63,6 +69,7 @@ export default function Navbar() {
   useEffect(() => {
     checkLightPages();
     closeAllTabs();
+    console.log("passed here!");
   }, [path]);
 
   function checkLightPages() {
@@ -71,6 +78,9 @@ export default function Navbar() {
       "/collections/sport",
       "/collections/gen-z",
       "/collections/spring",
+      "/store/jewelry",
+      "/store/dress",
+      "/store/intimate",
     ];
 
     if (paths.includes(path)) return setIsLight(true);
@@ -79,8 +89,9 @@ export default function Navbar() {
 
   function closeAllTabs() {
     setIsMenuOpen(false);
-    setIsDropOpen(false);
+    setIsCollOpen(false);
     setIsCartOpen(false);
+    setIsStoreOpen(false);
     document.body.style.overflow = "auto";
   }
 
@@ -98,8 +109,14 @@ export default function Navbar() {
     setIsCartOpen((prevState) => !prevState);
   }
 
-  function defineIsDropOpen() {
-    setIsDropOpen((prevState) => !prevState);
+  function defineIsCollOpen() {
+    setIsCollOpen((prevState) => !prevState);
+    setIsStoreOpen(false);
+  }
+
+  function defineIsStoreOpen() {
+    setIsStoreOpen((prevState) => !prevState);
+    setIsCollOpen(false);
   }
 
   return (
@@ -107,7 +124,7 @@ export default function Navbar() {
       className={`${styles.header} ${isOnTop && styles.onTop} ${
         isMenuOpen && styles.open
       } ${isLight && styles.light} 
-      ${isDropOpen && styles.drop}`}
+      ${(isCollOpen || isStoreOpen || isMenuOpen) && styles.drop}`}
     >
       <Container style={{ position: "static" }}>
         <div className={styles.header_container}>
@@ -117,19 +134,18 @@ export default function Navbar() {
             </nav>
 
             <nav className={styles.header_links}>
-              <Dropdown
-                text="Store"
-                isOpened={isDropOpen}
-                handleOpen={defineIsDropOpen}
-              >
-                <Store />
-              </Dropdown>
-
-              {links.map((link) => (
-                <Link href={link.href} key={link.href}>
-                  {link.text}
-                </Link>
+              {drops.map((drop) => (
+                <Dropdown
+                  text={drop.text}
+                  isOpened={drop.isAction}
+                  handleOpen={drop.setIsAction}
+                  key={drop.text}
+                >
+                  {drop.children}
+                </Dropdown>
               ))}
+
+              <Link href={"/contact"}>Contact</Link>
             </nav>
           </section>
 
