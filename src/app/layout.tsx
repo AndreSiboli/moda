@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "MODA",
   description: "This is a fictional site about fashion.",
   creator: "André Siboli",
-  keywords: "fashion, clothes, moda, woman, women",
+  keywords: "fashion, clothes, moda, woman, women, bikini, dress, dresses, intimate, jewelry",
   icons: {
     icon: "public/favicon.ico",
   },

@@ -40,18 +40,6 @@ export default function Video() {
           </Container>
         </div>
       </div>
-
-      {/* <Container>
-        <div className={styles.video_container}>
-          <h1>Have you seen the new summer collection?</h1>
-
-          <div className={styles.video_button}>
-            <LinkButton href="/collections/summer" text="Go now!" />
-          </div>
-        </div>
-      </Container> */}
-
-      {/* <span></span> */}
     </div>
   );
 }

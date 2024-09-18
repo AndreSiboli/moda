@@ -191,11 +191,44 @@ export default function Mentions() {
     return 0;
   });
 
+  const freePik = [
+    {
+      author: "Home video by freepik",
+      href: "https://www.freepik.com/free-video/brunette-girl-lying-beach-bed-using-phone_2832936#fromView=search&page=5&position=32&uuid=4eac92f2-75d2-4ebd-a36e-8564c4382622",
+    },
+    {
+      author: "Image by halayalex on Freepik",
+      href: "https://www.freepik.com/free-photo/portrait-beautiful-sensual-brunette-woman-girl-elegant-white-classic-clothes-wide-pants-white-background_6883359.htm#fromView=search&page=1&position=34&uuid=f064bd65-af6e-4c96-ae7f-af76ea9ffec7",
+    },
+    {
+      author: "Sign in image by lookstudio on Freepik",
+      href: "https://www.freepik.com/free-photo/charming-girl-with-curly-dark-cool-hairstyle-striped-lilac-wide-sleeve-blouse-posing-with-closed-eyes-isolated-wall_15860725.htm#fromView=search&page=1&position=50&uuid=2176ebdd-e67f-480c-94a6-3068ce8e191f",
+    },
+    {
+      author: "Sign up image by lookstudio on Freepik",
+      href: "https://www.freepik.com/free-photo/woman-gold-earrings-glasses-striped-cropped-top-laughs-isolated-wall_12859947.htm#fromView=search&page=15&position=27&uuid=2176ebdd-e67f-480c-94a6-3068ce8e191f",
+    },
+    {
+      author: "FAQ image by lookstudio on Freepik",
+      href: "https://www.freepik.com/free-photo/pensive-slim-lady-with-tanned-skin-brunette-hair-gold-accessories-wide-sleeve-lilac-shirt-looking-up-posing_23928210.htm#fromView=search&page=3&position=2&uuid=4c6db930-776c-4b0f-8de2-520563f7f24b",
+    },
+    {
+      author: "Contact image by lookstudio on Freepik",
+      href: "https://www.freepik.com/free-photo/curly-haired-pretty-lady-red-headband-yellow-trendy-sundress-blowing-kiss-holding-glass-isolated-backdrop_23938362.htm#from_view=detail_alsolike",
+    },
+  ];
+
   return (
     <div className={styles.mentions}>
       <Container>
         <div className={styles.mentions_container}>
           {mentions.map((mention) => (
+            <Link href={mention.href} target="_blank" key={mention.author}>
+              {mention.author}
+            </Link>
+          ))}
+
+          {freePik.map((mention) => (
             <Link href={mention.href} target="_blank" key={mention.author}>
               {mention.author}
             </Link>

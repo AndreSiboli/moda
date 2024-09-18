@@ -69,7 +69,6 @@ export default function Navbar() {
   useEffect(() => {
     checkLightPages();
     closeAllTabs();
-    console.log("passed here!");
   }, [path]);
 
   function checkLightPages() {

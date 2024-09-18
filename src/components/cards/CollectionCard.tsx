@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 import styles from "@/styles/cards/CollectionCard.module.scss";
+
 import Img from "../utils/Img";
-import LinkButton from "../links/LinkButton";
 import Link from "next/link";
 
 interface PropsType {
@@ -11,7 +11,7 @@ interface PropsType {
       href: string;
     };
     subSet: {
-      src: string | StaticImageData;
+      src: StaticImageData;
       href: string;
     }[];
   };
@@ -23,6 +23,7 @@ interface CardImageType {
 
 export default function CollectionCard(props: PropsType) {
   const { collection } = props;
+
   return (
     <div className={styles.card}>
       <div className={styles.card_main}>
@@ -31,7 +32,7 @@ export default function CollectionCard(props: PropsType) {
 
       <div className={styles.card_group}>
         {collection.subSet.map((item) => (
-          <div className={styles.group_image} key={item.href}>
+          <div className={styles.group_image} key={item.src.src}>
             <CardImage card={item} />
           </div>
         ))}
@@ -49,9 +50,9 @@ function CardImage(props: CardImageType) {
         <figure className={styles.image_container}>
           <Img src={card.src} />
         </figure>
-        <div className={styles.image_hover}>
-          <Link href={""}>See the item</Link>
-        </div>
+        <span className={styles.image_hover}>
+          <p>See the item</p>
+        </span>
       </Link>
     </div>
   );

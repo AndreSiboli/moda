@@ -4,6 +4,7 @@
 .hero {
   position: relative;
   padding: 0 2em;
+  background: var.$brand_color_500;
 
   &_wallpaper {
     pointer-events: none;

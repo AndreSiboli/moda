@@ -17,6 +17,7 @@ import Purchase from "@/components/messages/Purchase";
 
 import { PiX } from "react-icons/pi";
 import { CartUserType } from "@/_types/CartType";
+import Link from "next/link";
 
 interface PropsType {
   isOpen: boolean;

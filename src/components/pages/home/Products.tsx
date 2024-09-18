@@ -106,7 +106,7 @@ export default function Products() {
           </div>
 
           <div className={styles.products_button}>
-            <LinkButton href="" text="See all sets" />
+            <LinkButton href="/under-construction" text="See all sets" />
           </div>
         </div>
       </Container>
