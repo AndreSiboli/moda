@@ -185,6 +185,54 @@ export default function Mentions() {
       author: "Jesus Santos",
       href: "https://unsplash.com/pt-br/@jesussantosphotography",
     },
+    {
+      author: "Ali Karimiboroujeni",
+      href: "https://unsplash.com/pt-br/@alikarimiboroujeni",
+    },
+    {
+      author: "Tamara Bellis",
+      href: "https://unsplash.com/pt-br/@tamarabellis",
+    },
+    {
+      author: "Jim Romero",
+      href: "https://unsplash.com/pt-br/@jimromero",
+    },
+    {
+      author: "Ernest Tarasov",
+      href: "https://unsplash.com/pt-br/@rictrsv",
+    },
+    {
+      author: "Shuvalova Natalia",
+      href: "https://www.pexels.com/pt-br/@shuvalova-natalia-415991090",
+    },
+    {
+      author: "Joe Ciciarelli",
+      href: "https://unsplash.com/pt-br/@claritycontrol",
+    },
+    {
+      author: "Kate Tepl",
+      href: "https://unsplash.com/pt-br/@kate_tepla",
+    },
+    {
+      author: "Semen Zhuravlev",
+      href: "https://unsplash.com/pt-br/@sezha72",
+    },
+    {
+      author: "Anna Deli",
+      href: "https://unsplash.com/pt-br/@andeli",
+    },
+    {
+      author: "Ddddddarya",
+      href: "https://unsplash.com/pt-br/@ddddddarya",
+    },
+    {
+      author: "Taylor Harding",
+      href: "https://unsplash.com/pt-br/@taylorjamesphotos",
+    },
+    {
+      author: "Katie Mukhina",
+      href: "https://unsplash.com/pt-br/@muukhina",
+    },
   ].sort((a, b) => {
     if (a.author < b.author) return -1;
     if (a.author > b.author) return 1;
