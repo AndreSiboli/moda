@@ -15,7 +15,7 @@ export default function Dress() {
 
   return (
     <>
-      <HeroCollections data={hero} />
+      <HeroCollections data={hero} styleImage={{objectPosition: '0 center'}} />
       <Collection data={dresses} title="Dress" />
     </>
   );

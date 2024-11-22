@@ -5,6 +5,7 @@
   visibility: hidden;
   position: fixed;
   inset: 0;
+  min-height: 100dvh;
   background: #0005;
   z-index: 99;
   transition: visibility 0.15s ease-in-out;

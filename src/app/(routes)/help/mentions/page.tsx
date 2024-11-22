@@ -98,10 +98,6 @@ export default function Mentions() {
       href: "https://unsplash.com/pt-br/@hfestudio",
     },
     {
-      author: "Tamara Bellis",
-      href: "https://unsplash.com/pt-br/@tamarabellis",
-    },
-    {
       author: "Tudor Adrian",
       href: "https://unsplash.com/pt-br/@tudor_photography",
     },
@@ -233,6 +229,26 @@ export default function Mentions() {
       author: "Katie Mukhina",
       href: "https://unsplash.com/pt-br/@muukhina",
     },
+    {
+      author: "Cottonbro studio",
+      href: "https://www.pexels.com/pt-br/foto/flores-plantas-ramalhete-buque-4974347",
+    },
+    {
+      author: "R. Fera",
+      href: "https://www.pexels.com/pt-br/foto/homem-tirando-selfie-432059",
+    },
+    {
+      author: "Matheus Bertelli",
+      href: "https://www.pexels.com/pt-br/foto/fotografia-de-uma-mulher-segurando-luzes-799420",
+    },
+    {
+      author: "Ali Pazani",
+      href: "https://www.pexels.com/pt-br/foto/foto-de-mulher-segurando-seus-oculos-2829369",
+    },
+    {
+      author: "Yaroslav Shuraev",
+      href: "https://www.pexels.com/pt-br/foto/mulher-relaxamento-descanso-petalas-6811905",
+    },
   ].sort((a, b) => {
     if (a.author < b.author) return -1;
     if (a.author > b.author) return 1;
@@ -263,6 +279,10 @@ export default function Mentions() {
     {
       author: "Contact image by lookstudio on Freepik",
       href: "https://www.freepik.com/free-photo/curly-haired-pretty-lady-red-headband-yellow-trendy-sundress-blowing-kiss-holding-glass-isolated-backdrop_23938362.htm#from_view=detail_alsolike",
+    },
+    {
+      author: "Intimate page image by garetsvisual in freepik",
+      href: "https://br.freepik.com/fotos-gratis/feche-a-foto-do-corpo-de-uma-mulher-magra-em-lingerie-preta-e-gola-rule-cinza-em-fundo-cinza_25570219.htm#fromView=search&page=5&position=7&uuid=a05cdd79-9834-4a37-a395-e2ab64f1da36",
     },
   ];
 

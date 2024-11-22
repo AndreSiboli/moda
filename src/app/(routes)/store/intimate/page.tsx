@@ -4,7 +4,9 @@ import { intimate } from "@/fake-api/products";
 import HeroCollections from "@/components/collections/HeroCollections";
 import Collection from "@/components/collections/Collections";
 
+
 import wallapaper from "@/assets/products/intimate.jpg";
+
 
 export default function Intimate() {
   const hero = {
@@ -15,7 +17,7 @@ export default function Intimate() {
 
   return (
     <>
-      <HeroCollections data={hero} styleImage={{objectPosition: '20% 80%'}}/>
+      <HeroCollections data={hero} styleImage={{objectPosition: '45% 100%'}}/>
       <Collection data={intimate} title="Intimate" />
     </>
   );

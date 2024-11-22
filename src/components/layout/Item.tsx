@@ -28,12 +28,15 @@ export default function Item(props: PropsType) {
     setTimeout(() => {
       if (thereIsInCart(state.cart, product)) {
         setLoading("normal");
-        return defineMessage("This item is already in cart.");
+        return defineMessage({
+          title: "You can't do this action.",
+          message: "This item is already in cart.",
+        });
       }
 
       handleItem({ ...product, quantity: 1 });
       setLoading("normal");
-      defineMessage("Item add successfully.");
+      defineMessage({ title: "Sucess", message: "Item add successfully." });
     }, 1500);
   }
 

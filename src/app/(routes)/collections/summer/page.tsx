@@ -2,7 +2,7 @@ import styles from "@/styles/pages/collections/Summer.module.scss";
 import { summer } from "@/fake-api/collections";
 
 import HeroCollections from "@/components/collections/HeroCollections";
-import Collection from "@/components/collections/Collections";
+import Collections from "@/components/collections/Collections";
 
 import wallapaper from "@/assets/collections/jernej-graj-IbrSR6gBaqI-unsplash.jpg";
 
@@ -16,7 +16,7 @@ export default function Summer() {
   return (
     <>
       <HeroCollections data={hero} styleImage={{ objectPosition: "50% 80%" }} />
-      <Collection data={summer} title="Summer" />
+      <Collections data={summer} title="Summer" />
     </>
   );
 }

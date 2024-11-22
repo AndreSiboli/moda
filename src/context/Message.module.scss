@@ -11,6 +11,11 @@
   animation-iteration-count: 2;
   animation-fill-mode: both;
   box-shadow: 0 0 5px #0003;
+  border-radius: 0.5em;
+
+  h1{
+    font-size: 1.25em;
+  }
 
   @keyframes slide {
     0% {
