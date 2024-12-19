@@ -83,6 +83,7 @@
         width: 100%;
         aspect-ratio: 9/12;
         position: relative;
+        background: var.$neutral_color_300;
 
         &:first-child {
           display: none;

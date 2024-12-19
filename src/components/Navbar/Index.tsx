@@ -57,6 +57,11 @@ export default function Navbar() {
       const windowWidth = window.innerWidth;
 
       if (windowWidth > 768) setIsMenuOpen(false);
+      if (windowWidth <= 767) {
+        setIsMenuOpen(false);
+        setIsCollOpen(false);
+        setIsStoreOpen(false);
+      }
     }
 
     window.addEventListener("resize", resize);
