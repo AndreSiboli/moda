@@ -2,11 +2,11 @@ import { StaticImageData } from "next/image";
 
 export interface ProductType {
   images: {
-    src: StaticImageData | string;
+    src: StaticImageData;
     alt: string;
 
     subImages?: {
-      src: StaticImageData | string;
+      src: StaticImageData;
       alt: string;
     }[];
   };
@@ -21,4 +21,8 @@ export interface ProductType {
   price: number;
   stock: number;
   type: string[];
+  author: {
+    name: string
+    url: string
+  }
 }

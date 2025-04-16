@@ -26,7 +26,7 @@ export default function Item(props: PropsType) {
   function insertInCart() {
     setLoading("dotting");
     setTimeout(() => {
-      if (thereIsInCart(state.cart, product)) {
+      if (isThereInCart(state.cart, product)) {
         setLoading("normal");
         return defineMessage({
           title: "You can't do this action.",
@@ -40,14 +40,14 @@ export default function Item(props: PropsType) {
     }, 1500);
   }
 
-  function thereIsInCart(arr: ProductType[], obj: ProductType) {
+  function isThereInCart(arr: ProductType[], obj: ProductType) {
     return !!arr.filter((item) => item.id === obj.id).length;
   }
 
   return (
     <div className={styles.item} key={product.id}>
       <figure className={styles.item_image}>
-        <Img src={product.images.src} />
+        <Img src={product.images.src} loading="lazy" />
       </figure>
 
       <section className={styles.item_info}>
