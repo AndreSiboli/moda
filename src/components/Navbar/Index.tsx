@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import styles from "@/styles/Navbar/Index.module.scss";
 
@@ -18,7 +18,7 @@ import Store from "./Store";
 export default function Navbar() {
   const path = usePathname();
   const [isOnTop, setIsOnTop] = useState(true);
-  const [isLight, setIsLight] = useState(false);
+  const [isLight, setIsLight] = useState(false); //It depends the route
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCollOpen, setIsCollOpen] = useState(false);
   const [isStoreOpen, setIsStoreOpen] = useState(false);
@@ -27,13 +27,13 @@ export default function Navbar() {
     {
       text: "Collections",
       isAction: isCollOpen,
-      setIsAction: defineIsCollOpen,
+      setIsAction: setIsCollOpen,
       children: <Collections />,
     },
     {
       text: "Store",
       isAction: isStoreOpen,
-      setIsAction: defineIsStoreOpen,
+      setIsAction: setIsStoreOpen,
       children: <Store />,
     },
   ];
@@ -102,16 +102,6 @@ export default function Navbar() {
     else document.body.style.overflow = "hidden";
 
     setIsCartOpen((prevState) => !prevState);
-  }
-
-  function defineIsCollOpen() {
-    setIsCollOpen((prevState) => !prevState);
-    setIsStoreOpen(false);
-  }
-
-  function defineIsStoreOpen() {
-    setIsStoreOpen((prevState) => !prevState);
-    setIsCollOpen(false);
   }
 
   return (

@@ -16,7 +16,7 @@ interface PropsType {
 export default function Quantity(props: PropsType) {
   const { data } = props;
   const [currentQuantity, setCurrentQuantity] = useState(data.quantity);
-  const timeout = useRef<NodeJS.Timeout>(null);
+  const timeout = useRef<NodeJS.Timeout>(undefined);
   const dispatch = useDispatch<AppDispatch>();
 
   function insertByButton(add: 1 | -1) {
@@ -31,7 +31,7 @@ export default function Quantity(props: PropsType) {
   function insertByInput(e: ChangeEvent<HTMLInputElement>) {
     const { value } = e.target;
     let itemQuantity = 1;
-    
+
     if (Number.isNaN(value)) return;
 
     itemQuantity = parseInt(value);
@@ -45,7 +45,6 @@ export default function Quantity(props: PropsType) {
   }
 
   function addHowMany(quantity: number) {
-    if(!timeout.current) return
     clearTimeout(timeout.current);
 
     timeout.current = setTimeout(async () => {

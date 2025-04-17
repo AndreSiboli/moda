@@ -1,26 +1,45 @@
 "use client";
 
 import styles from "@/styles/buttons/Dropdown.module.scss";
-import { ReactNode, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, ReactNode, useEffect, useRef } from "react";
 
 import Container from "../layout/Container";
-
 import { PiCaretDown } from "react-icons/pi";
-import { useParams } from "next/navigation";
 
 interface PropsType {
   text: string;
   children: ReactNode;
   isOpened: boolean;
-  handleOpen: () => void;
+  handleOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function Dropdown(props: PropsType) {
   const { text, children, isOpened, handleOpen } = props;
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as HTMLDivElement)) {
+        handleOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  function isDropdownOpened() {
+    handleOpen((prevState) => !prevState);
+  }
 
   return (
-    <div className={`${styles.dropdown} ${isOpened && styles.opened}`}>
-      <div className={styles.dropdown_title} onClick={handleOpen}>
+    <div
+      className={`${styles.dropdown} ${isOpened && styles.opened}`}
+      ref={ref}
+    >
+      <div className={styles.dropdown_title} onClick={isDropdownOpened}>
         <p>{text}</p>
         <PiCaretDown />
       </div>
