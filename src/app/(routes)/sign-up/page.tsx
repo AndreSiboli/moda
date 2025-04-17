@@ -10,9 +10,12 @@ export default function SignUp() {
   return (
     <div className={styles.sign}>
       <figure className={styles.sign_image}>
-        <Img src={wallpaper} />
+        <Img
+          src={wallpaper}
+          styles={{ objectPosition: "50% 28%" }}
+        />
       </figure>
-      
+
       <Container>
         <div className={styles.sign_container}>
           <FormSignUp />

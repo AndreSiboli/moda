@@ -1,3 +1,5 @@
+import { ProductType } from "@/_types/ProductsType";
+
 export const uuidV7 = () => {
   return "tttttttt-tttt-7xxx-yxxx-xxxxxxxxxxxx"
     .replace(/[xy]/g, function (c) {
@@ -11,8 +13,8 @@ export const uuidV7 = () => {
     });
 };
 
-export function productss() {
-  const a = [{}].map((item) => ({
+export function productss(arr: ProductType[]) {
+  const a = arr.map((item) => ({
     ...item,
     id: uuidV7(),
     images: {

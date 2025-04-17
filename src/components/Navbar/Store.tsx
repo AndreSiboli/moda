@@ -38,28 +38,24 @@ export default function Store() {
       href: "/under-construction",
     },
     {
-      text: "Panties",
-      href: "/under-construction",
-    },
-    {
       text: "Tops",
-      href: "/under-construction",
+      href: "/store/tops",
     },
     {
       text: "Shorts",
-      href: "/under-construction",
+      href: "/store/shorts",
     },
     {
-      text: "Jackets",
-      href: "/under-construction",
+      text: "Pants",
+      href: "/store/pants",
     },
     {
       text: "Intimate",
-      href: "/under-construction",
+      href: "/store/intimate",
     },
     {
       text: "Shirts",
-      href: "/under-construction",
+      href: "/store/shirt",
     },
   ];
   const swim = [
@@ -79,19 +75,19 @@ export default function Store() {
   const accessories = [
     {
       text: "Necklaces",
-      href: "/under-construction",
+      href: "/store/necklace",
     },
     {
       text: "Rings",
-      href: "/under-construction",
+      href: "/store/ring",
     },
     {
       text: "Bracelet",
-      href: "/under-construction",
+      href: "/store/bracelet",
     },
     {
       text: "Earring",
-      href: "/under-construction",
+      href: "/store/earring",
     },
     {
       text: "Hats",

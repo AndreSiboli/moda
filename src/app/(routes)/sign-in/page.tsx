@@ -16,7 +16,7 @@ export default function SignIn() {
       </Container>
 
       <figure className={styles.sign_image}>
-        <Img src={wallpaper} />
+        <Img src={wallpaper} styles={{objectPosition: '50% 40%'}}/>
       </figure>
     </div>
   );

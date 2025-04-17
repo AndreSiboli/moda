@@ -77,18 +77,9 @@ export default function Navbar() {
   }, [path]);
 
   function checkLightPages() {
-    const paths = [
-      "/collections/summer",
-      "/collections/sport",
-      "/collections/gen-z",
-      "/collections/spring",
-      "/store/jewelry",
-      "/store/dress",
-      "/store/intimate",
-    ];
-
-    if (paths.includes(path)) return setIsLight(true);
-    setIsLight(false);
+    const paths = ["/collections", "/store"];
+    const isValidPath = paths.some((str) => path.startsWith(str));
+    setIsLight(isValidPath);
   }
 
   function closeAllTabs() {

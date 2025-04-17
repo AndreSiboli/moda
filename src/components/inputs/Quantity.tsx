@@ -16,7 +16,7 @@ interface PropsType {
 export default function Quantity(props: PropsType) {
   const { data } = props;
   const [currentQuantity, setCurrentQuantity] = useState(data.quantity);
-  const timeout = useRef<NodeJS.Timeout>();
+  const timeout = useRef<NodeJS.Timeout>(null);
   const dispatch = useDispatch<AppDispatch>();
 
   function insertByButton(add: 1 | -1) {
@@ -45,6 +45,7 @@ export default function Quantity(props: PropsType) {
   }
 
   function addHowMany(quantity: number) {
+    if(!timeout.current) return
     clearTimeout(timeout.current);
 
     timeout.current = setTimeout(async () => {

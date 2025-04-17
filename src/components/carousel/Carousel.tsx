@@ -44,7 +44,7 @@ export default function CarouselProducts(props: PropsType) {
   const initialClick = useRef(0);
   const initialTimeClick = useRef(0);
   const translate = useRef(0);
-  const intervalAnimation = useRef<NodeJS.Timeout>();
+  const intervalAnimation = useRef<NodeJS.Timeout>(null);
 
   function fixItemPerView() {
     const width = window.innerWidth;
@@ -283,11 +283,7 @@ export default function CarouselProducts(props: PropsType) {
         onTouchMove={(e) => dragMove(e)}
         onTouchEndCapture={(e) => dragEnd(e)}
       >
-        {children.map((item) =>
-          cloneElement(item, {
-            style: {},
-          })
-        )}
+        {children.map((item) => cloneElement(item, {}))}
       </div>
     </div>
   );

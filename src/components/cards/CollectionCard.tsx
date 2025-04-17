@@ -7,7 +7,7 @@ import Link from "next/link";
 interface PropsType {
   collection: {
     mainSet: {
-      src: string | StaticImageData;
+      src: StaticImageData;
       href: string;
     };
     subSet: {
