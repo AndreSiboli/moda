@@ -1,13 +1,11 @@
 "use client";
 
-// import styles from "@/styles/pages/store/Dresses.module.scss";
-import HeroCollections from "@/components/collections/HeroCollections";
-import Collection from "@/components/collections/Collections";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ProductType } from "@/_types/ProductsType";
 import { chooseProductPage, chooseProductType } from "@/utils/storeManager";
 import { StorePageType } from "@/_types/StorePageType";
+import ProductsLayout from "@/components/collections/ProductsLayout";
 
 export default function Store() {
   const params = useParams();
@@ -22,12 +20,5 @@ export default function Store() {
     setProducts(choosenProducts);
   }, [params]);
 
-  return page && products ? (
-    <>
-      <HeroCollections data={page} />
-      <Collection data={products} title={page.title} />
-    </>
-  ) : (
-    <div>Loading</div>
-  );
+  return <ProductsLayout page={page} products={products}/>
 }

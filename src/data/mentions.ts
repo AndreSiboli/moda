@@ -165,11 +165,6 @@ const references = [
 ];
 
 const freepik = [
-  //   {
-  //     id: '01963a72-6e84-7e83-a660-a5bb96370f3e',
-  //     author: "Home video by freepik",
-  //     url: "https://www.freepik.com/free-video/brunette-girl-lying-beach-bed-using-phone_2832936#fromView=search&page=5&position=32&uuid=4eac92f2-75d2-4ebd-a36e-8564c4382622",
-  //   },
   {
     id: "01963a73-07e7-746b-ba54-37b54ea4dac3",
     images: {
@@ -179,28 +174,6 @@ const freepik = [
     author: {
       name: "Halayalex on Freepik",
       url: "https://www.freepik.com/free-photo/portrait-beautiful-sensual-brunette-woman-girl-elegant-white-classic-clothes-wide-pants-white-background_6883359.htm#fromView=search&page=1&position=34&uuid=f064bd65-af6e-4c96-ae7f-af76ea9ffec7",
-    },
-  },
-  {
-    id: "01963a73-1293-7f73-9acb-c266e1352940",
-    images: {
-      src: signIn,
-      alt: "",
-    },
-    author: {
-      name: "Lookstudio on Freepik",
-      url: "https://www.freepik.com/free-photo/charming-girl-with-curly-dark-cool-hairstyle-striped-lilac-wide-sleeve-blouse-posing-with-closed-eyes-isolated-wall_15860725.htm#fromView=search&page=1&position=50&uuid=2176ebdd-e67f-480c-94a6-3068ce8e191f",
-    },
-  },
-  {
-    id: "01963a73-95db-79b6-9d3c-a3551d075ea1",
-    images: {
-      src: signUp,
-      alt: "",
-    },
-    author: {
-      name: "Lookstudio on Freepik",
-      url: "https://www.freepik.com/free-photo/woman-gold-earrings-glasses-striped-cropped-top-laughs-isolated-wall_12859947.htm#fromView=search&page=15&position=27&uuid=2176ebdd-e67f-480c-94a6-3068ce8e191f",
     },
   },
   {

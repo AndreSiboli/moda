@@ -1,0 +1,36 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.layout {
+  width: 100%;
+  min-height: 100vh;
+
+  @media (min-width: 1600px) {
+    min-height: 600px;
+  }
+
+  &_loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: var.$brand_color_400;
+
+    @media (min-width: 1600px) {
+      min-height: 600px;
+    }
+
+    .loading_container {
+      max-width: 126px;
+      width: 100%;
+      aspect-ratio: 1/1;
+
+      > * {
+        border-right-color: #fff;
+        border-left-color: #fff;
+        color: #fff;
+      }
+    }
+  }
+}
