@@ -27,9 +27,9 @@
       aspect-ratio: 1/1;
 
       > * {
-        border-right-color: #fff;
-        border-left-color: #fff;
-        color: #fff;
+        border-right-color: var.$clr-light-hard;
+        border-left-color: var.$clr-light-hard;
+        color: var.$clr-light-hard;
       }
     }
   }

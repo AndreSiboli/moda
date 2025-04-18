@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  color: var.$dark_text_color;
+  color: var.$clr-dark-normal;
 
   &_container {
     padding: 7em 0;
@@ -113,6 +113,7 @@
     .action_button {
       a {
         box-shadow: 0 5px 10px 0px #0003;
+        
       }
     }
 

@@ -32,7 +32,7 @@
 
     svg {
       font-size: 1em;
-      color: var.$dark_text_color;
+      color: var.$clr-dark-normal;
       transition: transform 0.15s ease-in-out;
     }
   }
@@ -47,7 +47,7 @@
     left: 0;
     z-index: -1;
     padding: 0 2em;
-    box-shadow: 0 1px 10px #0005;
+    box-shadow: 0 1px 10px #0003;
     transition: visibility 0.25s ease-in-out, height 0.25s ease-in-out;
 
     overflow: hidden;

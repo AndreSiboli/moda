@@ -3,7 +3,7 @@
 
 .card {
   display: flex;
-  background-color: #0005;
+  background-color: clr-dark-normal5;
   position: relative;
 
   &_main {
@@ -15,7 +15,7 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     flex-direction: column;
-    background: #000;
+    background: clr-dark-normal;
     width: 100%;
 
     .group_image {
@@ -68,7 +68,7 @@
     visibility: hidden;
     width: 100%;
     height: 0;
-    background: #0005;
+    background: clr-dark-normal5;
     transition: 0.25s ease-in-out;
     opacity: 0;
     position: absolute;
@@ -79,11 +79,11 @@
 
     P {
       width: fit-content;
-      color: #fff;
+      color: var.$clr-light-hard;
 
       &::after,
       &::before {
-        border-color: #fff;
+        border-color: var.$clr-light-hard;
       }
     }
   }

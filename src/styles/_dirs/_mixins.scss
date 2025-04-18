@@ -9,15 +9,15 @@
 @mixin Scroll {
   &::-webkit-scrollbar {
     max-width: 10px;
-    background: #fff;
+    background: var.$clr-light-hard;
     border-radius: 0.5em;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: var.$dark_text_color;
+    background: var.$clr-dark-normal;
 
     &:hover {
-      background: #0005;
+      background: clr-dark-normal5;
     }
   }
 }

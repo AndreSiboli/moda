@@ -12,11 +12,23 @@
 
   > span {
     font-weight: bold;
+    transition: color 0.15s ease-in-out;
+  }
+
+  &.v1 {
+    background: var.$neutral_color_100;
+    color: clr-dark-normal;
+  }
+
+  &.v2 {
+    background: var.$neutral_color_900;
+    color: var.$clr-light-hard;
   }
 
   @include mix.OnlyPc {
     &:hover {
       background: var.$brand_color_200;
+      color: var.$clr-dark-normal;
     }
   }
 }

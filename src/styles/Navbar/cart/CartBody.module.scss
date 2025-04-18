@@ -1,0 +1,19 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  position: relative;
+
+  @include mix.Scroll;
+
+  .body_items {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    padding-top: 0;
+    transition: 3s ease-in-out;
+  }
+}

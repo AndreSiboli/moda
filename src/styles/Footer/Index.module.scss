@@ -1,8 +1,8 @@
 @use "@/styles/_dirs/variables" as var;
 
 .footer {
-  background: var.$dark_text_color;
-  color: var.$light_text_color;
+  background: var.$clr-dark-normal;
+  color: var.$clr-light-hard;
   padding: 0 2em;
 
   &_container {

@@ -1,0 +1,29 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+
+  &_button {
+    button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+
+      svg {
+        font-size: 2em;
+      }
+    }
+  }
+
+  &_title {
+    p {
+      font-size: 1.25em;
+      text-wrap: nowrap;
+    }
+  }
+}

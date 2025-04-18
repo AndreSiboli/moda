@@ -8,7 +8,7 @@
   padding: 1em;
   z-index: 99;
   transition: background 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
-  color: var.$dark_text_color;
+  color: var.$clr-dark-normal;
 
   &:not(.onTop) {
     background: var.$neutral_color_100;
@@ -37,11 +37,11 @@
     .header_logo,
     .header_links,
     .header_end {
-      color: var.$light_text_color;
+      color: var.$clr-light-hard;
       transition: color 0.15s ease-in-out;
 
       svg {
-        color: var.$light_text_color;
+        color: var.$clr-light-hard;
       }
     }
 
@@ -55,10 +55,10 @@
       .header_logo,
       .header_links,
       .header_end {
-        color: var.$dark_text_color;
+        color: var.$clr-dark-normal;
 
         svg {
-          color: var.$dark_text_color;
+          color: var.$clr-dark-normal;
         }
       }
 

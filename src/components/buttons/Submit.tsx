@@ -1,18 +1,18 @@
+import RalewayFont from "@/components/fonts/RalewayFont";
 import styles from "@/styles/buttons/Submit.module.scss";
 
-import RalewayFont from "@/components/fonts/RalewayFont";
-import { MouseEvent } from "react";
+import { ComponentProps } from "react";
 
-interface PropsType {
+interface PropsType extends ComponentProps<"button"> {
   text: string;
-  handleSubmit: (e: MouseEvent<any>) => void;
+  variant?: 'v1' | 'v2'
 }
 
 export default function Submit(props: PropsType) {
-  const { text, handleSubmit } = props;
+  const { text, variant='v1' } = props;
 
   return (
-    <button className={styles.button} onClick={handleSubmit}>
+    <button {...props} className={`${styles.button} ${styles[variant]}`}>
       <RalewayFont>{text}</RalewayFont>
     </button>
   );

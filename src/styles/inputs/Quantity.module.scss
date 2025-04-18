@@ -14,7 +14,7 @@
     aspect-ratio: 1/1;
     border: none;
     padding: 0.5em;
-    background: var.$sec_color;
+    background: var.$clr-dark-normal;
     border-radius: 50%;
     cursor: pointer;
     transition: background 0.15s ease-in-out;
@@ -29,7 +29,7 @@
         background: var.$brand_color_200;
 
         svg {
-          color: var.$dark_text_color;
+          color: var.$clr-dark-normal;
         }
       }
     }
@@ -51,6 +51,6 @@
   }
 
   &:has(input:focus) {
-    border-color: var.$sec_color;
+    border-color: var.$clr-dark-normal;
   }
 }

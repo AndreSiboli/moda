@@ -2,7 +2,7 @@
 @use "@/styles/_dirs/mixins" as mix;
 
 .button {
-  background: var.$lightest_color;
+  background: var.$clr-light-hard;
   border: none;
   padding: 1em 2em;
   text-transform: uppercase;
@@ -15,7 +15,7 @@
 
   @include mix.OnlyPc {
     &:hover {
-      background: var.$darkest_color;
+      background: var.$clr-dark-normal;
     }
   }
 }

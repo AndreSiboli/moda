@@ -1,0 +1,36 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  background: var.$neutral_color_100;
+  border-top: 1px solid clr-dark-normal;
+  padding: 1em;
+  color: var.$clr-dark-normal;
+
+  &_total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+
+    p {
+      text-align: center;
+
+      &:last-child {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &_button {
+    width: 100%;
+  }
+}

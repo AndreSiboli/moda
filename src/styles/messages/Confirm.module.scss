@@ -7,7 +7,7 @@
   align-items: center;
   position: fixed;
   inset: 0;
-  background: #0005;
+  background: clr-dark-normal5;
   z-index: 9999;
 
   &_container {
@@ -33,7 +33,7 @@
     gap: 0.5em;
 
     button {
-      color: #fff;
+      color: var.$clr-light-hard;
       width: 100%;
 
       &:first-child {
