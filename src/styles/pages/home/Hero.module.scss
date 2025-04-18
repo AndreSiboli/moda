@@ -61,99 +61,64 @@
       gap: 0;
     }
   }
+}
 
-  &_social {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    background: var.$brand_color_200;
-    padding: 1em;
-    border-radius: 0.1em;
-    z-index: 20;
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background: var.$brand_color_200;
+  padding: 1em;
+  border-radius: 0.1em;
+  z-index: 20;
 
-    @media (max-width: 600px) {
-      flex-direction: row;
-    }
-
-    svg {
-      font-size: 1.3em;
-    }
+  @media (max-width: 600px) {
+    flex-direction: row;
   }
 
-  &_action {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-    max-width: 400px;
-    width: 100%;
-    padding: 2em;
-    text-align: center;
-    position: relative;
+  svg {
+    font-size: 1.3em;
+  }
+}
 
-    h1,
-    p,
-    .action_button {
-      z-index: 3;
-    }
+.action {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  max-width: 400px;
+  width: 100%;
+  padding: 2em;
+  text-align: center;
+  position: relative;
 
+  &_title,
+  &_text,
+  &_button {
+    z-index: 3;
+  }
+
+  &_title {
     h1 {
       font-size: 3em;
       text-transform: uppercase;
       font-style: italic;
       line-height: 0.8em;
       font-weight: 500;
-
-      span {
-        display: block;
-      }
-    }
-
-    .action_button {
-      a {
-        box-shadow: 0 5px 10px 0px #0003;
-        
-      }
-    }
-
-    .action_square {
-      width: 100%;
-      height: 80%;
-      position: absolute;
-      top: 15px;
-      background: var.$brand_color_300;
-
-      z-index: 2;
-      border-radius: 0.1em;
-    }
-
-    .action_square_2 {
-      width: 90%;
-      height: 50%;
-      position: absolute;
-      top: -25px;
-      left: 40%;
-      background: var.$brand_color_500;
-      z-index: -2;
-      border-radius: 0.1em;
+      color: var.$clr-dark-normal;
     }
   }
 
-  .square_1 {
-    width: calc(270px - 5.8vw);
-    height: 70px;
-    background: var.$brand_color_100;
-    position: absolute;
-    top: 0;
-    right: -60px;
+  &_text {
+    p {
+      color: var.$clr-dark-soft;
+    }
   }
-  .square_2 {
-    width: 340px;
-    height: 125px;
-    background: var.$brand_color_300;
-    position: absolute;
-    bottom: 0;
-    right: 0px;
+
+  &_button {
+    a {
+      box-shadow: 0 5px 10px 0px #0003;
+    }
   }
 }
