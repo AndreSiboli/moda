@@ -1,7 +1,7 @@
 "use client";
 
 import { ProductType } from "@/_types/ProductsType";
-import { ColletctionPageType, StorePageType } from "@/_types/StorePageType";
+import { RoutesCollectionType, RoutesStoreType } from "@/_types/RoutesType";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { chooseCollectionPage, chooseCollection } from "@/utils/storeManager";
@@ -11,7 +11,7 @@ import Collection from "@/components/collections/Collections";
 import Loading from "../utils/Loading";
 
 interface PropsType {
-  page: ColletctionPageType | StorePageType | null;
+  page: RoutesCollectionType | RoutesStoreType | null;
   products: ProductType[] | null;
 }
 

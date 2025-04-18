@@ -1,14 +1,14 @@
 import { ProductType } from "@/_types/ProductsType";
-import { storeCollections, storePage } from "@/data/storePages";
+import { routesCollections, routesStore } from "@/data/routes";
 import { collections } from "@/fake-api/AllColletions";
 import { products } from "@/fake-api/allProducts";
 
 export function chooseCollection(type: string): ProductType[] {
-  return collections.filter((product) => (product.collection === type));
+  return collections.filter((product) => product.collection === type);
 }
 
 export function chooseCollectionPage(type: string) {
-  return storeCollections.filter((page) => page.collection === type);
+  return routesCollections.filter((page) => page.collection === type);
 }
 
 export function chooseProductType(type: string): ProductType[] {
@@ -16,5 +16,5 @@ export function chooseProductType(type: string): ProductType[] {
 }
 
 export function chooseProductPage(type: string) {
-  return storePage.filter((page) => page.type === type);
+  return routesStore.filter((page) => page.type === type);
 }

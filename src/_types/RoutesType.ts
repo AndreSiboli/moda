@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 import { CSSProperties } from "react";
 
-export interface StorePageType {
+export interface RoutesStoreType {
   image: {
     src: StaticImageData;
     styles?: CSSProperties;
@@ -11,6 +11,6 @@ export interface StorePageType {
   type: string;
 }
 
-export interface ColletctionPageType extends Omit<StorePageType, "type"> {
+export interface RoutesCollectionType extends Omit<RoutesStoreType, "type"> {
   collection: string;
 }

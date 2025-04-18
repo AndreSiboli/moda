@@ -1,11 +1,11 @@
-import { ColletctionPageType, StorePageType } from "@/_types/StorePageType";
+import { RoutesCollectionType, RoutesStoreType } from "@/_types/RoutesType";
 import styles from "@/styles/collections/HeroCollections.module.scss";
 
 import Container from "@/components/layout/Container";
 import Img from "@/components/utils/Img";
 
 interface PropsType {
-  data: StorePageType | ColletctionPageType;
+  data: RoutesStoreType | RoutesCollectionType;
 }
 
 export default function HeroCollections(props: PropsType) {

@@ -4,12 +4,12 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ProductType } from "@/_types/ProductsType";
 import { chooseCollectionPage, chooseCollection } from "@/utils/storeManager";
-import { ColletctionPageType } from "@/_types/StorePageType";
+import { RoutesCollectionType } from "@/_types/RoutesType";
 import ProductsLayout from "@/components/collections/ProductsLayout";
 
 export default function Collections() {
   const params = useParams();
-  const [page, setPage] = useState<ColletctionPageType | null>(null);
+  const [page, setPage] = useState<RoutesCollectionType | null>(null);
   const [products, setProducts] = useState<ProductType[] | null>(null);
 
   useEffect(() => {

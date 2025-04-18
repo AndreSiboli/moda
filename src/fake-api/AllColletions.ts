@@ -56,7 +56,7 @@ import spring9 from "@/assets/collections/spring/pexels-vitoriasantos-3050943.jp
 import spring10 from "@/assets/collections/spring/sam-chapman-rEA2MzwxGmY-unsplash.jpg";
 import spring11 from "@/assets/collections/spring/vitalii-khodzinskyi-nYM9SSk7vC8-unsplash.jpg";
 
-const summer24: CollectionType[] = [
+const summer25: CollectionType[] = [
   {
     id: "01963a34-5d6a-7bc7-a4c7-a88a08ef8c7f",
     title: "Lorem Ipsum Dolor Sit",
@@ -325,7 +325,7 @@ const summer24: CollectionType[] = [
   },
 ];
 
-const spring24: CollectionType[] = [
+const spring25: CollectionType[] = [
   {
     id: "01963a34-5d6a-7885-9934-4dba2d1101e2",
     title: "Lorem Ipsum Dolor Sit",
@@ -570,7 +570,7 @@ const spring24: CollectionType[] = [
   },
 ];
 
-const genz24: CollectionType[] = [
+const genz25: CollectionType[] = [
   {
     id: "01963a34-5d6a-7917-bd72-f8a5f77cf70f",
     title: "Lorem Ipsum Dolor Sit",
@@ -840,7 +840,7 @@ const genz24: CollectionType[] = [
   },
 ];
 
-const sport24: CollectionType[] = [
+const sport25: CollectionType[] = [
   {
     id: "01963a34-5d6a-7816-94bc-9d8977df11dc",
     title: "Lorem Ipsum Dolor Sit",
@@ -1108,8 +1108,8 @@ const sport24: CollectionType[] = [
 ];
 
 export const collections: CollectionType[] = [
-  ...summer24,
-  ...spring24,
-  ...genz24,
-  ...sport24,
+  ...summer25,
+  ...spring25,
+  ...genz25,
+  ...sport25,
 ];
