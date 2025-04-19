@@ -34,11 +34,9 @@ export default function CartCard(props: PropsType) {
 
   return (
     <div className={styles.card} ref={cardRef}>
-      <div className={styles.card_image}>
-        <figure className={styles.image_container}>
-          <Img src={images.src} alt={images.alt} />
-        </figure>
-      </div>
+      <figure className={styles.card_image}>
+        <Img src={images.src} alt={images.alt} />
+      </figure>
 
       <div className={styles.card_info}>
         <div className={styles.info_wrapper}>

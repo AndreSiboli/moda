@@ -17,7 +17,7 @@ interface PropsType {
   handleItem: (prop: CartUserType) => void;
 }
 
-export default function Item(props: PropsType) {
+export default function Product(props: PropsType) {
   const { product, handleItem } = props;
   const { defineMessage } = useContext(MessageContext);
   const [loading, setLoading] = useState<"normal" | "dotting">("normal");
@@ -36,31 +36,31 @@ export default function Item(props: PropsType) {
 
       handleItem({ ...product, quantity: 1 });
       setLoading("normal");
-      defineMessage({ title: "Sucess", message: "Item add successfully." });
-    }, 1500);
+      defineMessage({ title: "Sucess", message: "Item added successfully." });
+    }, 1000);
   }
 
   function isThereInCart(arr: ProductType[], obj: ProductType) {
-    return !!arr.filter((item) => item.id === obj.id).length;
+    return arr.some((item) => item.id === obj.id);
   }
 
   return (
-    <div className={styles.item} key={product.id}>
-      <figure className={styles.item_image}>
+    <div className={styles.product}>
+      <figure className={styles.product_image}>
         <Img src={product.images.src} loading="lazy" />
       </figure>
 
-      <section className={styles.item_info}>
+      <section className={styles.product_info}>
         <div className={styles.info_wrapper}>
           <div className={styles.info_header}>
             <p className={styles.header_title}>{product.title}</p>
-            <CartButton handleFunction={insertInCart} loadingState={loading} />
-          </div>
-          <div>
             <p>U$ {formatToDecimal(product.price, 2)}</p>
-          </div>
-          <div>
+            <p>Stock: {product.stock}</p>
             <Rating rating={product.rating} />
+          </div>
+
+          <div className={styles.info_button}>
+            <CartButton handleFunction={insertInCart} loadingState={loading} />
           </div>
         </div>
       </section>

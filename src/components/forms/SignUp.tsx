@@ -41,7 +41,7 @@ export default function FormSignUp(props: PropsType) {
       </div>
 
       <div className={styles.form_button}>
-        <Submit text="Sign Up" onClick={(e) => submit(e)} />
+        <Submit text="Sign Up" onClick={(e) => submit(e)} variant="v2"/>
       </div>
 
       <div className={styles.form_create}>

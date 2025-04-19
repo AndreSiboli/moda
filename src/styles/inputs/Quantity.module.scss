@@ -4,8 +4,10 @@
 .quantity {
   display: flex;
   width: fit-content;
-  border-radius: 0.5em;
+  border-radius: 1em;
   overflow: hidden;
+  background: #0001;
+  transition: background .15s ease-in-out;
 
   button {
     display: flex;
@@ -51,6 +53,6 @@
   }
 
   &:has(input:focus) {
-    border-color: var.$clr-dark-normal;
+    background: #0002;
   }
 }

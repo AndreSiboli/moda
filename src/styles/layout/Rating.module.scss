@@ -1,3 +1,6 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
 .card_rate {
   display: flex;
   align-items: center;

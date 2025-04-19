@@ -53,6 +53,7 @@ export default function Footer() {
                   target="_blank"
                   aria-label={soc.label}
                   key={soc.label}
+                  rel="noopener noreferrer"
                 >
                   {soc.icon}
                 </Link>

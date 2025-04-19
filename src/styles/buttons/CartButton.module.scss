@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid clr-dark-normal;
+  border: 1px solid var.$clr-dark-normal;
   padding: 0.5em;
   background: transparent;
   border-radius: 50%;
@@ -47,7 +47,7 @@
     width: 100%;
 
     .dot {
-      background: clr-dark-normal;
+      background: var.$clr-dark-normal;
       border-radius: 50%;
       width: calc(100% / 3 - 0.25em);
       aspect-ratio: 1/1;
@@ -74,15 +74,5 @@
         }
       }
     }
-  }
-
-  @include mix.OnlyPc {
-    // &:hover {
-    //   background: clr-dark-normal;
-
-    //   svg {
-    //     color: var.$clr-light-hard;
-    //   }
-    // }
   }
 }

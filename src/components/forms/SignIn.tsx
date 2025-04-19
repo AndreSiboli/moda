@@ -31,7 +31,7 @@ export default function FormSignIn() {
       </div>
 
       <div className={styles.form_button}>
-        <Submit text="Sign In" onClick={(e) => submit(e)} />
+        <Submit text="Sign In" onClick={(e) => submit(e)} variant="v2" />
       </div>
 
       <div className={styles.form_create}>

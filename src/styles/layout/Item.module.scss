@@ -1,7 +1,7 @@
 @use "@/styles/_dirs/variables" as var;
 @use "@/styles/_dirs/mixins" as mix;
 
-.item {
+.product {
   display: flex;
   flex-direction: column;
   aspect-ratio: 11/16;
@@ -20,7 +20,7 @@
       position: absolute;
       bottom: 0;
       width: 100%;
-      background: clr-light-harda;
+      background: #fffa;
       overflow: hidden;
       filter: blur(2px);
       transition: 0.15s ease-in-out, filter 0.3s ease-in-out;
@@ -29,7 +29,8 @@
 
     .info_wrapper {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      gap: 1em;
       padding: 0.5em 0;
 
       @include mix.OnlyPc {
@@ -41,10 +42,8 @@
 
     .info_header {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1em;
-      margin-bottom: 0.5em;
+      flex-direction: column;
+      gap: 0.15em;
 
       .header_title {
         overflow: hidden;
@@ -53,17 +52,23 @@
         line-clamp: 1;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
+        font-weight: bold;
       }
+    }
+
+    .info_button {
+      width: fit-content;
+      height: fit-content;
     }
   }
 
   @include mix.OnlyPc {
     &:hover {
-      .item_image {
+      .product_image {
         filter: brightness(0.6);
       }
 
-      .item_info {
+      .product_info {
         max-height: 100%;
         filter: blur(0);
       }

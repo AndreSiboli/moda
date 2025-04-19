@@ -10,10 +10,10 @@ import {
 } from "@/redux/features/cart-slice";
 import styles from "@/styles/Navbar/Cart.module.scss";
 
-import Purchase from "@/components/messages/Purchase";
 import CartHeader from "./cart/CartHeader";
 import CartBody from "./cart/CartBody";
 import CartFooter from "./cart/CartFooter";
+import Purchase from "@/components/messages/Purchase";
 
 interface PropsType {
   isOpen: boolean;
@@ -38,7 +38,7 @@ export default function Cart(props: PropsType) {
     dispatch(deleteItem(id));
   }
 
-  function submit() {
+  function submitPurchase() {
     setIsPurchase(true);
   }
 
@@ -67,7 +67,7 @@ export default function Cart(props: PropsType) {
         ) : (
           <>
             <CartBody data={data.cart} handleDelete={deleteCartItem} />
-            <CartFooter total={data.total} handleSubmit={submit} />
+            <CartFooter total={data.total} handleSubmit={submitPurchase} />
           </>
         )}
       </div>
@@ -82,5 +82,3 @@ export default function Cart(props: PropsType) {
     </aside>
   );
 }
-
-

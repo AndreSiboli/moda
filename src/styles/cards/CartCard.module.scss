@@ -30,19 +30,16 @@
   &_image {
     flex: 1 1 25%;
     min-width: 120px;
+    position: relative;
+    aspect-ratio: 1/1;
 
-    .image_container {
-      position: relative;
-      aspect-ratio: 1/1;
+    @media (max-width: 400px) {
+      max-width: 250px;
+      margin: 0 auto;
+    }
 
-      @media (max-width: 400px) {
-        max-width: 250px;
-     margin: 0 auto;
-      }
-
-      img {
-        border-radius: 0.15em;
-      }
+    img {
+      border-radius: 0.15em;
     }
   }
 
