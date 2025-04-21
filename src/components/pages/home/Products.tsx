@@ -100,7 +100,7 @@ export default function Products() {
             {collections.map((collection) => (
               <CollectionCard
                 collection={collection}
-                key={collection.mainSet.href}
+                key={collection.mainSet.src.src}
               />
             ))}
           </div>

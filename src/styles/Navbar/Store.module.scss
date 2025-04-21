@@ -75,23 +75,6 @@
         overflow: hidden;
         min-height: 300px;
 
-        a {
-          display: block;
-          position: absolute;
-          background: var.$neutral_color_500;
-          border-radius: 50%;
-          padding: 0.5em;
-          width: fit-content;
-          top: 5px;
-          right: 5px;
-          transition: background 0.15s ease-in-out;
-
-          svg {
-            display: block;
-            font-size: 1em;
-          }
-        }
-
         img {
           filter: brightness(0.7);
           transition: transform 0.5s ease-in-out, filter 0.25s ease-in-out;

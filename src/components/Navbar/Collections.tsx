@@ -9,7 +9,7 @@ import genz from "@/assets/collections/genz/joshua-rondeau-TG8vuPf2O-I-unsplash.
 import sport from "@/assets/collections/sport/mahdi-chaghari-C0iF9gJ3TWs-unsplash.jpg";
 import spring from "@/assets/collections/spring/pexels-vitoriasantos-3050943.jpg";
 
-import { PiHandSwipeLeft, PiLink } from "react-icons/pi";
+import { PiHandSwipeLeft } from "react-icons/pi";
 
 export default function Collections() {
   const images = [
@@ -72,15 +72,12 @@ export default function Collections() {
 
         <Carousel parentConfig={{ itemsLength: 4 }}>
           {images.map((image) => (
-            <div className={styles.card} key={image.title}>
+            <Link href={image.href} className={styles.card} key={image.title}>
               <figure className={styles.card_image}>
                 <Img src={image.src} />
-                <Link href={image.href} aria-label={image.title}>
-                  <PiLink />
-                </Link>
               </figure>
               <p>{image.title}</p>
-            </div>
+            </Link>
           ))}
         </Carousel>
       </nav>

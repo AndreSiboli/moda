@@ -1,5 +1,5 @@
 import Container from "@/components/layout/Container";
-import styles from "./not-found.module.scss";
+import styles from "@/styles/pages/not-found.module.scss";
 import Link from "next/link";
 
 export default function NotFound() {

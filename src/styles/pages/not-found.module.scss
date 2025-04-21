@@ -1,12 +1,11 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
 .notfound {
   padding: 0 2em;
 
   &_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
+    @include mix.Flex($direction: column, $gap: 0.5em);
     min-height: 100vh;
     padding-top: 7em;
     padding-bottom: 7em;

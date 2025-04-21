@@ -17,7 +17,15 @@
     background: var.$clr-dark-normal;
 
     &:hover {
-      background: clr-dark-normal5;
+      background: #0005;
     }
   }
+}
+
+@mixin Flex($jc: center, $ai: center, $direction: row, $gap: 0em) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
 }

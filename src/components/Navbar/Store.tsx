@@ -137,15 +137,12 @@ export default function Store() {
 
         <Carousel parentConfig={{ itemsLength: 3 }}>
           {images.map((image) => (
-            <div className={styles.card} key={image.title}>
+            <Link href={image.href} className={styles.card} key={image.title}>
               <figure className={styles.card_image}>
                 <Img src={image.src} />
-                <Link href={image.href} aria-label={image.title}>
-                  <PiLink />
-                </Link>
               </figure>
               <p>{image.title}</p>
-            </div>
+            </Link>
           ))}
         </Carousel>
       </nav>

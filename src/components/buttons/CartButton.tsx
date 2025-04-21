@@ -1,26 +1,26 @@
 import styles from "@/styles/buttons/CartButton.module.scss";
-import { PiBag, PiCheck } from "react-icons/pi";
+import { ComponentProps } from "react";
+import { PiBag } from "react-icons/pi";
 
-interface PropsType {
-  handleFunction: () => void;
-  loadingState: "normal" | "dotting";
+interface PropsType extends ComponentProps<"button"> {
+  isLoading: boolean;
 }
 
 export default function CartButton(props: PropsType) {
-  const { handleFunction, loadingState } = props;
+  const { isLoading, ...rest } = props;
 
   return (
     <button
-      className={`${styles.button} ${styles[loadingState]}`}
-      onClick={handleFunction}
+      {...rest}
+      className={`${styles.button} ${isLoading && styles.loading}`}
       aria-label="Add to cart"
     >
       <PiBag />
 
-      <div className={styles.dots}>
-        <span className={styles.dot}></span>
-        <span className={styles.dot}></span>
-        <span className={styles.dot}></span>
+      <div className={styles.button_loading}>
+        <span className={styles.dot} />
+        <span className={styles.dot} />
+        <span className={styles.dot} />
       </div>
     </button>
   );

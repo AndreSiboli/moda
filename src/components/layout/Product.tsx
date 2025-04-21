@@ -20,14 +20,13 @@ interface PropsType {
 export default function Product(props: PropsType) {
   const { product, handleItem } = props;
   const { defineMessage } = useContext(MessageContext);
-  const [loading, setLoading] = useState<"normal" | "dotting">("normal");
+  const [isLoading, setIsLoading] = useState(false);
   const state = useAppSelector((state) => state.cartReducer);
 
   function insertInCart() {
-    setLoading("dotting");
-    setTimeout(() => {
+    const insert = () => {
       if (isThereInCart(state.cart, product)) {
-        setLoading("normal");
+        setIsLoading(false);
         return defineMessage({
           title: "You can't do this action.",
           message: "This item is already in cart.",
@@ -35,13 +34,21 @@ export default function Product(props: PropsType) {
       }
 
       handleItem({ ...product, quantity: 1 });
-      setLoading("normal");
+      setIsLoading(false);
       defineMessage({ title: "Sucess", message: "Item added successfully." });
-    }, 1000);
+    };
+    setIsLoading(true);
+    simulateDelay(insert);
   }
 
   function isThereInCart(arr: ProductType[], obj: ProductType) {
     return arr.some((item) => item.id === obj.id);
+  }
+
+  function simulateDelay(callback: VoidFunction) {
+    setTimeout(() => {
+      callback();
+    }, 1000);
   }
 
   return (
@@ -60,7 +67,7 @@ export default function Product(props: PropsType) {
           </div>
 
           <div className={styles.info_button}>
-            <CartButton handleFunction={insertInCart} loadingState={loading} />
+            <CartButton onClick={insertInCart} isLoading={isLoading} />
           </div>
         </div>
       </section>

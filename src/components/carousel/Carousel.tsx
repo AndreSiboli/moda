@@ -8,11 +8,15 @@ import {
   useEffect,
   useRef,
   useState,
+  useCallback,
 } from "react";
 import styles from "@/styles/carousel/Carousel.module.scss";
 
-interface PropsType {
-  children: ReactElement[];
+interface CarouselProps {
+  children: ReactElement<{
+    onClick?: (e: MouseEvent) => void;
+    draggable?: boolean;
+  }>[];
   parentConfig?: {
     animationTime?: number;
     parentWidth?: string;
@@ -24,8 +28,10 @@ interface PropsType {
   };
 }
 
-export default function CarouselProducts(props: PropsType) {
-  const { children, parentConfig } = props;
+export default function CarouselProducts({
+  children,
+  parentConfig,
+}: CarouselProps) {
   const [config, setConfig] = useState({
     animationTime: 200,
     parentWidth: "100%",
@@ -36,254 +42,191 @@ export default function CarouselProducts(props: PropsType) {
     itemsLength: 4,
     ...parentConfig,
   });
+
   const [currentPosition, setCurrentPosition] = useState(0);
+
   const parentRef = useRef<HTMLDivElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const allowShift = useRef(false);
-  const dragging = useRef(false);
-  const initialClick = useRef(0);
-  const initialTimeClick = useRef(0);
-  const translate = useRef(0);
-  const intervalAnimation = useRef<NodeJS.Timeout>(null);
+  const isDragging = useRef(false);
+  const isShiftAllowed = useRef(false);
+  const wasDragged = useRef(false);
+  const startPosition = useRef(0);
+  const startTime = useRef(0);
+  const initialTranslate = useRef(0);
+  const animationTimeout = useRef<NodeJS.Timeout>(undefined);
 
-  function fixItemPerView() {
+  const fixItemsPerView = useCallback(() => {
     const width = window.innerWidth;
-
-    if (width <= 768) {
-      setConfig((prevState) => ({
-        ...prevState,
-        itemsPerView: 2,
-        itemsAppearance: 2,
-        margin: 8,
-        slide: true,
-      }));
-      return;
-    }
-
-    setConfig((prevState) => ({
-      ...prevState,
-      itemsPerView: 1,
-      margin: 16,
-      itemsAppearance: config.itemsLength,
-      slide: false,
+    setConfig((prev) => ({
+      ...prev,
+      itemsPerView: width <= 768 ? 2 : 1,
+      itemsAppearance: width <= 768 ? 2 : config.itemsLength,
+      margin: width <= 768 ? 8 : 16,
+      slide: width <= 768,
     }));
-  }
+  }, [config.itemsLength]);
 
-  //It'll fix the size on first loading
   useEffect(() => {
-    const move = calculateNextMove(currentPosition);
-    moveCarousel(move);
-    fixItemPerView();
+    fixItemsPerView();
+    moveCarousel(calculateNextMove(currentPosition));
   }, []);
 
-  //Always the user resize the page, it'll fix the carousel
   useEffect(() => {
-    function resize() {
-      fixItemPerView();
-    }
-
-    window.addEventListener("resize", resize);
-
-    return () => {
-      window.removeEventListener("resize", resize);
-    };
-  }, [currentPosition, config]);
+    const handleResize = () => fixItemsPerView();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [fixItemsPerView]);
 
   useEffect(() => {
-    const move = calculateNextMove(0);
-    moveCarousel(move);
+    moveCarousel(calculateNextMove(0));
     setCurrentPosition(0);
   }, [config]);
 
-  //This calculate exactly the next move
-  function calculateNextMove(currentPos: number) {
-    const parentElement = parentRef.current;
-    const childElement = wrapperRef.current;
-    if (!parentElement || !childElement) return 0;
+  const calculateNextMove = (position: number) => {
+    const wrapper = wrapperRef.current;
+    if (!wrapper) return 0;
 
-    const childrenWidth = childElement.children[0].clientWidth;
-    const marginLeftRight = config.margin;
-    const itemTotalWidth = childrenWidth + marginLeftRight;
-    const movePerSlide = itemTotalWidth * config.itemsPerView;
+    const child = wrapper.children[0] as HTMLElement;
+    if (!child) return 0;
 
-    const totalItems = childElement.children.length;
-    const remainderItems = totalItems % config.itemsPerView;
-    const totalSlides = totalItems / config.itemsPerView - 1;
-    const gapItemAndSpace = 24;
+    const itemWidth = child.clientWidth + config.margin;
+    const totalItems = wrapper.children.length;
+    const slides = Math.floor((totalItems - 1) / config.itemsPerView);
+    const remainder = totalItems % config.itemsPerView;
 
-    if (currentPos >= totalSlides && remainderItems !== 0) {
-      const leftItemsWidth = remainderItems * itemTotalWidth;
-      return movePerSlide * (currentPos - 1) + leftItemsWidth - gapItemAndSpace;
-    }
-    if (currentPos === totalSlides)
-      return movePerSlide * currentPos - gapItemAndSpace;
+    const movePerSlide = itemWidth * config.itemsPerView;
+    const endGap = 24;
 
-    return movePerSlide * currentPos;
-  }
-
-  function moveCarousel(to: number) {
-    if (!wrapperRef.current) return;
-    to >= 0
-      ? (wrapperRef.current.style.transform = `translate3d(-${to}px, 0, 0)`)
-      : (wrapperRef.current.style.transform = `translate3d(${Math.abs(
-          to
-        )}px, 0, 0)`);
-  }
-
-  //this is the core function
-  function changeItem(num: 1 | 0 | -1) {
-    if (!wrapperRef.current || dragging.current || allowShift.current) return;
-    const nextItem = currentPosition + num;
-    const children = wrapperRef.current.childNodes.length;
-    const movement = (children - 1) / config.itemsPerView;
-
-    if (nextItem < 0 || nextItem > movement) {
-      return;
+    if (position >= slides && remainder !== 0) {
+      return movePerSlide * (position - 1) + itemWidth * remainder - endGap;
     }
 
-    const moveTo = calculateNextMove(nextItem);
-    allowShift.current = true;
+    return movePerSlide * position - (position === slides ? endGap : 0);
+  };
+
+  const moveCarousel = (to: number) => {
+    const wrapper = wrapperRef.current;
+    if (!wrapper) return;
+    wrapper.style.transform = `translate3d(-${to}px, 0, 0)`;
+  };
+
+  const changeItem = (delta: -1 | 0 | 1) => {
+    if (isDragging.current || isShiftAllowed.current) return;
+    const next = currentPosition + delta;
+    const totalItems = wrapperRef.current?.childNodes.length || 0;
+    const maxPosition = Math.floor((totalItems - 1) / config.itemsPerView);
+
+    if (next < 0 || next > maxPosition) return;
+
+    isShiftAllowed.current = true;
     addAnimation(true);
-    moveCarousel(moveTo);
-    clearAnimation();
-    clearShift();
-    setCurrentPosition(nextItem);
-  }
+    moveCarousel(calculateNextMove(next));
+    clearTimeout(animationTimeout.current!);
 
-  function addAnimation(current: boolean) {
-    if (!wrapperRef.current) return;
-
-    wrapperRef.current.className = `${styles.carousel_wrapper} ${
-      current && styles.animation
-    }`;
-  }
-
-  function clearAnimation() {
-    if (intervalAnimation.current) {
-      clearTimeout(intervalAnimation.current);
-    }
-
-    intervalAnimation.current = setTimeout(() => {
+    animationTimeout.current = setTimeout(() => {
       addAnimation(false);
+      isShiftAllowed.current = false;
     }, config.animationTime);
-  }
 
-  function clearShift() {
-    setTimeout(() => {
-      allowShift.current = false;
-    }, config.animationTime);
-  }
+    setCurrentPosition(next);
+  };
 
-  //MOBILE FUNCTIONS
+  const addAnimation = (isEnabled: boolean) => {
+    if (!wrapperRef.current) return;
+    wrapperRef.current.className = `${styles.carousel_wrapper} ${
+      isEnabled ? styles.animation : ""
+    }`;
+  };
 
-  function dragStart(e: MouseEvent | TouchEvent) {
-    if (!config.slide) return;
-    const parent = parentRef.current;
+  const handleDragStart = (e: MouseEvent | TouchEvent) => {
+    if (!config.slide || isShiftAllowed.current) return;
     const wrapper = wrapperRef.current;
-    if (!parent || !wrapper || allowShift.current) return;
+    if (!wrapper) return;
 
-    dragging.current = true;
+    isDragging.current = true;
+    wasDragged.current = false;
+    const matrix = new WebKitCSSMatrix(
+      window.getComputedStyle(wrapper).transform
+    );
+    initialTranslate.current = matrix.m41;
+    startTime.current = e.timeStamp;
 
-    const style = window.getComputedStyle(wrapper);
-    const matrix = new WebKitCSSMatrix(style.transform);
-    const currentTranslateX = matrix.m41;
-    translate.current = Number(currentTranslateX);
-    initialTimeClick.current = e.timeStamp;
+    startPosition.current = "touches" in e ? -e.touches[0].pageX : -e.pageX;
+  };
 
-    if ("touches" in e) {
-      initialClick.current = -e.touches[0].pageX;
-    } else {
-      initialClick.current = -e.pageX;
-    }
-  }
-
-  function dragMove(e: MouseEvent | TouchEvent) {
-    if (!config.slide) return;
-
-    const parent = parentRef.current;
+  const handleDragMove = (e: MouseEvent | TouchEvent) => {
+    if (!isDragging.current || isShiftAllowed.current) return;
     const wrapper = wrapperRef.current;
-    if (!parent || !wrapper || !dragging.current || allowShift.current) return;
-    let getCurrentGrab = 0;
+    const parent = parentRef.current;
+    if (!wrapper || !parent) return;
 
-    if ("touches" in e) {
-      getCurrentGrab =
-        translate.current - (-e.touches[0].clientX - initialClick.current);
-    } else {
-      getCurrentGrab = translate.current - (-e.pageX - initialClick.current);
-    }
+    const currentX = "touches" in e ? e.touches[0].pageX : e.pageX;
+    const offset = -(currentX + startPosition.current);
+    const position = initialTranslate.current - offset;
 
-    if (-getCurrentGrab <= -50) return;
-    wrapper.style.transform = `translate3d(${getCurrentGrab}px, 0, 0)`;
+    wasDragged.current = true;
+    if (-position <= -50) return;
 
+    wrapper.style.transform = `translate3d(${position}px, 0, 0)`;
     parent.style.cursor = "grabbing";
-  }
+  };
 
-  function dragEnd(e: MouseEvent | TouchEvent) {
+  const handleDragEnd = (e: MouseEvent | TouchEvent) => {
     if (!config.slide) return;
-
+    isDragging.current = false;
     const parent = parentRef.current;
-    const wrapper = wrapperRef.current;
-    if (!parent || !wrapper) return;
-    dragging.current = false;
-    if (allowShift.current) return;
+    if (parent) parent.style.cursor = "auto";
 
-    parent.style.cursor = "auto";
-    const width = parent.clientWidth;
-    const howFast = e.timeStamp - initialTimeClick.current;
+    if (isShiftAllowed.current) return;
 
-    function movement(position: number) {
-      if (
-        initialClick.current < -position - width / 2 ||
-        (howFast <= 200 && initialClick.current < -position - 25)
-      ) {
-        changeItem(1);
-        return;
-      }
-      if (
-        initialClick.current > -position + width / 2 ||
-        (howFast <= 200 && initialClick.current > -position + 25)
-      ) {
-        changeItem(-1);
-        return;
-      }
-      changeItem(0);
+    const width = parent?.clientWidth || 0;
+    const duration = e.timeStamp - startTime.current;
+    const clientX = "changedTouches" in e ? e.changedTouches[0].pageX : e.pageX;
+
+    const threshold = duration <= 200 ? 25 : width / 2;
+
+    if (startPosition.current < -clientX - threshold) return changeItem(1);
+    if (startPosition.current > -clientX + threshold) return changeItem(-1);
+
+    changeItem(0);
+    setTimeout(() => (wasDragged.current = false), 0);
+  };
+
+  const handleLinkClick = (e: MouseEvent) => {
+    if (wasDragged.current) {
+      e.preventDefault();
+      e.stopPropagation();
+      wasDragged.current = false;
     }
-
-    if ("touches" in e) {
-      const pos = e.changedTouches[0].pageX;
-      movement(pos);
-    } else {
-      const pos = e.pageX;
-      movement(pos);
-    }
-  }
-
-  function dragOut(e: MouseEvent | TouchEvent) {
-    dragging.current = false;
-  }
+  };
 
   return (
     <div
       className={styles.carousel}
       ref={parentRef}
-      style={{ maxWidth: `${config.parentWidth}` }}
+      style={{ maxWidth: config.parentWidth }}
     >
       <div
-        className={`${styles.carousel_wrapper}`}
         ref={wrapperRef}
+        className={styles.carousel_wrapper}
         style={{
           gap: `${config.margin}px`,
           gridTemplateColumns: `repeat(${config.itemsLength}, calc(100% / ${config.itemsAppearance} - 1em))`,
         }}
-        onMouseDown={(e) => dragStart(e)}
-        onMouseMove={(e) => dragMove(e)}
-        onMouseUp={(e) => dragEnd(e)}
-        onMouseOut={(e) => dragOut(e)}
-        onTouchStart={(e) => dragStart(e)}
-        onTouchMove={(e) => dragMove(e)}
-        onTouchEndCapture={(e) => dragEnd(e)}
+        onMouseDown={handleDragStart}
+        onMouseMove={handleDragMove}
+        onMouseUp={handleDragEnd}
+        onMouseOut={() => (isDragging.current = false)}
+        onTouchStart={handleDragStart}
+        onTouchMove={handleDragMove}
+        onTouchEndCapture={handleDragEnd}
       >
-        {children.map((item) => cloneElement(item, {}))}
+        {children.map((child) =>
+          cloneElement(child, {
+            onClick: handleLinkClick,
+            draggable: false,
+          })
+        )}
       </div>
     </div>
   );

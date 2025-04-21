@@ -2,9 +2,7 @@
 @use "@/styles/_dirs/mixins" as mix;
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mix.Flex;
   border: 1px solid var.$clr-dark-normal;
   padding: 0.5em;
   background: transparent;
@@ -13,34 +11,31 @@
   transition: background 0.15s ease-in-out;
   width: 35px;
   aspect-ratio: 1/1;
+  position: relative;
 
-  &.normal {
-    svg {
-      display: block;
-      transform: scale(0);
-      opacity: 0;
-      animation: 1s ease-in-out forwards appear;
-    }
-
-    @keyframes appear {
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
+  > svg {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
 
-  &.dotting {
-    .dots {
+  > svg,
+  &_loading {
+    position: absolute;
+  }
+
+  &.loading {
+    > svg {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    .button_loading {
       display: flex;
     }
   }
 
-  > svg {
-    display: none;
-  }
-
-  .dots {
+  &_loading {
     display: none;
     justify-content: center;
     gap: 0.25em;
@@ -49,7 +44,7 @@
     .dot {
       background: var.$clr-dark-normal;
       border-radius: 50%;
-      width: calc(100% / 3 - 0.25em);
+      width: calc(70% / 3 - 0.25em);
       aspect-ratio: 1/1;
       opacity: 0;
       transform: scale(0);
