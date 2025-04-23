@@ -1,0 +1,73 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.message {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  padding: 1em;
+  min-width: 125px;
+  background: var.$neutral_color_100;
+  box-shadow: 0 0 5px #0003;
+  z-index: 999;
+  pointer-events: none;
+
+  border-radius: 0.5em;
+  opacity: 0;
+  transform: translate(-150px, 0);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+  &.visible {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  &.info {
+    svg,
+    h1 {
+      color: var.$support_color_mesg;
+    }
+  }
+
+  &.success {
+    svg,
+    h1 {
+      color: var.$support_color_scss;
+    }
+  }
+
+  &.error {
+    svg,
+    h1 {
+      color: var.$support_color_err;
+    }
+  }
+
+  &.warning {
+    svg,
+    h1 {
+      color: var.$support_color_warn;
+    }
+  }
+
+  &_title {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    .icon {
+      svg {
+        display: block;
+        font-size: 1.35em;
+      }
+    }
+
+    h1 {
+      font-size: 1.25em;
+    }
+  }
+
+  &_text {
+    margin-top: 0.25em;
+  }
+}

@@ -30,12 +30,17 @@ export default function Product(props: PropsType) {
         return defineMessage({
           title: "You can't do this action.",
           message: "This item is already in cart.",
+          type: "error",
         });
       }
 
       handleItem({ ...product, quantity: 1 });
       setIsLoading(false);
-      defineMessage({ title: "Sucess", message: "Item added successfully." });
+      defineMessage({
+        title: "Added to cart.",
+        message: "Item added successfully.",
+        type: "success",
+      });
     };
     setIsLoading(true);
     simulateDelay(insert);

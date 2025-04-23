@@ -29,7 +29,6 @@
 
   &_buttons {
     display: flex;
-    // flex-direction: column;
     gap: 0.5em;
 
     button {
@@ -37,7 +36,7 @@
       width: 100%;
 
       &:first-child {
-        background: var.$support_color_rght;
+        background: var.$support_color_scss;
       }
 
       &:last-child {

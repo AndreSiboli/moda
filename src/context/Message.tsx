@@ -1,48 +1,51 @@
 "use client";
 
-import { createContext, ReactNode, useState } from "react";
-import styles from "./Message.module.scss";
+import { createContext, ReactNode, useRef, useState } from "react";
+import Message from "@/components/messages/Message";
+
+type MessageProps = {
+  title: string;
+  message: string;
+  type: "success" | "error" | "warning" | "info";
+};
 
 interface MessageContextProps {
-  defineMessage: ({
-    title,
-    message,
-  }: {
-    title: string;
-    message: string;
-  }) => void;
+  defineMessage: (data: MessageProps) => void;
 }
 
 export const MessageContext = createContext({} as MessageContextProps);
 
 export function MessageProvider({ children }: { children: ReactNode }) {
-  const [message, setMessage] = useState("");
-  const [title, setTitle] = useState("");
+  const [message, setMessage] = useState({
+    title: "",
+    message: "",
+    type: "" as "success" | "error" | "warning" | "info",
+  });
+  const [isVisible, setIsVisible] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  function defineMessage({
-    title,
-    message,
-  }: {
-    title: string;
-    message: string;
-  }) {
-    setTitle(title);
-    setMessage(message);
+  function clearMessage() {
+    setIsVisible(false);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  }
+
+  function defineMessage(data: MessageProps) {
+    clearMessage();
+
     setTimeout(() => {
-      setTitle("");
-      setMessage("");
-    }, 8000);
+      setMessage(data);
+      setIsVisible(true);
+
+      timeoutRef.current = setTimeout(() => {
+        clearMessage();
+      }, 8000);
+    }, 650);
   }
 
   return (
     <MessageContext.Provider value={{ defineMessage }}>
       {children}
-      {message && (
-        <div className={styles.message}>
-          <h1>{title}</h1>
-          <p>{message}</p>
-        </div>
-      )}
+      <Message message={message} isVisible={isVisible} />
     </MessageContext.Provider>
   );
 }
