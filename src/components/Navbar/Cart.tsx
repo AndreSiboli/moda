@@ -10,9 +10,9 @@ import {
 } from "@/redux/features/cart-slice";
 import styles from "@/styles/navbar/Cart.module.scss";
 
-import CartHeader from "./cart/CartHeader";
-import CartBody from "./cart/CartBody";
-import CartFooter from "./cart/CartFooter";
+import CartHeader from "@/components/navbar/cart/CartHeader";
+import CartBody from "@/components/navbar/cart/CartBody";
+import CartFooter from "@/components/navbar/cart/CartFooter";
 import Purchase from "@/components/messages/Purchase";
 
 interface PropsType {

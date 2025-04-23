@@ -5,15 +5,15 @@ import { usePathname } from "next/navigation";
 import styles from "@/styles/navbar/Index.module.scss";
 
 import Link from "next/link";
-import Cart from "./Cart";
 import Logo from "@/components/layout/Logo";
 import Container from "@/components/layout/Container";
 import Dropdown from "@/components/buttons/Dropdown";
-import Collections from "./Collections";
-import Menu from "./Menu";
+import Cart from "@/components/navbar/Cart";
+import Collections from "@/components/navbar/Collections";
+import Menu from "@/components/navbar/Menu";
+import Store from "@/components/navbar/Store";
 
 import { PiShoppingCartSimple, PiUser } from "react-icons/pi";
-import Store from "./Store";
 
 export default function Navbar() {
   const path = usePathname();

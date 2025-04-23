@@ -4,8 +4,9 @@ import { useState } from "react";
 import styles from "@/styles/navbar/Menu.module.scss";
 
 import Link from "next/link";
-import Collection from "./Collections";
-import Store from "./Store";
+import Collection from "@/components/navbar/Collections";
+import Store from "@/components/navbar/Store";
+import Logo from "../layout/Logo";
 
 import {
   PiArrowLeft,
@@ -14,7 +15,6 @@ import {
   PiXLogo,
   PiFacebookLogo,
 } from "react-icons/pi";
-import Logo from "../layout/Logo";
 
 interface PropsType {
   isOpen: boolean;
