@@ -6,18 +6,18 @@ import { CartUserType } from "@/_types/CartType";
 import { formatToDecimal } from "@/utils/formatter";
 import { MessageContext } from "@/context/Message";
 import { useAppSelector } from "@/redux/store";
-import styles from "@/styles/layout/Item.module.scss";
+import styles from "@/styles/cards/ProductCard.module.scss";
 
-import CartButton from "@/components/buttons/CartButton";
+import CartButton from "@/components/ui/buttons/CartButton";
 import Img from "@/components/utils/Img";
-import Rating from "@/components/layout/Rating";
+import Rating from "@/components/common/Rating";
 
 interface PropsType {
   product: ProductType;
   handleItem: (prop: CartUserType) => void;
 }
 
-export default function Product(props: PropsType) {
+export default function ProductCard(props: PropsType) {
   const { product, handleItem } = props;
   const { defineMessage } = useContext(MessageContext);
   const [isLoading, setIsLoading] = useState(false);

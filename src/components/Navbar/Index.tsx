@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import styles from "@/styles/Navbar/Index.module.scss";
+import styles from "@/styles/navbar/Index.module.scss";
 
 import Link from "next/link";
 import Cart from "./Cart";

@@ -8,7 +8,7 @@ import {
   deleteItem,
   increaseTotal,
 } from "@/redux/features/cart-slice";
-import styles from "@/styles/Navbar/Cart.module.scss";
+import styles from "@/styles/navbar/Cart.module.scss";
 
 import CartHeader from "./cart/CartHeader";
 import CartBody from "./cart/CartBody";

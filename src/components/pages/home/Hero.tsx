@@ -5,9 +5,9 @@ import styles from "@/styles/pages/home/Hero.module.scss";
 import Container from "@/components/layout/Container";
 import Img from "@/components/utils/Img";
 import Link from "next/link";
-import LinkStyled from "@/components/links/LinkStyled";
-import Circle from "@/components/shapes/Circle";
-import Square from "@/components/shapes/Square";
+import LinkButton from "@/components/ui/links/LinkButton";
+import Circle from "@/components/ui/shapes/Circle";
+import Square from "@/components/ui/shapes/Square";
 
 import image from "@/assets/hero.png";
 import {
@@ -163,7 +163,7 @@ function HeroAction() {
       </div>
 
       <div className={styles.action_button}>
-        <LinkStyled text="Shop now" href="/under-construction" />
+        <LinkButton href="/under-construction" text="Shop now" variant="v1" />
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import styles from "@/styles/pages/home/Products.module.scss";
 
 import Container from "@/components/layout/Container";
 import CollectionCard from "@/components/cards/CollectionCard";
-import LinkButton from "@/components/links/LinkButton";
+import LinkBoxed from "@/components/ui/links/LinkBoxed";
 
 import genz1 from "@/assets/collections/genz/joshua-rondeau-MCd8GU4nz8M-unsplash.jpg";
 import genz2 from "@/assets/collections/genz/nina-hill-mqM8WHiuZPY-unsplash.jpg";
@@ -106,7 +106,7 @@ export default function Products() {
           </div>
 
           <div className={styles.products_button}>
-            <LinkButton href="/under-construction" text="See all sets" />
+            <LinkBoxed href="/under-construction" text="See all sets" />
           </div>
         </div>
       </Container>

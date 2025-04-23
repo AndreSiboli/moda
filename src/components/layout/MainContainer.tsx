@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 import styles from "@/styles/layout/MainContainer.module.scss";
 
-import Navbar from "@/components/Navbar/Index";
-import Footer from "@/components/Footer/Index";
+import Navbar from "@/components/navbar/Index";
+import Footer from "@/components/layout/Footer";
 
 interface PropsType {
   children: ReactNode;

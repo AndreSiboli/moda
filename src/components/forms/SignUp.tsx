@@ -5,7 +5,7 @@ import { MouseEvent } from "react";
 
 import Input from "../inputs/Input";
 import Link from "next/link";
-import Submit from "../buttons/Submit";
+import Submit from "../ui/buttons/Submit";
 
 interface PropsType {}
 
@@ -41,7 +41,7 @@ export default function FormSignUp(props: PropsType) {
       </div>
 
       <div className={styles.form_button}>
-        <Submit text="Sign Up" onClick={(e) => submit(e)} variant="v2"/>
+        <Submit text="Sign Up" onClick={(e) => submit(e)} variant="v2" />
       </div>
 
       <div className={styles.form_create}>

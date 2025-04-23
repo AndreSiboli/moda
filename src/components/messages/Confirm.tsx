@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "@/styles/messages/Confirm.module.scss";
 
-import Button from "@/components/buttons/Button";
+import Button from "@/components/ui/buttons/Button";
 
 interface PropsType {
   title: string;
@@ -29,8 +29,8 @@ export default function Confirm(props: PropsType) {
           <p>{text}</p>
         </div>
         <div className={styles.confirm_buttons}>
-          <Button text="Yes" handleFunction={() => confirm(true)} />
-          <Button text="No" handleFunction={() => confirm(false)} />
+          <Button text="Yes" onClick={() => confirm(true)} />
+          <Button text="No" onClick={() => confirm(false)} />
         </div>
       </div>
     </div>

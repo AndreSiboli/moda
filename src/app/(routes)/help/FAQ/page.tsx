@@ -1,7 +1,7 @@
 import styles from "@/styles/pages/help/FAQ.module.scss";
 
 import Container from "@/components/layout/Container";
-import Details from "@/components/layout/Details";
+import Details from "@/components/buttons/Details";
 import Img from "@/components/utils/Img";
 
 import heroWallpaper from "@/assets/faq.jpg";

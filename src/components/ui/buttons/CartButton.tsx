@@ -1,4 +1,4 @@
-import styles from "@/styles/buttons/CartButton.module.scss";
+import styles from "@/styles/ui/buttons/CartButton.module.scss";
 import { ComponentProps } from "react";
 import { PiBag } from "react-icons/pi";
 

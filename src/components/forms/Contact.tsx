@@ -4,7 +4,7 @@ import styles from "@/styles/forms/Contact.module.scss";
 import Input from "../inputs/Input";
 import Textarea from "../inputs/Textarea";
 import { MouseEvent } from "react";
-import Submit from "../buttons/Submit";
+import Submit from "../ui/buttons/Submit";
 
 interface PropsType {}
 
@@ -37,7 +37,7 @@ export default function ContactForm(props: PropsType) {
       </div>
 
       <div className={styles.form_button}>
-        <Submit text="Send us" onClick={(e) => submit(e)} />
+        <Submit text="Send us" onClick={(e) => submit(e)} variant="v2" />
       </div>
     </form>
   );

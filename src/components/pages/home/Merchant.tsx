@@ -3,7 +3,7 @@ import { Courier_Prime } from "next/font/google";
 
 import Container from "@/components/layout/Container";
 import Img from "@/components/utils/Img";
-import LinkButton from "@/components/links/LinkButton";
+import LinkBoxed from "@/components/ui/links/LinkBoxed";
 
 import mainImage from "@/assets/collections/genz/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg";
 import image2 from "@/assets/collections/genz/joshua-rondeau-xFAD1brcgQk-unsplash.jpg";
@@ -38,10 +38,7 @@ export default function Merchant() {
                   </p>
                 </div>
                 <div className={styles.info_button}>
-                  <LinkButton
-                    href="/collections/gen-z"
-                    text="See collection!"
-                  />
+                  <LinkBoxed href="/collections/gen-z" text="See collection!" />
                 </div>
               </div>
             </div>

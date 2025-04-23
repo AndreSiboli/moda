@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "@/styles/layout/Details.module.scss";
+import styles from "@/styles/buttons/Details.module.scss";
 
 interface PropsType {
   data: {

@@ -1,4 +1,4 @@
-import styles from "@/styles/Navbar/cart/CartHeader.module.scss";
+import styles from "@/styles/navbar/cart/CartHeader.module.scss";
 import { PiX } from "react-icons/pi";
 
 interface PropsType {

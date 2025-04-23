@@ -10,7 +10,7 @@ import {
   useState,
   useCallback,
 } from "react";
-import styles from "@/styles/carousel/Carousel.module.scss";
+import styles from "@/styles/common/Carousel.module.scss";
 
 interface CarouselProps {
   children: ReactElement<{

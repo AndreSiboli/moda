@@ -1,4 +1,4 @@
-import styles from "@/styles/Navbar/cart/CartBody.module.scss";
+import styles from "@/styles/navbar/cart/CartBody.module.scss";
 import CartCard from "@/components/cards/CartCard";
 import { CartUserType } from "@/_types/CartType";
 

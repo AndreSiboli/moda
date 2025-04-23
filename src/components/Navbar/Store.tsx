@@ -1,14 +1,14 @@
-import styles from "@/styles/Navbar/Store.module.scss";
+import styles from "@/styles/navbar/Store.module.scss";
 
 import Link from "next/link";
 import Img from "@/components/utils/Img";
-import Carousel from "@/components/carousel/Carousel";
+import Carousel from "@/components/common/Carousel";
 
 import jewelry from "@/assets/products/jewelry/natali-hordiiuk-6xUNKC6sutk-unsplash.jpg";
 import dress from "@/assets/products/dresses/jesus-santos-rUSJt8Y6Alw-unsplash.jpg";
 import intimate from "@/assets/products/intimate/riccardo-carlo-rossi-x90HeQHJ1yE-unsplash.jpg";
 
-import { PiHandSwipeLeft, PiLink } from "react-icons/pi";
+import { PiHandSwipeLeft } from "react-icons/pi";
 
 export default function Store() {
   const images = [

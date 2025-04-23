@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "@/styles/Navbar/Menu.module.scss";
+import styles from "@/styles/navbar/Menu.module.scss";
 
 import Link from "next/link";
 import Collection from "./Collections";

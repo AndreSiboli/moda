@@ -3,9 +3,8 @@
 import { formatToDecimal } from "@/utils/formatter";
 import styles from "@/styles/messages/Purchase.module.scss";
 
-import Button from "@/components/buttons/Button";
-import SimpleButton from "@/components/buttons/SimpleButton";
-
+import Button from "@/components/ui/buttons/Button";
+import SimpleButton from "@/components/ui/buttons/SimpleButton";
 
 interface PropsType {
   total: number;
@@ -31,8 +30,8 @@ export default function Purchase(props: PropsType) {
           <p className={styles.price}>${formatToDecimal(total, 2)}</p>
         </div>
         <div className={styles.confirm_buttons}>
-          <Button text="Proceed" handleFunction={() => confirm(true)} />
-          <SimpleButton text="Not yet" handleFunction={() => confirm(false)} />
+          <Button text="Proceed" onClick={() => confirm(true)} />
+          <SimpleButton text="Not yet" onClick={() => confirm(false)} />
         </div>
       </div>
     </div>

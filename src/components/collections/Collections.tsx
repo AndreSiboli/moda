@@ -13,7 +13,7 @@ import { insertItem } from "@/redux/features/cart-slice";
 
 import Sort from "@/components/collections/Sort";
 import Radio from "@/components/collections/Radio";
-import Product from "@/components/layout/Product";
+import ProductCard from "@/components/cards/ProductCard";
 
 interface PropsType {
   data: ProductType[];
@@ -35,7 +35,7 @@ export default function Collection(props: PropsType) {
     setSort(str);
   }
 
-  function addProduct(product: ProductType & {quantity: number}) {
+  function addProduct(product: ProductType & { quantity: number }) {
     dispatch(insertItem(product));
   }
 
@@ -65,7 +65,7 @@ export default function Collection(props: PropsType) {
       </div>
       <div className={`${styles.collection_group} ${styles[grid]}`}>
         {products.map((item) => (
-          <Product product={item} key={item.id} handleItem={addProduct} />
+          <ProductCard product={item} key={item.id} handleItem={addProduct} />
         ))}
       </div>
     </section>

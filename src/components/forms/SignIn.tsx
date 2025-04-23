@@ -5,7 +5,7 @@ import { MouseEvent } from "react";
 
 import Input from "../inputs/Input";
 import Link from "next/link";
-import Submit from "../buttons/Submit";
+import Submit from "../ui/buttons/Submit";
 
 export default function FormSignIn() {
   function submit(e: MouseEvent<HTMLButtonElement>) {

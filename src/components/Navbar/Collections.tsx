@@ -1,8 +1,8 @@
-import styles from "@/styles/Navbar/Collections.module.scss";
+import styles from "@/styles/navbar/Collections.module.scss";
 
 import Link from "next/link";
 import Img from "@/components/utils/Img";
-import Carousel from "@/components/carousel/Carousel";
+import Carousel from "@/components/common/Carousel";
 
 import summer from "@/assets/collections/summer/matas-katinas-jYDRaDUfYsA-unsplash.jpg";
 import genz from "@/assets/collections/genz/joshua-rondeau-TG8vuPf2O-I-unsplash.jpg";

@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 import { formatToDecimal } from "@/utils/formatter";
 import styles from "@/styles/cards/CartCard.module.scss";
 
-import Rating from "@/components/layout/Rating";
+import Rating from "@/components/common/Rating";
 import Quantity from "@/components/inputs/Quantity";
 import Img from "@/components/utils/Img";
 

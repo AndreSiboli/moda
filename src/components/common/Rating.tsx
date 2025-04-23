@@ -1,5 +1,4 @@
-import styles from "@/styles/layout/Rating.module.scss";
-
+import styles from "@/styles/common/Rating.module.scss";
 import { PiStar, PiStarFill, PiStarHalfFill } from "react-icons/pi";
 
 interface PropsType {

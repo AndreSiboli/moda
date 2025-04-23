@@ -1,10 +1,10 @@
 import React from "react";
 import { Courier_Prime } from "next/font/google";
-import styles from "@/styles/Footer/Index.module.scss";
+import styles from "@/styles/layout/Footer.module.scss";
 
-import Container from "../layout/Container";
+import Container from "./Container";
 import Link from "next/link";
-import Logo from "../layout/Logo";
+import Logo from "./Logo";
 
 import {
   PiInstagramLogo,

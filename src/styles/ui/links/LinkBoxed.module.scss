@@ -11,17 +11,17 @@
 
   @include mix.OnlyPc {
     &:hover {
-      .button:after {
+      .link_span:after {
         width: 110%;
       }
 
-      .button:before {
+      .link_span:before {
         height: 100%;
       }
     }
   }
 
-  .button {
+  &_span {
     display: block;
     margin: 0 auto;
     width: 90%;

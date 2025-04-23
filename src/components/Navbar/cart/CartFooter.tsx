@@ -1,5 +1,5 @@
-import Submit from "@/components/buttons/Submit";
-import styles from "@/styles/Navbar/cart/CartFooter.module.scss";
+import Submit from "@/components/ui/buttons/Submit";
+import styles from "@/styles/navbar/cart/CartFooter.module.scss";
 import { formatToDecimal } from "@/utils/formatter";
 
 interface CartFooterType {
@@ -17,7 +17,7 @@ export default function CartFooter(props: CartFooterType) {
       </div>
 
       <div className={styles.footer_button}>
-        <Submit text="Confirm Order" onClick={handleSubmit} variant="v2"/>
+        <Submit text="Confirm Order" onClick={handleSubmit} variant="v2" />
       </div>
     </footer>
   );
