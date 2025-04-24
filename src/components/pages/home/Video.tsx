@@ -6,6 +6,7 @@ import styles from "@/styles/pages/home/Video.module.scss";
 import Container from "@/components/layout/Container";
 
 import { PiPause, PiPlay } from "react-icons/pi";
+import LinkButton from "@/components/ui/links/LinkButton";
 
 export default function Video() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -20,7 +21,7 @@ export default function Video() {
 
   return (
     <div className={styles.merchant_video}>
-      <div className={styles.video}>
+      <div className={styles.video_container}>
         <video
           src="./video.mp4"
           className={styles.video_mp4}
@@ -28,7 +29,7 @@ export default function Video() {
           autoPlay
           muted
           ref={videoRef}
-        ></video>
+        />
 
         <div className={styles.video_manager}>
           <Container>
@@ -39,6 +40,9 @@ export default function Video() {
             </div>
           </Container>
         </div>
+      </div>
+      <div className={styles.video_footer}>
+        <LinkButton href="/collections/summer" text="Swim now!" variant="v1"/>
       </div>
     </div>
   );

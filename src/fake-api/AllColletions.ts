@@ -1,11 +1,11 @@
 import { CollectionType } from "@/_types/CollectionType";
 
-import summer1 from "@/assets/collections/summer/alexander-grey-NXom4fEGDes-unsplash.jpg";
+import summer1 from "@/assets/collections/summer/sexto-abismo-ginebra-aEi9gK09kT4-unsplash.jpg";
 import summer2 from "@/assets/collections/summer/alexander-jawfox-zXa0Peaq30U-unsplash.jpg";
 import summer3 from "@/assets/collections/summer/christopher-campbell-483r_jIASq0-unsplash.jpg";
 import summer4 from "@/assets/collections/summer/jernej-graj-8y6L01KFagQ-unsplash.jpg";
 import summer5 from "@/assets/collections/summer/matas-katinas-jYDRaDUfYsA-unsplash.jpg";
-import summer6 from "@/assets/collections/summer/stepan-kalinin-z7zHwR5v-bA-unsplash.jpg";
+import summer6 from "@/assets/collections/summer/sexto-abismo-ginebra-uFXXP1hwsvs-unsplash.jpg";
 import summer7 from "@/assets/collections/summer/sule-makaroglu-8QF8cD0T26w-unsplash.jpg";
 import summer7p2 from "@/assets/collections/summer/sule-makaroglu-pu2DMQ-Bi5s-unsplash.jpg";
 import summer8 from "@/assets/collections/summer/sule-makaroglu-33GgRmC_Huc-unsplash.jpg";
@@ -67,7 +67,7 @@ const summer25: CollectionType[] = [
     price: 39.99,
     stock: 16,
     rating: {
-      score: 4.4,
+      score: 4.8,
       votes: 115,
     },
     description:
@@ -75,8 +75,8 @@ const summer25: CollectionType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Alexander Grey",
-      url: "https://unsplash.com/pt-br/@sharonmccutcheon",
+      name: "Sexto Abismo",
+      url: "https://unsplash.com/pt-br/@sextoabismo",
     },
   },
   {
@@ -177,7 +177,7 @@ const summer25: CollectionType[] = [
     price: 42.99,
     stock: 18,
     rating: {
-      score: 4.2,
+      score: 4.7,
       votes: 135,
     },
     description:
@@ -185,8 +185,8 @@ const summer25: CollectionType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Stepan Kalinin",
-      url: "https://unsplash.com/pt-br/@incrprl",
+      name: "Sexto Abismo",
+      url: "https://unsplash.com/pt-br/@sextoabismo",
     },
   },
   {

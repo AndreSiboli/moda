@@ -2,70 +2,82 @@
 @use "@/styles/_dirs/mixins" as mix;
 
 .merchant_video {
-  .video_container {
-    padding: 4em 1em;
-
-    h1 {
-      margin-bottom: 1em;
-      text-align: center;
-    }
-
-    .video_button {
-      margin: 0 auto;
-      width: fit-content;
-    }
-  }
-
-  span {
-    display: block;
-    width: 40%;
-    background: var.$brand_color_400;
-    height: 1px;
-    margin: 0 auto;
-  }
-}
-
-.video {
-  width: 100%;
-  overflow: hidden;
-  max-height: 100vh;
-  height: 100vh;
-  margin-top: 7em;
   position: relative;
+  height: 500vh;
+  overflow: clip;
 
-  @media (min-width: 1620px) {
-    max-height: 600px;
-  }
-
-  &_mp4 {
-    background: var.$brand_color_100;
-    object-fit: cover;
-    object-position: center;
+  .video_container {
+    overflow: clip;
     width: 100%;
-    height: 100%;
-    position: absolute;
-  }
+    max-height: 100dvh;
+    height: 100dvh;
+    margin-top: 7em;
+    position: sticky;
+    top: 0;
 
-  &_manager {
-    position: absolute;
-    inset: 0;
+    //Sass was bug, so I had to not use shorthand
+    animation-name: scale;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
+    animation-range: entry 30% exit 85%;
 
-    .manager_container {
-      display: flex;
-      align-items: flex-end;
+    .video_mp4 {
+      background: var.$brand_color_100;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
       height: 100%;
-      padding-bottom: 2em;
+      position: absolute;
+    }
 
-      button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+    .video_manager {
+      position: absolute;
+      inset: 0;
+      padding-left: 2em;
 
-        svg {
-          font-size: 2em;
-          color: var.$clr-light-hard;
+      .manager_container {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+
+        padding-bottom: 2em;
+
+        button {
+          background: transparent;
+          border: none;
+          cursor: pointer;
+
+          svg {
+            font-size: 2em;
+            color: var.$clr-light-hard;
+          }
         }
       }
     }
+  }
+
+  .video_footer {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px #0003;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  10% {
+    border-radius: 1em;
+  }
+
+  90%,
+  100% {
+    border-radius: 1em;
+    transform: scale(0.65);
   }
 }

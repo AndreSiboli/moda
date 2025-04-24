@@ -1,115 +1,151 @@
-import styles from "@/styles/pages/home/Products.module.scss";
+"use client";
 
+import { CSSProperties, useEffect, useState } from "react";
+import { StaticImageData } from "next/image";
+import styles from "@/styles/pages/home/Products.module.scss";
 import Container from "@/components/layout/Container";
-import CollectionCard from "@/components/cards/CollectionCard";
-import LinkBoxed from "@/components/ui/links/LinkBoxed";
+import Radio from "@/components/inputs/Radio";
+import CollectionSection from "@/components/layout/CollectionSection";
 
 import genz1 from "@/assets/collections/genz/joshua-rondeau-MCd8GU4nz8M-unsplash.jpg";
 import genz2 from "@/assets/collections/genz/nina-hill-mqM8WHiuZPY-unsplash.jpg";
 import genz3 from "@/assets/collections/genz/mahdi-chaghari-Z7DdU3d8UDc-unsplash.jpg";
-import summer1 from "@/assets/collections/summer/christopher-campbell-483r_jIASq0-unsplash.jpg";
+import genz4 from "@/assets/collections/genz/ayo-ogunseinde-0im7yfJ3qog-unsplash.jpg";
+import summer1 from "@/assets/collections/summer/tudor-adrian-gloe7HNn4g4-unsplash.jpg";
 import summer2 from "@/assets/collections/summer/alexander-jawfox-zXa0Peaq30U-unsplash.jpg";
-import summer3 from "@/assets/collections/summer/sule-makaroglu-pu2DMQ-Bi5s-unsplash.jpg";
-import sport1 from "@/assets/collections/sport/sergey-sokolov-cO-5xW3uDxo-unsplash.jpg";
-import sport2 from "@/assets/collections/sport/sergey-sokolov-z2L4PU8xZEk-unsplash.jpg";
-import sport3 from "@/assets/collections/sport/sheldon-5mTOegXTMUM-unsplash.jpg";
-import spring1 from "@/assets/collections/spring/bailey-burton-jN8PVzZQ9iQ-unsplash.jpg";
+import summer3 from "@/assets/collections/summer/sexto-abismo-ginebra-uFXXP1hwsvs-unsplash.jpg";
+import summer4 from "@/assets/collections/summer/sexto-abismo-ginebra-aEi9gK09kT4-unsplash.jpg";
+import sport1 from "@/assets/collections/sport/artem-mihailov-XGPXbVNu6e8-unsplash.jpg";
+import sport2 from "@/assets/collections/sport/sheldon-5mTOegXTMUM-unsplash.jpg";
+import sport3 from "@/assets/collections/sport/sergey-sokolov-cO-5xW3uDxo-unsplash.jpg";
+import sport4 from "@/assets/collections/sport/tony-luginsland-ofaBcg1xZL0-unsplash.jpg";
+import spring1 from "@/assets/collections/spring/sule-makaroglu-hP-aYOy1284-unsplash.jpg";
+import spring3 from "@/assets/collections/spring/bailey-burton-jN8PVzZQ9iQ-unsplash.jpg";
 import spring2 from "@/assets/collections/spring/sam-chapman-rEA2MzwxGmY-unsplash.jpg";
-import spring3 from "@/assets/collections/spring/sule-makaroglu-hP-aYOy1284-unsplash.jpg";
+import spring4 from "@/assets/collections/spring/jasmin-chew-e_fwWMPw97Y-unsplash.jpg";
+
+interface CollectionType {
+  name: string;
+  text: string;
+  images: {
+    src: StaticImageData;
+    alt: string;
+    style?: CSSProperties;
+  }[];
+}
 
 export default function Products() {
-  const collections = [
+  const [currentCollection, setCurrentCollection] = useState("Sport");
+  const [collection, setCollection] = useState<CollectionType | null>(null);
+  const [animation, setAnimation] = useState(false);
+  const collectionsList: CollectionType[] = [
     {
-      mainSet: {
-        src: genz1,
-        href: "/under-construction",
-      },
-      subSet: [
-        {
-          src: genz2,
-          href: "/under-construction",
-        },
-        {
-          src: genz3,
-          href: "/under-construction",
-        },
+      name: "Gen Z",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci, tenetur itaque officiis necessitatibus iste consectetur veniam nulla animi aperiam perferendis in ut optio deleniti cupiditate at sed temporibus quo!",
+      images: [
+        { src: genz1, alt: "", style: { objectPosition: "center 80%" } },
+        { src: genz2, alt: "", style: { objectPosition: "center 100%" } },
+        { src: genz3, alt: "" },
+        { src: genz4, alt: "", style: { objectPosition: "center 70%" } },
       ],
     },
     {
-      mainSet: {
-        src: summer1,
-        href: "/under-construction",
-      },
-      subSet: [
-        {
-          src: summer2,
-          href: "/under-construction",
-        },
-        {
-          src: summer3,
-          href: "/under-construction",
-        },
+      name: "Summer",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci, tenetur itaque officiis necessitatibus iste consectetur veniam nulla animi aperiam perferendis in ut optio deleniti cupiditate at sed temporibus quo!",
+      images: [
+        { src: summer1, alt: "" },
+        { src: summer2, alt: "", style: { objectPosition: "center 30%" } },
+        { src: summer3, alt: "" },
+        { src: summer4, alt: "" },
       ],
     },
     {
-      mainSet: {
-        src: sport1,
-        href: "/under-construction",
-      },
-      subSet: [
-        {
-          src: sport2,
-          href: "/under-construction",
-        },
-        {
-          src: sport3,
-          href: "/under-construction",
-        },
+      name: "Spring",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci, tenetur itaque officiis necessitatibus iste consectetur veniam nulla animi aperiam perferendis in ut optio deleniti cupiditate at sed temporibus quo!",
+      images: [
+        { src: spring1, alt: "", style: { objectPosition: "center 100%" } },
+        { src: spring2, alt: "", style: { objectPosition: "center 80%" } },
+        { src: spring3, alt: "" },
+        { src: spring4, alt: "", style: { objectPosition: "center 100%" } },
       ],
     },
     {
-      mainSet: {
-        src: spring1,
-        href: "/under-construction",
-      },
-      subSet: [
-        {
-          src: spring2,
-          href: "/under-construction",
-        },
-        {
-          src: spring3,
-          href: "/under-construction",
-        },
+      name: "Sport",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci, tenetur itaque officiis necessitatibus iste consectetur veniam nulla animi aperiam perferendis in ut optio deleniti cupiditate at sed temporibus quo!",
+      images: [
+        { src: sport1, alt: "", style: { objectPosition: "center 60%" } },
+        { src: sport2, alt: "" },
+        { src: sport3, alt: "", style: { objectPosition: "center 80%" } },
+        { src: sport4, alt: "", style: { objectPosition: "center 40%" } },
       ],
     },
   ];
+  const radios = [
+    {
+      text: "Sport",
+      name: "collection",
+      id: "sport",
+      value: "Sport",
+    },
+    {
+      text: "Summer",
+      name: "collection",
+      id: "summer",
+      value: "Summer",
+    },
+    {
+      text: "Gen Z",
+      name: "collection",
+      id: "genz",
+      value: "Gen Z",
+    },
+    {
+      text: "Spring",
+      name: "collection",
+      id: "spring",
+      value: "Spring",
+    },
+  ];
 
-  return (
+  useEffect(() => {
+    const arr = collectionsList.find((item) => item.name === currentCollection);
+    if (arr) {
+      setAnimation(true);
+      setTimeout(() => {
+        setCollection(arr);
+        setTimeout(() => {
+          setAnimation(false);
+        }, 125);
+      }, 175);
+    }
+  }, [currentCollection]);
+
+  return collection ? (
     <div className={styles.products}>
       <Container>
         <div className={styles.products_container}>
-          <div className={styles.products_header}>
-            <h1>Collections</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, est.
-            </p>
+          <div
+            className={`${styles.products_wrapper} ${
+              animation ? styles.animated : ""
+            }`}
+          >
+            <CollectionSection collection={collection} />
           </div>
 
-          <div className={styles.products_collections}>
-            {collections.map((collection) => (
-              <CollectionCard
-                collection={collection}
-                key={collection.mainSet.src.src}
+          <div className={styles.products_manager}>
+            {radios.map((item) => (
+              <Radio
+                {...item}
+                key={item.id}
+                defaultChecked={item.value === currentCollection}
+                onChange={(e) => setCurrentCollection(e.target.value)}
               />
             ))}
-          </div>
-
-          <div className={styles.products_button}>
-            <LinkBoxed href="/under-construction" text="See all sets" />
           </div>
         </div>
       </Container>
     </div>
+  ) : (
+    <div style={{ marginBottom: "2em" }} />
   );
 }

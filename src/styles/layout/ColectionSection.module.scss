@@ -1,0 +1,62 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.collection {
+  display: flex;
+  gap: 1em;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_wrapper,
+  &_side {
+    flex: 1 1 50%;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  &_wrapper {
+    .collection_header {
+      h1 {
+        color: var.$brand_color_500;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        color: var.$neutral_color_700;
+      }
+    }
+
+    .collection_images {
+      display: flex;
+      gap: 1em;
+
+      .image_container {
+        aspect-ratio: 1/1;
+        margin-top: 3em;
+      }
+    }
+  }
+
+  &_side {
+    display: flex;
+    gap: 1em;
+
+    .image_container {
+      height: 100%;
+    }
+  }
+
+  .image_container {
+    position: relative;
+    background: var.$brand_color_100;
+    width: 100%;
+
+    @media (max-width: 1100px) {
+      height: auto;
+      aspect-ratio: 1/1;
+    }
+  }
+}

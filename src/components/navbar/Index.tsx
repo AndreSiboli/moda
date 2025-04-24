@@ -92,14 +92,14 @@ export default function Navbar() {
 
   function defineIsMenuOpen() {
     if (isMenuOpen) document.body.style.overflow = "auto";
-    else document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "cllp";
 
     setIsMenuOpen((prevState) => !prevState);
   }
 
   function defineIsCart() {
     if (isCartOpen) document.body.style.overflow = "auto";
-    else document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "clip";
 
     setIsCartOpen((prevState) => !prevState);
   }
