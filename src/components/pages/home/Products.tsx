@@ -12,7 +12,7 @@ import genz2 from "@/assets/collections/genz/nina-hill-mqM8WHiuZPY-unsplash.jpg"
 import genz3 from "@/assets/collections/genz/mahdi-chaghari-Z7DdU3d8UDc-unsplash.jpg";
 import genz4 from "@/assets/collections/genz/ayo-ogunseinde-0im7yfJ3qog-unsplash.jpg";
 import summer1 from "@/assets/collections/summer/tudor-adrian-gloe7HNn4g4-unsplash.jpg";
-import summer2 from "@/assets/collections/summer/alexander-jawfox-zXa0Peaq30U-unsplash.jpg";
+import summer2 from "@/assets/collections/summer/gus-tu-njana-stWKm45jVds-unsplash.jpg";
 import summer3 from "@/assets/collections/summer/sexto-abismo-ginebra-uFXXP1hwsvs-unsplash.jpg";
 import summer4 from "@/assets/collections/summer/sexto-abismo-ginebra-aEi9gK09kT4-unsplash.jpg";
 import sport1 from "@/assets/collections/sport/artem-mihailov-XGPXbVNu6e8-unsplash.jpg";
@@ -54,7 +54,7 @@ export default function Products() {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci, tenetur itaque officiis necessitatibus iste consectetur veniam nulla animi aperiam perferendis in ut optio deleniti cupiditate at sed temporibus quo!",
       images: [
         { src: summer1, alt: "" },
-        { src: summer2, alt: "", style: { objectPosition: "center 30%" } },
+        { src: summer2, alt: "" },
         { src: summer3, alt: "" },
         { src: summer4, alt: "" },
       ],

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Img from "@/components/utils/Img";
 import Carousel from "@/components/common/Carousel";
 
-import summer from "@/assets/collections/summer/matas-katinas-jYDRaDUfYsA-unsplash.jpg";
+import summer from "@/assets/collections/summer/pexels-eduardordone-2602717.jpg";
 import genz from "@/assets/collections/genz/joshua-rondeau-TG8vuPf2O-I-unsplash.jpg";
 import sport from "@/assets/collections/sport/mahdi-chaghari-C0iF9gJ3TWs-unsplash.jpg";
 import spring from "@/assets/collections/spring/pexels-vitoriasantos-3050943.jpg";

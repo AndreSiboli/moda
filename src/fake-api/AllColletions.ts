@@ -1,17 +1,15 @@
 import { CollectionType } from "@/_types/CollectionType";
 
 import summer1 from "@/assets/collections/summer/sexto-abismo-ginebra-aEi9gK09kT4-unsplash.jpg";
-import summer2 from "@/assets/collections/summer/alexander-jawfox-zXa0Peaq30U-unsplash.jpg";
-import summer3 from "@/assets/collections/summer/christopher-campbell-483r_jIASq0-unsplash.jpg";
-import summer4 from "@/assets/collections/summer/jernej-graj-8y6L01KFagQ-unsplash.jpg";
-import summer5 from "@/assets/collections/summer/matas-katinas-jYDRaDUfYsA-unsplash.jpg";
+import summer2 from "@/assets/collections/summer/gus-tu-njana-stWKm45jVds-unsplash.jpg";
+import summer3 from "@/assets/collections/summer/dmitry-ganin-LDM-hkWsoOQ-unsplash.jpg";
+import summer4 from "@/assets/collections/summer/keith-tanner-dxdASzd-bu0-unsplash.jpg";
+import summer5 from "@/assets/collections/summer/pexels-eduardordone-2602717.jpg";
 import summer6 from "@/assets/collections/summer/sexto-abismo-ginebra-uFXXP1hwsvs-unsplash.jpg";
-import summer7 from "@/assets/collections/summer/sule-makaroglu-8QF8cD0T26w-unsplash.jpg";
-import summer7p2 from "@/assets/collections/summer/sule-makaroglu-pu2DMQ-Bi5s-unsplash.jpg";
-import summer8 from "@/assets/collections/summer/sule-makaroglu-33GgRmC_Huc-unsplash.jpg";
-import summer8p2 from "@/assets/collections/summer/sule-makaroglu-BSOVhRtTH7c-unsplash.jpg";
-import summer9 from "@/assets/collections/summer/tamara-bellis-NXJMAp4csx0-unsplash.jpg";
-import summer10 from "@/assets/collections/summer/tamara-bellis-y4eKeASlLok-unsplash.jpg";
+import summer7 from "@/assets/collections/summer/pexels-alesiakozik-6637450.jpg";
+import summer8 from "@/assets/collections/summer/diego-acosta-irZxUnbcR9g-unsplash.jpg";
+import summer9 from "@/assets/collections/summer/pexels-alesiakozik-6641970.jpg";
+import summer10 from "@/assets/collections/summer/jasmin-chew-43iuA0mu4L8-unsplash.jpg";
 import summer11 from "@/assets/collections/summer/tamara-bellis-yAsdIQKrXfU-unsplash.jpg";
 import summer12 from "@/assets/collections/summer/tudor-adrian-gloe7HNn4g4-unsplash.jpg";
 
@@ -89,7 +87,7 @@ const summer25: CollectionType[] = [
     price: 45.5,
     stock: 10,
     rating: {
-      score: 4.3,
+      score: 4.7,
       votes: 85,
     },
     description:
@@ -97,8 +95,8 @@ const summer25: CollectionType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Alexander Jawfox",
-      url: "https://unsplash.com/pt-br/@jawfox_photography",
+      name: "Gus Tu Njana",
+      url: "https://unsplash.com/pt-br/@njanatugus",
     },
   },
   {
@@ -119,8 +117,8 @@ const summer25: CollectionType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Christopher Campbell",
-      url: "https://unsplash.com/pt-br/@chrisjoelcampbell ",
+      name: "Dmitry Ganin",
+      url: "https://unsplash.com/pt-br/@ganinph",
     },
   },
   {
@@ -133,7 +131,7 @@ const summer25: CollectionType[] = [
     price: 47.99,
     stock: 13,
     rating: {
-      score: 4.3,
+      score: 4.5,
       votes: 150,
     },
     description:
@@ -141,8 +139,8 @@ const summer25: CollectionType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Jernej Graj",
-      url: "https://unsplash.com/pt-br/@jernejgraj",
+      name: "Keith Tanner",
+      url: "https://unsplash.com/pt-br/@keithtanman",
     },
   },
   {
@@ -163,8 +161,8 @@ const summer25: CollectionType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Matas Katinas",
-      url: "http://unsplash.com/pt-br/@matuxee",
+      name: "Eduardo Ordone",
+      url: "https://www.pexels.com/pt-br/@eduardordone/",
     },
   },
   {
@@ -195,7 +193,6 @@ const summer25: CollectionType[] = [
     images: {
       src: summer7,
       alt: "",
-      subImages: [{ src: summer7p2, alt: "" }],
     },
     price: 50.5,
     stock: 20,
@@ -208,8 +205,8 @@ const summer25: CollectionType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Sule Makaroglu",
-      url: "https://unsplash.com/pt-br/@sulemakaroglu",
+      name: "Alesia Kozik",
+      url: "https://www.pexels.com/pt-br/@alesiakozik/",
     },
   },
   {
@@ -218,7 +215,6 @@ const summer25: CollectionType[] = [
     images: {
       src: summer8,
       alt: "",
-      subImages: [{ src: summer8p2, alt: "" }],
     },
     price: 38.99,
     stock: 12,
@@ -231,8 +227,8 @@ const summer25: CollectionType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Sule Makaroglu",
-      url: "https://unsplash.com/pt-br/@sulemakaroglu",
+      name: "diego acosta",
+      url: "https://unsplash.com/pt-br/@djab1998",
     },
   },
   {
@@ -253,8 +249,8 @@ const summer25: CollectionType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Tamara Bellis",
-      url: "https://unsplash.com/pt-br/@tamarabellis",
+      name: "Alesia Kozik",
+      url: "https://www.pexels.com/pt-br/@alesiakozik/",
     },
   },
   {
@@ -275,8 +271,8 @@ const summer25: CollectionType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Tamara Bellis",
-      url: "https://unsplash.com/pt-br/@tamarabellis",
+      name: "Jasmin Chew",
+      url: "https://unsplash.com/pt-br/@majestical_jasmin",
     },
   },
   {
