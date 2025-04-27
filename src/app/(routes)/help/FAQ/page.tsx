@@ -6,50 +6,51 @@ import Img from "@/components/utils/Img";
 
 import heroWallpaper from "@/assets/faq.jpg";
 
+
 export default function FAQ() {
   const questions = [
     {
-      text: "Can I resell in my store?",
+      title: "Can I resell in my store?",
       content:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis repellat tempore impedit est ab eligendi, ducimus optio dolore quis inventore provident excepturi atque sint molestias totam corporis cum obcaecati fugiat?",
     },
     {
-      text: "What payment methods do you have?",
+      title: "What payment methods do you have?",
       content:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis repellat tempore impedit est ab eligendi, ducimus optio dolore quis inventore provident excepturi atque sint molestias totam corporis cum obcaecati fugiat?",
     },
     {
-      text: "Can I cancel my order?",
+      title: "Can I cancel my order?",
       content:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis repellat tempore impedit est ab eligendi, ducimus optio dolore quis inventore provident excepturi atque sint molestias totam corporis cum obcaecati fugiat?",
     },
     {
-      text: "Can I personilize my items?",
+      title: "Can I personilize my items?",
       content:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis repellat tempore impedit est ab eligendi, ducimus optio dolore quis inventore provident excepturi atque sint molestias totam corporis cum obcaecati fugiat?",
     },
     {
-      text: "How do I know my size?",
+      title: "How do I know my size?",
       content:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis repellat tempore impedit est ab eligendi, ducimus optio dolore quis inventore provident excepturi atque sint molestias totam corporis cum obcaecati fugiat?",
     },
     {
-      text: "Where are Moda products made?",
+      title: "Where are Moda products made?",
       content:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis repellat tempore impedit est ab eligendi, ducimus optio dolore quis inventore provident excepturi atque sint molestias totam corporis cum obcaecati fugiat?",
     },
     {
-      text: "Why is my account not working?",
+      title: "Why is my account not working?",
       content:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis repellat tempore impedit est ab eligendi, ducimus optio dolore quis inventore provident excepturi atque sint molestias totam corporis cum obcaecati fugiat?",
     },
     {
-      text: "What is Moda?",
+      title: "What is Moda?",
       content:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis repellat tempore impedit est ab eligendi, ducimus optio dolore quis inventore provident excepturi atque sint molestias totam corporis cum obcaecati fugiat?",
     },
     {
-      text: "Are my products delivered?",
+      title: "Are my products delivered?",
       content:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis repellat tempore impedit est ab eligendi, ducimus optio dolore quis inventore provident excepturi atque sint molestias totam corporis cum obcaecati fugiat?",
     },
@@ -59,7 +60,7 @@ export default function FAQ() {
     <div className={styles.faq}>
       <div className={styles.faq_images}>
         <figure className={styles.image_container}>
-          <Img src={heroWallpaper} />
+          <Img src={heroWallpaper} styles={{objectPosition: '50% 10%'}}/>
         </figure>
       </div>
       <Container>
@@ -69,7 +70,10 @@ export default function FAQ() {
           </div>
           <div className={styles.faq_wrapper}>
             {questions.map((question) => (
-              <Details data={question} key={question.text}/>
+              <Details
+                data={question}
+                key={question.title}
+              />
             ))}
           </div>
         </div>

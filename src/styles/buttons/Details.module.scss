@@ -3,7 +3,7 @@
 
 .details {
   width: 100%;
-  transition: background 0.25s ease-in-out;
+  transition: background .15s ease-in-out;
   height: fit-content;
   border-bottom: 1px solid var.$neutral_color_900;
 
@@ -17,7 +17,7 @@
     cursor: pointer;
 
     border-radius: 0.25em;
-    transition: background 0.25s ease-in-out;
+    transition: background .15s ease-in-out;
 
     @include mix.OnlyPc {
       &:hover {
