@@ -16,8 +16,8 @@ import summer2 from "@/assets/collections/summer/gus-tu-njana-stWKm45jVds-unspla
 import summer3 from "@/assets/collections/summer/sexto-abismo-ginebra-uFXXP1hwsvs-unsplash.jpg";
 import summer4 from "@/assets/collections/summer/sexto-abismo-ginebra-aEi9gK09kT4-unsplash.jpg";
 import sport1 from "@/assets/collections/sport/artem-mihailov-XGPXbVNu6e8-unsplash.jpg";
-import sport2 from "@/assets/collections/sport/sheldon-5mTOegXTMUM-unsplash.jpg";
-import sport3 from "@/assets/collections/sport/sergey-sokolov-cO-5xW3uDxo-unsplash.jpg";
+import sport2 from "@/assets/collections/sport/sergey-sokolov-cO-5xW3uDxo-unsplash.jpg";
+import sport3 from "@/assets/collections/sport/mahdi-chaghari-QpWqqoEdhv4-unsplash.jpg";
 import sport4 from "@/assets/collections/sport/tony-luginsland-ofaBcg1xZL0-unsplash.jpg";
 import spring1 from "@/assets/collections/spring/sule-makaroglu-hP-aYOy1284-unsplash.jpg";
 import spring3 from "@/assets/collections/spring/bailey-burton-jN8PVzZQ9iQ-unsplash.jpg";
@@ -74,8 +74,8 @@ export default function Products() {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci, tenetur itaque officiis necessitatibus iste consectetur veniam nulla animi aperiam perferendis in ut optio deleniti cupiditate at sed temporibus quo!",
       images: [
         { src: sport1, alt: "", style: { objectPosition: "center 60%" } },
-        { src: sport2, alt: "" },
-        { src: sport3, alt: "", style: { objectPosition: "center 80%" } },
+        { src: sport2, alt: "", style: { objectPosition: "center 95%" }},
+        { src: sport3, alt: "", style: { objectPosition: "center 35%" } },
         { src: sport4, alt: "", style: { objectPosition: "center 40%" } },
       ],
     },

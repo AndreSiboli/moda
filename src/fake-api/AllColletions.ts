@@ -17,13 +17,13 @@ import sport1 from "@/assets/collections/sport/alonso-reyes-xd4tmzR8Uog-unsplash
 import sport2 from "@/assets/collections/sport/anastase-maragos-J7IBavYCdUA-unsplash.jpg";
 import sport3 from "@/assets/collections/sport/artem-mihailov-XGPXbVNu6e8-unsplash.jpg";
 import sport4 from "@/assets/collections/sport/ayo-ogunseinde-0xWXyaa8bTQ-unsplash.jpg";
-import sport5 from "@/assets/collections/sport/erwans-socks-LBBc6wrbYcs-unsplash.jpg";
+import sport5 from "@/assets/collections/sport/alexi-romano-WrxPwb6-wo8-unsplash.jpg";
 import sport6 from "@/assets/collections/sport/korie-cull-3THr5zbJKPU-unsplash.jpg";
 import sport7 from "@/assets/collections/sport/mahdi-chaghari-C0iF9gJ3TWs-unsplash.jpg";
 import sport8 from "@/assets/collections/sport/nick-pliahas-LiQLeo-ZhX4-unsplash.jpg";
 import sport9 from "@/assets/collections/sport/sergey-sokolov-cO-5xW3uDxo-unsplash.jpg";
 import sport10 from "@/assets/collections/sport/sergey-sokolov-z2L4PU8xZEk-unsplash.jpg";
-import sport11 from "@/assets/collections/sport/sheldon-5mTOegXTMUM-unsplash.jpg";
+import sport11 from "@/assets/collections/sport/mahdi-chaghari-QpWqqoEdhv4-unsplash.jpg";
 import sport12 from "@/assets/collections/sport/tony-luginsland-ofaBcg1xZL0-unsplash.jpg";
 
 import genz1 from "@/assets/collections/genz/ayo-ogunseinde-0im7yfJ3qog-unsplash.jpg";
@@ -943,8 +943,8 @@ const sport25: CollectionType[] = [
     type: ["clothes"],
     collection: "sport",
     author: {
-      name: "Erwans Socks",
-      url: "https://unsplash.com/pt-br/@erwans_socks",
+      name: "Alexi Romano",
+      url: "https://unsplash.com/pt-br/@alexirosemedia",
     },
   },
   {
@@ -1053,8 +1053,8 @@ const sport25: CollectionType[] = [
     type: ["clothes"],
     collection: "sport",
     author: {
-      name: "Sergey Sokolov",
-      url: "https://unsplash.com/pt-br/@svsokolov ",
+      name: "Mahdi Chaghari",
+      url: "https://unsplash.com/pt-br/@mahdi_chf",
     },
   },
   {
