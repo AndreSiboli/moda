@@ -20,16 +20,13 @@ export default function ContactForm(props: PropsType) {
     <form className={styles.form}>
       <div className={styles.form_inputs}>
         <div className={styles.input_container}>
-          <Input input={{ id: "name", type: "text" }} text="Name" />
+          <Input id="name" name="name" type="text" text="Name" />
         </div>
         <div className={styles.input_container}>
-          <Input input={{ id: "email", type: "email" }} text="Email" />
+          <Input id="email" name="email" type="email" text="Email" />
         </div>
         <div className={styles.input_container}>
-          <Input
-            input={{ id: "phone-number", type: "text" }}
-            text="Phone Number"
-          />
+          <Input id="phone-number" name="phone-number" type="text" text="Phone Number" />
         </div>
         <div className={styles.input_container}>
           <Textarea data={{ id: "message", text: "Message" }} />

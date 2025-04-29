@@ -25,8 +25,14 @@
 
     button {
       color: var.$clr-light-hard;
-      background: clr-dark-normal;
+      background: var.$clr-dark-normal;
     }
+  }
+
+  &_error {
+    font-size: 0.9em;
+    color: var.$support_color_err;
+    margin-top: 1em;
   }
 
   &_forgot {

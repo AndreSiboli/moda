@@ -1,20 +1,18 @@
 import styles from "@/styles/inputs/Input.module.scss";
+import { ComponentProps } from "react";
 
-interface PropsType {
-  input: {
-    type: string;
-    id: string;
-  };
+interface PropsType extends ComponentProps<"input"> {
+  id: string;
   text: string;
+  isError?: boolean;
 }
 
 export default function Input(props: PropsType) {
-  const { input, text } = props;
-  const { type, id } = input;
+  const { text, id, isError, ...rest } = props;
 
   return (
-    <div className={styles.input}>
-      <input type={type} id={id} name={id} placeholder=" "/>
+    <div className={`${styles.input} ${isError ? styles.error : ""}`}>
+      <input {...rest} id={id} placeholder=" " />
       <label htmlFor={id}>{text}</label>
     </div>
   );

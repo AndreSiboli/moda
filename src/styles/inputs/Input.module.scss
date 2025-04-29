@@ -35,4 +35,12 @@
     transition: top 0.15s ease-in-out, transform 0.15s ease-in-out,
       font-size 0.15s ease-in-out;
   }
+
+  &.error {
+    border-bottom-color: var.$support_color_err;
+
+    label {
+      color: var.$support_color_err;
+    }
+  }
 }

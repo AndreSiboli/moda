@@ -36,14 +36,10 @@
     }
   }
 
-  &_forgot {
-    a {
-      display: block;
-      font-size: 0.8em;
-      text-decoration: underline;
-      margin: 0 auto;
-      margin-top: 1em;
-    }
+  &_error {
+    font-size: 0.9em;
+    color: var.$support_color_err;
+    margin-top: 1em;
   }
 
   &_create {
