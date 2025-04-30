@@ -162,6 +162,17 @@ const references = [
       url: "https://www.freepik.com/free-photo/high-angle-woman-posing-bikini_62418895.htm#fromView=search&page=7&position=28&uuid=202f44df-1003-487d-8c40-b8320d13fb01&query=underwear",
     },
   },
+  {
+    id: "01964430-287a-7116-90dc-acb355189f48",
+    images: {
+      src: contact,
+      alt: "",
+    },
+    author: {
+      name: "Süheyl Burak",
+      url: "https://unsplash.com/pt-br/@suheylburak",
+    },
+  },
 ];
 
 const freepik = [
@@ -185,17 +196,6 @@ const freepik = [
     author: {
       name: "Lookstudio on Freepik",
       url: "https://www.freepik.com/free-photo/pensive-slim-lady-with-tanned-skin-brunette-hair-gold-accessories-wide-sleeve-lilac-shirt-looking-up-posing_23928210.htm#fromView=search&page=3&position=2&uuid=4c6db930-776c-4b0f-8de2-520563f7f24b",
-    },
-  },
-  {
-    id: "01963a74-121e-7f9e-9228-ec1f2918ced1",
-    images: {
-      src: contact,
-      alt: "",
-    },
-    author: {
-      name: "Lookstudio on Freepik",
-      url: "https://www.freepik.com/free-photo/curly-haired-pretty-lady-red-headband-yellow-trendy-sundress-blowing-kiss-holding-glass-isolated-backdrop_23938362.htm#from_view=detail_alsolike",
     },
   },
 ];

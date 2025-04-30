@@ -12,8 +12,9 @@
     outline: none;
     width: 100%;
     font-size: 1em;
+    font-family: var(--font-raleway);
     resize: vertical;
-    min-height: 1.75em;
+    min-height: 100px;
     max-height: 200px;
 
     &:-webkit-autofill {
@@ -31,10 +32,18 @@
   label {
     position: absolute;
     pointer-events: none;
-    top:0;
+    top: 0;
     left: 0;
     color: var.$neutral_color_700;
     transition: top 0.15s ease-in-out, transform 0.15s ease-in-out,
       font-size 0.15s ease-in-out;
+  }
+
+  &.error {
+    border-bottom-color: var.$support_color_err;
+
+    label {
+      color: var.$support_color_err;
+    }
   }
 }

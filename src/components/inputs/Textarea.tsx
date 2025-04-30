@@ -1,28 +1,20 @@
+import { ComponentProps } from "react";
 import styles from "@/styles/inputs/Textarea.module.scss";
-import { Raleway } from "next/font/google";
 
-const raleway = Raleway({ subsets: ["latin"], weight: ["400", "500", "700"] });
-
-interface PropsType {
-  data: {
-    id: string;
-    text: string;
-  };
+interface PropsType extends ComponentProps<"textarea"> {
+  id: string;
+  text: string;
+  isError?: boolean;
 }
 
 export default function Textarea(props: PropsType) {
-  const { data } = props;
+  const { id, text, isError, ...rest } = props;
 
   return (
-    <div className={styles.textarea}>
-      <textarea
-        name={data.id}
-        id={data.id}
-        className={raleway.className}
-        placeholder=""
-      ></textarea>
+    <div className={`${styles.textarea} ${isError ? styles.error : ""}`}>
+      <textarea {...rest} id={id} placeholder=""></textarea>
 
-      <label htmlFor={data.id}>{data.text}</label>
+      <label htmlFor={id}>{text}</label>
     </div>
   );
 }

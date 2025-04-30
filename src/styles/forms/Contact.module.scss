@@ -2,7 +2,6 @@
 @use "@/styles/_dirs/mixins" as mix;
 
 .form {
-  max-width: 400px;
   width: 100%;
 
   &_inputs {
@@ -11,10 +10,15 @@
     gap: 1.5em;
   }
 
+  &_error {
+    font-size: 0.9em;
+    color: var.$support_color_err;
+    margin-top: 1em;
+  }
+
   &_button {
     margin: 0 auto;
     margin-top: 2em;
-    max-width: 400px;
     width: 100%;
 
     button {

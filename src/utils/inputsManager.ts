@@ -35,7 +35,8 @@ export function checkPassword(
   repassword: string,
   handleErr: (str: string) => void
 ) {
-  if (password.length < 8) return handleErr("The password is too short.");
+  if (password.length < 8)
+    return handleErr("The password need at least 8 characters.");
 
   const regex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
@@ -46,5 +47,21 @@ export function checkPassword(
   if (password !== repassword)
     return handleErr("The password is not the same.");
 
+  return true;
+}
+
+export function checkSubject(value: string, handleErr: (str: string) => void) {
+  if (value.length === 0) return handleErr("You need a subject.");
+  if (value.length > 255) return handleErr("Too many caracteres in subject.");
+  return true;
+}
+
+export function checkPhoneNumber(
+  value: string,
+  handleErr: (str: string) => void
+) {
+  const regex = /^\(\d{3}\)\s\d{3}-\d{4}$/;
+  if (!regex.test(value))
+    return handleErr("Invalid phone number format. Use (XXX) XXX-XXXX.");
   return true;
 }
