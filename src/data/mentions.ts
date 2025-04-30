@@ -173,9 +173,6 @@ const references = [
       url: "https://unsplash.com/pt-br/@suheylburak",
     },
   },
-];
-
-const freepik = [
   {
     id: "01963a73-07e7-746b-ba54-37b54ea4dac3",
     images: {
@@ -183,10 +180,13 @@ const freepik = [
       alt: "",
     },
     author: {
-      name: "Halayalex on Freepik",
-      url: "https://www.freepik.com/free-photo/portrait-beautiful-sensual-brunette-woman-girl-elegant-white-classic-clothes-wide-pants-white-background_6883359.htm#fromView=search&page=1&position=34&uuid=f064bd65-af6e-4c96-ae7f-af76ea9ffec7",
+      name: "Joshua Rawson-Harris",
+      url: "https://unsplash.com/pt-br/@joshrh19",
     },
   },
+];
+
+const freepik = [
   {
     id: "01963a73-97db-79eb-8384-3ff20b7bad42",
     images: {
