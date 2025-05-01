@@ -13,7 +13,6 @@ import shorts from "@/assets/products/thumbnails/shorts.jpg";
 import pants from "@/assets/products/thumbnails/pants.jpg";
 import tops from "@/assets/products/thumbnails/tops.jpg";
 import contact from "@/assets/contact.jpg";
-import faq from "@/assets/faq.jpg";
 import hero from "@/assets/hero.png";
 import signIn from "@/assets/sign-in.jpg";
 import signUp from "@/assets/sign-up.jpg";
@@ -186,18 +185,6 @@ const references = [
   },
 ];
 
-const freepik = [
-  {
-    id: "01963a73-97db-79eb-8384-3ff20b7bad42",
-    images: {
-      src: faq,
-      alt: "",
-    },
-    author: {
-      name: "Lookstudio on Freepik",
-      url: "https://www.freepik.com/free-photo/pensive-slim-lady-with-tanned-skin-brunette-hair-gold-accessories-wide-sleeve-lilac-shirt-looking-up-posing_23928210.htm#fromView=search&page=3&position=2&uuid=4c6db930-776c-4b0f-8de2-520563f7f24b",
-    },
-  },
-];
 
-export const mentions = references.concat(products, collections, freepik);
+
+export const mentions = references.concat(products, collections);

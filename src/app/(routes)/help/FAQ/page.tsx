@@ -2,10 +2,6 @@ import styles from "@/styles/pages/help/FAQ.module.scss";
 
 import Container from "@/components/layout/Container";
 import Details from "@/components/buttons/Details";
-import Img from "@/components/utils/Img";
-
-import heroWallpaper from "@/assets/faq.jpg";
-
 
 export default function FAQ() {
   const questions = [
@@ -58,11 +54,6 @@ export default function FAQ() {
 
   return (
     <div className={styles.faq}>
-      <div className={styles.faq_images}>
-        <figure className={styles.image_container}>
-          <Img src={heroWallpaper} styles={{objectPosition: '50% 10%'}}/>
-        </figure>
-      </div>
       <Container>
         <div className={styles.faq_container}>
           <div className={styles.faq_title}>
