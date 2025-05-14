@@ -75,6 +75,16 @@
       font-size: 1.25em;
     }
 
+    .info_sizes {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+
+      p {
+        font-size: 0.9em;
+      }
+    }
+
     .info_stock {
       color: var.$neutral_color_700;
     }

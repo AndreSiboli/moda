@@ -1,0 +1,42 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.products {
+  min-height: 100dvh;
+
+  &_container {
+    display: flex;
+    gap: 2em;
+    width: 100%;
+
+    @media (max-width: 916px) {
+      flex-direction: column;
+    }
+  }
+
+  &_images,
+  &_info {
+    flex: 1 1 50%;
+  }
+
+  &_info {
+    position: relative;
+    padding-bottom: 2em;
+
+    @media (max-width: 916px) {
+      padding-bottom: 4em;
+    }
+  }
+
+  &_carousel {
+    .carousel_swipe {
+      padding: 0.5em 1em;
+      display: flex;
+      align-items: center;
+      justify-self: flex-end;
+      gap: 0.25em;
+      font-size: 0.9em;
+      color: var.$clr-dark-soft;
+    }
+  }
+}

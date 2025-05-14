@@ -2,7 +2,7 @@ import styles from "@/styles/navbar/Collections.module.scss";
 
 import Link from "next/link";
 import Img from "@/components/utils/Img";
-import Carousel from "@/components/common/Carousel";
+import Carousel from "@/components/carousel/Carousel";
 
 import summer from "@/assets/collections/summer/pexels-eduardordone-2602717.jpg";
 import genz from "@/assets/collections/genz/joshua-rondeau-TG8vuPf2O-I-unsplash.jpg";
@@ -10,6 +10,7 @@ import sport from "@/assets/collections/sport/alonso-reyes-xd4tmzR8Uog-unsplash.
 import spring from "@/assets/collections/spring/pexels-vitoriasantos-3050943.jpg";
 
 import { PiHandSwipeLeft } from "react-icons/pi";
+import { CarouselConfigTypes } from "@/_types/CarouselTypes";
 
 export default function Collections() {
   const images = [
@@ -48,6 +49,20 @@ export default function Collections() {
       href: "/under-construction",
     },
   ];
+  const config: CarouselConfigTypes = {
+    gap: 8,
+    controllLayout: handleCarouselLayout,
+  };
+
+  function handleCarouselLayout(): Omit<CarouselConfigTypes, "controllLayout"> {
+    const width = window.innerWidth;
+    const smallDevices = width <= 768;
+    return {
+      itemsAppearance: smallDevices ? 2 : 4,
+      peek: smallDevices ? 0.1 : 0,
+      isSlide: smallDevices,
+    };
+  }
 
   return (
     <div className={styles.store}>
@@ -70,7 +85,7 @@ export default function Collections() {
           <PiHandSwipeLeft /> Swipe
         </p>
 
-        <Carousel parentConfig={{ itemsLength: 4 }}>
+        <Carousel parentConfig={config}>
           {images.map((image) => (
             <Link href={image.href} className={styles.card} key={image.title}>
               <figure className={styles.card_image}>

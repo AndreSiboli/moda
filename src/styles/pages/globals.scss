@@ -16,7 +16,7 @@ body {
   background: var.$clr-light-hard;
   color: var.$clr-dark-normal;
   overflow-x: clip;
-
+  overflow: hidden;
   @include mix.Scroll;
 }
 

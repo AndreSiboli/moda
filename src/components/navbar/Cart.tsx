@@ -30,12 +30,12 @@ export default function Cart(props: PropsType) {
     dispatch(increaseTotal());
   }, [data]);
 
-  function deleteCartItem(id: string) {
+  function deleteCartItem({ id, size }: { id: string; size: string }) {
     //Db solution
     //...
 
     //Client solution
-    dispatch(deleteItem(id));
+    dispatch(deleteItem({ id, size }));
   }
 
   function submitPurchase() {

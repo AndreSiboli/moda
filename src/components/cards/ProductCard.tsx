@@ -1,16 +1,18 @@
 "use client";
 
-import { useContext, useState } from "react";
+import { MouseEvent, useContext, useState } from "react";
 import { ProductType } from "@/_types/ProductsType";
 import { CartUserType } from "@/_types/CartType";
 import { formatToDecimal } from "@/utils/formatter";
 import { MessageContext } from "@/context/Message";
 import { useAppSelector } from "@/redux/store";
+import { isThereInCart } from "@/utils/CartManager";
 import styles from "@/styles/cards/ProductCard.module.scss";
 
 import CartButton from "@/components/ui/buttons/CartButton";
 import Img from "@/components/utils/Img";
 import Rating from "@/components/common/Rating";
+import Link from "next/link";
 
 interface PropsType {
   product: ProductType;
@@ -23,31 +25,30 @@ export default function ProductCard(props: PropsType) {
   const [isLoading, setIsLoading] = useState(false);
   const state = useAppSelector((state) => state.cartReducer);
 
-  function insertInCart() {
-    const insert = () => {
-      if (isThereInCart(state.cart, product)) {
-        setIsLoading(false);
-        return defineMessage({
-          title: "You can't do this action.",
-          message: "This item is already in cart.",
-          type: "error",
-        });
-      }
+  function insertInCart(e: MouseEvent<HTMLButtonElement>) {
+    e.preventDefault();
+    e.stopPropagation();
 
-      handleItem({ ...product, quantity: 1 });
-      setIsLoading(false);
-      defineMessage({
-        title: "Added to cart.",
-        message: "Item added successfully.",
-        type: "success",
-      });
-    };
-    setIsLoading(true);
-    simulateDelay(insert);
-  }
+    // const insert = () => {
+    //   if (isThereInCart(state.cart, product)) {
+    //     setIsLoading(false);
+    //     return defineMessage({
+    //       title: "You can't do this action.",
+    //       message: "This item is already in cart.",
+    //       type: "error",
+    //     });
+    //   }
 
-  function isThereInCart(arr: ProductType[], obj: ProductType) {
-    return arr.some((item) => item.id === obj.id);
+    //   handleItem({ ...product, quantity: 1 });
+    //   setIsLoading(false);
+    //   defineMessage({
+    //     title: "Added to cart.",
+    //     message: "Item added successfully.",
+    //     type: "success",
+    //   });
+    // };
+    // setIsLoading(true);
+    // simulateDelay(insert);
   }
 
   function simulateDelay(callback: VoidFunction) {
@@ -57,9 +58,13 @@ export default function ProductCard(props: PropsType) {
   }
 
   return (
-    <div className={styles.product}>
+    <Link href={`/products/${product.id}`} className={styles.product}>
       <figure className={styles.product_image}>
-        <Img src={product.images.src} loading="lazy" />
+        <Img
+          src={product.thumbnail.src}
+          alt={product.thumbnail.alt}
+          loading="lazy"
+        />
       </figure>
 
       <section className={styles.product_info}>
@@ -67,15 +72,18 @@ export default function ProductCard(props: PropsType) {
           <div className={styles.info_header}>
             <p className={styles.header_title}>{product.title}</p>
             <p>U$ {formatToDecimal(product.price, 2)}</p>
-            <p>Stock: {product.stock}</p>
+            {/* <p>Stock: {product.stock}</p> */}
             <Rating rating={product.rating} />
           </div>
 
-          <div className={styles.info_button}>
-            <CartButton onClick={insertInCart} isLoading={isLoading} />
-          </div>
+          {/* <div className={styles.info_button}>
+            <CartButton
+              onClick={(e) => insertInCart(e)}
+              isLoading={isLoading}
+            />
+          </div> */}
         </div>
       </section>
-    </div>
+    </Link>
   );
 }

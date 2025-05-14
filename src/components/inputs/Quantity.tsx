@@ -21,7 +21,7 @@ export default function Quantity(props: PropsType) {
 
   function insertByButton(add: 1 | -1) {
     let newQuantityItems = currentQuantity + add;
-    if (newQuantityItems > data.stock) newQuantityItems = data.stock;
+    if (newQuantityItems > data.size.stock) newQuantityItems = data.size.stock;
     else if (newQuantityItems < 1) newQuantityItems = 1;
 
     setCurrentQuantity(newQuantityItems);
@@ -36,7 +36,7 @@ export default function Quantity(props: PropsType) {
 
     itemQuantity = parseInt(value);
 
-    if (itemQuantity > data.stock) itemQuantity = data.stock;
+    if (itemQuantity > data.size.stock) itemQuantity = data.size.stock;
     else if (itemQuantity < 1) itemQuantity = 1;
     if (!itemQuantity) itemQuantity = 1;
 
@@ -52,7 +52,9 @@ export default function Quantity(props: PropsType) {
       //...
 
       //Client logic
-      dispatch(increaseItem({ id: data.id, quantity }));
+      dispatch(
+        increaseItem({ id: data.id, quantity, size: data.size.size.toString() })
+      );
       changeTotal();
     }, 700);
   }
@@ -71,7 +73,7 @@ export default function Quantity(props: PropsType) {
       </button>
       <input
         type="number"
-        max={data.stock}
+        max={data.size.stock}
         min={1}
         value={currentQuantity}
         onChange={insertByInput}

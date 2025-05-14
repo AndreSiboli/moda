@@ -2,9 +2,6 @@
 
 import { ProductType } from "@/_types/ProductsType";
 import { RoutesCollectionType, RoutesStoreType } from "@/_types/RoutesType";
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
-import { chooseCollectionPage, chooseCollection } from "@/utils/storeManager";
 import styles from "@/styles/collections/ProductLayout.module.scss";
 import HeroCollections from "@/components/collections/HeroCollections";
 import Collection from "@/components/collections/Collections";

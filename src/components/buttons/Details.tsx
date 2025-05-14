@@ -1,17 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import styles from "@/styles/buttons/Details.module.scss";
 
 interface PropsType {
-  data: {
-    title: string;
-    content: string;
-  };
+  title: string;
+  children: ReactNode;
 }
 
 export default function Details(props: PropsType) {
-  const { data } = props;
+  const { title, children } = props;
   const [isActive, setIsActive] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -22,10 +20,16 @@ export default function Details(props: PropsType) {
       }
     }
 
-    document.addEventListener("detail-opened", handleOtherOpened as EventListener);
+    document.addEventListener(
+      "detail-opened",
+      handleOtherOpened as EventListener
+    );
 
     return () => {
-      document.removeEventListener("detail-opened", handleOtherOpened as EventListener);
+      document.removeEventListener(
+        "detail-opened",
+        handleOtherOpened as EventListener
+      );
     };
   }, []);
 
@@ -44,7 +48,7 @@ export default function Details(props: PropsType) {
     >
       <header className={styles.details_info} onClick={defineIsActive}>
         <div className={styles.info_wrapper}>
-          <span>{data.title}</span>
+          <span>{title}</span>
         </div>
 
         <div className={styles.info_button}>
@@ -54,9 +58,7 @@ export default function Details(props: PropsType) {
       </header>
 
       <div className={styles.details_content}>
-        <div className={styles.details_content_wrapper}>
-          {data.content}
-        </div>
+        <div className={styles.details_content_wrapper}>{children}</div>
       </div>
     </section>
   );

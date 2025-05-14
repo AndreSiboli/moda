@@ -1,0 +1,24 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.product_header {
+  @include mix.Flex($direction: column, $gap: 0.5em);
+
+  &_title {
+    h1 {
+      font: normal clamp(1.35em, 1.35em + 1vw, 2.5em) var(--font-courier);
+      color: var.$clr-dark-normal;
+      text-align: center;
+    }
+  }
+
+  &_price {
+    p {
+      font: normal 1em var(--font-courier);
+    }
+  }
+
+  &_rating {
+    margin-top: -0.5em;
+  }
+}

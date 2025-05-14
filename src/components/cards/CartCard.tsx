@@ -7,10 +7,10 @@ import styles from "@/styles/cards/CartCard.module.scss";
 
 import Rating from "@/components/common/Rating";
 import Quantity from "@/components/inputs/Quantity";
+import Confirm from "../messages/Confirm";
 import Img from "@/components/utils/Img";
 
 import { PiTrash } from "react-icons/pi";
-import Confirm from "../messages/Confirm";
 
 interface PropsType {
   data: CartUserType;
@@ -19,7 +19,7 @@ interface PropsType {
 
 export default function CartCard(props: PropsType) {
   const { data, handleDelete } = props;
-  const { id, images, title, price } = data;
+  const { id, thumbnail, title, price } = data;
   const [areYouSure, setAreYouSure] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -35,7 +35,7 @@ export default function CartCard(props: PropsType) {
   return (
     <div className={styles.card} ref={cardRef}>
       <figure className={styles.card_image}>
-        <Img src={images.src} alt={images.alt} />
+        <Img src={thumbnail.src} alt={thumbnail.alt} />
       </figure>
 
       <div className={styles.card_info}>
@@ -54,7 +54,10 @@ export default function CartCard(props: PropsType) {
           <div>
             <Rating rating={data.rating} />
           </div>
-          <p className={styles.info_stock}>stock: {data.stock}</p>
+          <div className={styles.info_sizes}>
+            <p className={styles.info_size}>Size: {data.size.size}</p>
+            <p className={styles.info_stock}>Stock: {data.size.stock}</p>
+          </div>
         </div>
 
         <div className={styles.info_buttons}>

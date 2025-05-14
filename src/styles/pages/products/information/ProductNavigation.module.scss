@@ -1,0 +1,35 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.product_nav {
+  @include mix.Flex($gap: 1em);
+  .nav_link {
+    position: relative;
+    height: fit-content;
+
+    a {
+      color: var.$clr_light_soft;
+      font-size: 0.9em;
+
+      @include mix.OnlyPc {
+        transition: color 0.15s ease-in-out;
+        &:hover {
+          color: var.$clr_dark_normal;
+        }
+      }
+    }
+
+    &:not(:first-child) {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(-0.5em + 1px);
+        transform: translateY(-50%);
+        width: 1px;
+        height: 65%;
+        background: var.$clr_light_soft;
+      }
+    }
+  }
+}

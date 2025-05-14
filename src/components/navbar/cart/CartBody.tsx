@@ -4,7 +4,7 @@ import { CartUserType } from "@/_types/CartType";
 
 interface CartBodyType {
   data: CartUserType[];
-  handleDelete: (id: string) => void;
+  handleDelete: ({ id, size }: { id: string; size: string }) => void;
 }
 
 export default function CartBody(props: CartBodyType) {
@@ -16,8 +16,10 @@ export default function CartBody(props: CartBodyType) {
         {data.map((item) => (
           <CartCard
             data={item}
-            handleDelete={() => handleDelete(item.id)}
-            key={item.id}
+            handleDelete={() =>
+              handleDelete({ id: item.id, size: item.size.toString() })
+            }
+            key={item.id + item.size.size}
           />
         ))}
       </section>

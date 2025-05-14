@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Raleway, Courier_Prime } from "next/font/google";
 import "@/styles/pages/globals.scss";
 
 import { ReduxProvider } from "@/redux/Provider";
@@ -11,6 +11,13 @@ const raleway = Raleway({
   weight: ["400", "500", "700"],
   variable: "--font-raleway",
 });
+
+const courier = Courier_Prime({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-courier",
+});
+
 
 export const metadata: Metadata = {
   title: "MODA",
@@ -30,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} ${raleway.variable}`}>
+      <body className={`${raleway.className} ${raleway.variable} ${courier.variable}`}>
         <ReduxProvider>
           <MessageProvider>
             <MainContainer>{children}</MainContainer>

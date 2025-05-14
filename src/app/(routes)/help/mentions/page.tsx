@@ -21,8 +21,8 @@ export default function Mentions() {
               <Link href={mention.author.url} target="_blank" key={mention.id}>
                 <figure className={styles.image_container}>
                   <Image
-                    src={mention.images.src}
-                    alt={mention.images.alt}
+                    src={mention.thumbnail.src}
+                    alt={mention.thumbnail.alt}
                     loading="lazy"
                   />
                 </figure>

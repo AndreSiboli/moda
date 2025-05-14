@@ -61,10 +61,9 @@ export default function FAQ() {
           </div>
           <div className={styles.faq_wrapper}>
             {questions.map((question) => (
-              <Details
-                data={question}
-                key={question.title}
-              />
+              <Details title={question.title} key={question.title}>
+                <p>{question.content}</p>
+              </Details>
             ))}
           </div>
         </div>

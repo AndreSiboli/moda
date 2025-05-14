@@ -1,0 +1,36 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.product_details {
+    margin-top: 1em;
+    width: 100%;
+
+    .details_list {
+      .list {
+        padding-left: 0.5em;
+
+        &:not(:first-child) {
+          margin-top: 1em;
+        }
+
+        p {
+          font-weight: bold;
+        }
+
+        ul {
+          list-style-position: inside;
+          padding-left: 1em;
+
+          &:not(:first-child) {
+            margin-top: 0.5em;
+          }
+
+          li {
+            &:not(:first-child) {
+              margin-top: 0.5em;
+            }
+          }
+        }
+      }
+    }
+  }

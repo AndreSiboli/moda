@@ -1,5 +1,5 @@
 import { products } from "@/fake-api/allProducts";
-import { collections } from "@/fake-api/AllColletions";
+import { collections } from "@/fake-api/CollectionsData";
 
 import intimate from "@/assets/products/thumbnails/intimate.jpg";
 import dresses from "@/assets/products/thumbnails/dresses.jpg";
@@ -20,7 +20,7 @@ import signUp from "@/assets/sign-up.jpg";
 const references = [
   {
     id: "0196442e-f234-77b2-b5fa-fc7cfc6b1160",
-    images: {
+    thumbnail: {
       src: signIn,
       alt: "",
     },
@@ -31,7 +31,7 @@ const references = [
   },
   {
     id: "0196442e-f234-77b2-b5fa-fc7cfe6b1160",
-    images: {
+    thumbnail: {
       src: signUp,
       alt: "",
     },
@@ -42,7 +42,7 @@ const references = [
   },
   {
     id: "0196442e-f234-77b2-b5fa-fc7cfa6b1160",
-    images: {
+    thumbnail: {
       src: dresses,
       alt: "",
     },
@@ -53,7 +53,7 @@ const references = [
   },
   {
     id: "0196442f-4013-7790-b4de-72832e2a7c7d",
-    images: {
+    thumbnail: {
       src: jewelry,
       alt: "",
     },
@@ -64,7 +64,7 @@ const references = [
   },
   {
     id: "0196442f-419c-7a46-808c-00a31f98b1b7",
-    images: {
+    thumbnail: {
       src: necklace,
       alt: "",
     },
@@ -75,7 +75,7 @@ const references = [
   },
   {
     id: "0196442f-436a-707b-a1eb-8c90620a7fb8",
-    images: {
+    thumbnail: {
       src: ring,
       alt: "",
     },
@@ -86,7 +86,7 @@ const references = [
   },
   {
     id: "0196442f-4547-7494-bfbc-edbf05f9823f",
-    images: {
+    thumbnail: {
       src: earring,
       alt: "",
     },
@@ -97,7 +97,7 @@ const references = [
   },
   {
     id: "0196442f-46ea-7786-b8ba-b8259e5c80e4",
-    images: {
+    thumbnail: {
       src: bracelet,
       alt: "",
     },
@@ -108,7 +108,7 @@ const references = [
   },
   {
     id: "01964430-287a-7116-90dc-acb355163f48",
-    images: {
+    thumbnail: {
       src: shorts,
       alt: "",
     },
@@ -119,7 +119,7 @@ const references = [
   },
   {
     id: "01964430-2a11-75a4-9ff0-3e4d024705f8",
-    images: {
+    thumbnail: {
       src: shirt,
       alt: "",
     },
@@ -130,7 +130,7 @@ const references = [
   },
   {
     id: "01964430-2bd1-7b27-9738-d594b1e0881c",
-    images: {
+    thumbnail: {
       src: pants,
       alt: "",
     },
@@ -141,7 +141,7 @@ const references = [
   },
   {
     id: "01964430-2d5c-703f-a7aa-141ebe4d5c7b",
-    images: {
+    thumbnail: {
       src: tops,
       alt: "",
     },
@@ -152,7 +152,7 @@ const references = [
   },
   {
     id: "01964430-2d5c-703f-a7aa-141fbe4d5c7b",
-    images: {
+    thumbnail: {
       src: intimate,
       alt: "",
     },
@@ -163,7 +163,7 @@ const references = [
   },
   {
     id: "01964430-287a-7116-90dc-acb355189f48",
-    images: {
+    thumbnail: {
       src: contact,
       alt: "",
     },
@@ -174,7 +174,7 @@ const references = [
   },
   {
     id: "01963a73-07e7-746b-ba54-37b54ea4dac3",
-    images: {
+    thumbnail: {
       src: hero,
       alt: "",
     },
@@ -185,6 +185,4 @@ const references = [
   },
 ];
 
-
-
-export const mentions = references.concat(products, collections);
+export const mentions = references.concat(products);

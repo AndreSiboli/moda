@@ -1,0 +1,26 @@
+.portraits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+  min-height: 100dvh;
+
+  &_flex {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    width: 100%;
+  }
+
+  &_image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -16,22 +16,38 @@ export const cart = createSlice({
   initialState,
   reducers: {
     insertItem: (state, action: PayloadAction<CartUserType>) => {
-      if (state.cart.filter((item) => item.id === action.payload.id).length)
+      if (
+        state.cart.filter(
+          (item) =>
+            item.id === action.payload.id &&
+            item.size.size === action.payload.size.size
+        ).length
+      )
         return;
       state.cart.push(action.payload);
     },
-    deleteItem: (state, action: PayloadAction<string>) => {
-      state.cart = state.cart.filter((item) => item.id !== action.payload);
+    deleteItem: (
+      state,
+      action: PayloadAction<{ id: string; size: string }>
+    ) => {
+      state.cart = state.cart.filter(
+        (item) =>
+          !(
+            item.id === action.payload.id &&
+            item.size.size === action.payload.size
+          )
+      );
     },
     clearCart: (state) => {
       state.cart = [];
     },
     increaseItem: (
       state,
-      action: PayloadAction<{ id: string; quantity: number }>
+      action: PayloadAction<{ id: string; quantity: number; size: string }>
     ) => {
       const increaseItem = state.cart.filter(
-        (item) => item.id === action.payload.id
+        (item) =>
+          item.id === action.payload.id && item.size.size.toString() === action.payload.size
       )[0];
 
       increaseItem.quantity = action.payload.quantity;

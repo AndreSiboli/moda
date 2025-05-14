@@ -13,3 +13,7 @@ export function formatPhone(e: string) {
 
   return formatted
 }
+
+export function formatCapitalize(e: string){
+  return `${e[0].toUpperCase()}${e.substring(1)}`
+}

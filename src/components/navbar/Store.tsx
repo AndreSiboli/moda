@@ -2,13 +2,14 @@ import styles from "@/styles/navbar/Store.module.scss";
 
 import Link from "next/link";
 import Img from "@/components/utils/Img";
-import Carousel from "@/components/common/Carousel";
+import Carousel from "@/components/carousel/Carousel";
 
 import jewelry from "@/assets/products/jewelry/natali-hordiiuk-6xUNKC6sutk-unsplash.jpg";
 import dress from "@/assets/products/dresses/jesus-santos-rUSJt8Y6Alw-unsplash.jpg";
 import intimate from "@/assets/products/intimate/riccardo-carlo-rossi-x90HeQHJ1yE-unsplash.jpg";
 
 import { PiHandSwipeLeft } from "react-icons/pi";
+import { CarouselConfigTypes } from "@/_types/CarouselTypes";
 
 export default function Store() {
   const images = [
@@ -98,6 +99,20 @@ export default function Store() {
       href: "/under-construction",
     },
   ];
+  const config: CarouselConfigTypes = {
+    gap: 8,
+    controllLayout: handleCarouselLayout,
+  };
+
+  function handleCarouselLayout(): Omit<CarouselConfigTypes, "controllLayout"> {
+    const width = window.innerWidth;
+    const smallDevices = width <= 768;
+    return {
+      itemsAppearance: smallDevices ? 2 : 3,
+      peek: smallDevices ? 0.1 : 0,
+      isSlide: smallDevices,
+    };
+  }
 
   return (
     <div className={styles.store}>
@@ -135,7 +150,7 @@ export default function Store() {
           <PiHandSwipeLeft /> Swipe
         </p>
 
-        <Carousel parentConfig={{ itemsLength: 3 }}>
+        <Carousel parentConfig={config}>
           {images.map((image) => (
             <Link href={image.href} className={styles.card} key={image.title}>
               <figure className={styles.card_image}>

@@ -1,0 +1,71 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.select {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &_button {
+    @include mix.Flex($jc: space-between, $gap: 1em);
+    width: 100%;
+    border: 1px solid var.$clr_dark_normal;
+    background: var.$clr_light_hard;
+    padding: 0.5em 1em;
+    cursor: pointer;
+
+    svg {
+      display: block;
+      transition: transform 0.15s ease-in-out;
+    }
+  }
+
+  &_options {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: calc(100% + 0.5em);
+    left: 0;
+    background: var.$clr_light_hard;
+    padding: 0.5em;
+    box-shadow: 0 0 10px 2px #0003;
+    z-index: 99;
+    width: 100%;
+    transition: opacity 0.15s ease-in-out;
+
+    .option {
+      padding: 0.5em;
+      cursor: pointer;
+      transition: background 0.15s ease-in-out;
+
+      &.disabled {
+        color: var.$clr_light_soft;
+
+        @include mix.OnlyPc {
+          &:hover {
+            background: var.$clr_light_hard;
+          }
+        }
+      }
+
+      @include mix.OnlyPc {
+        &:hover {
+          background: var.$clr_light_soft;
+        }
+      }
+    }
+  }
+
+  &.opened {
+    .select_button {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    .select_options {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

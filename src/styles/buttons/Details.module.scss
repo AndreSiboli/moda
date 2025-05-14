@@ -3,9 +3,13 @@
 
 .details {
   width: 100%;
-  transition: background .15s ease-in-out;
+  transition: background 0.15s ease-in-out;
   height: fit-content;
   border-bottom: 1px solid var.$neutral_color_900;
+
+  &:first-child {
+    border-top: 1px solid var.$neutral_color_900;
+  }
 
   &_info {
     display: flex;
@@ -17,7 +21,7 @@
     cursor: pointer;
 
     border-radius: 0.25em;
-    transition: background .15s ease-in-out;
+    transition: background 0.15s ease-in-out;
 
     @include mix.OnlyPc {
       &:hover {
@@ -58,8 +62,9 @@
 
   &_content {
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
-    transition: max-height 0.25s ease-in-out;
+    transition: max-height 0.15s ease-in-out, opacity 0.15s ease-in-out;
 
     &_wrapper {
       display: flex;
@@ -67,6 +72,8 @@
       gap: 1em;
       padding: 1em 0.5em;
       padding-top: 0;
+      transform: translateY(100px);
+      transition: transform 0.15s ease-in-out;
     }
   }
 
@@ -78,7 +85,12 @@
     }
 
     .details_content {
-      max-height: 500px;
+      max-height: 1000px;
+      opacity: 1;
+
+      &_wrapper {
+        transform: translateY(0);
+      }
     }
 
     .details_info {

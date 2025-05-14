@@ -35,9 +35,9 @@ export default function Collection(props: PropsType) {
     setSort(str);
   }
 
-  function addProduct(product: ProductType & { quantity: number }) {
-    dispatch(insertItem(product));
-  }
+  // function addProduct(product: ProductType & { quantity: number }) {
+  //   // dispatch(insertItem(product));
+  // } //I have to reformule this
 
   useEffect(() => {
     let sorted = data;
@@ -65,7 +65,7 @@ export default function Collection(props: PropsType) {
       </div>
       <div className={`${styles.collection_group} ${styles[grid]}`}>
         {products.map((item) => (
-          <ProductCard product={item} key={item.id} handleItem={addProduct} />
+          <ProductCard product={item} key={item.id} handleItem={()=>{}} />
         ))}
       </div>
     </section>
