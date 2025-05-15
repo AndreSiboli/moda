@@ -35,7 +35,9 @@ export default function ProductButton(props: PropsType) {
     const find = findSize();
     if (!find) return null;
 
-    const { sizes, ...rest } = product;
+    //Pass less content to cart
+    const { sizes, details, images, description, ...rest } = product;
+    
     return {
       ...rest,
       size: find,
