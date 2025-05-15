@@ -9,7 +9,7 @@ import ProductDetails from "./information/ProductDetails";
 import ProductHeader from "./information/ProductHeader";
 
 interface PropsType {
-  product: ProductType;
+  product: ProductType & { collection?: string };
 }
 
 export default function ProductInformation(props: PropsType) {
@@ -88,11 +88,18 @@ export default function ProductInformation(props: PropsType) {
 
   return (
     <article className={styles.info} ref={parentRef}>
-      <ProductNavigation type={product.type[0]} />
+      <ProductNavigation
+        type={product.collection ? product.collection : product.type[0]}
+        href={
+          product.collection
+            ? `/collections/${product.collection}`
+            : `/store/${product.type[0]}`
+        }
+      />
 
       <ProductHeader product={product} />
 
-      {product.sizes.length !== 1  && (
+      {product.sizes.length !== 1 && (
         <div className={styles.info_size}>
           <Select
             placeholder="Size"

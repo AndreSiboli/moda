@@ -4,10 +4,11 @@ import Link from "next/link";
 
 interface PropsType {
   type: string;
+  href: string;
 }
 
 export default function ProductNavigation(props: PropsType) {
-  const { type } = props;
+  const { type, href } = props;
 
   return (
     <nav className={styles.product_nav}>
@@ -15,7 +16,7 @@ export default function ProductNavigation(props: PropsType) {
         <Link href="/">Home</Link>
       </div>
       <div className={styles.nav_link}>
-        <Link href={`/store/${type}`}>{formatCapitalize(type)}</Link>
+        <Link href={href}>{formatCapitalize(type)}</Link>
       </div>
     </nav>
   );
