@@ -8,7 +8,7 @@ export interface ProductType {
     src: StaticImageData;
     alt: string;
   };
-  sizes: { size: number | string; stock: number }[];
+  sizes: { size: string; stock: number }[];
   rating: {
     score: number;
     votes: number;

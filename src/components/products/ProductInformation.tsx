@@ -98,8 +98,8 @@ export default function ProductInformation(props: PropsType) {
             placeholder="Size"
             value={size}
             options={product.sizes.map((size) => ({
-              title: size.size.toString(),
-              value: size.size.toString(),
+              title: size.size,
+              value: size.size,
               disabled: size.stock === 0,
             }))}
             handleSelect={handleSelect}

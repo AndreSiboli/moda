@@ -44,7 +44,7 @@ export default function ProductButton(props: PropsType) {
   }
 
   function findSize() {
-    return product.sizes.find((size) => size.size.toString() === selectedSize);
+    return product.sizes.find((size) => size.size === selectedSize);
   }
 
   function simulateDelay(callback: VoidFunction) {

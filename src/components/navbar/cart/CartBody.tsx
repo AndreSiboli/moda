@@ -17,7 +17,7 @@ export default function CartBody(props: CartBodyType) {
           <CartCard
             data={item}
             handleDelete={() =>
-              handleDelete({ id: item.id, size: item.size.toString() })
+              handleDelete({ id: item.id, size: item.size.size })
             }
             key={item.id + item.size.size}
           />

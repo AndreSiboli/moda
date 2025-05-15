@@ -53,7 +53,7 @@ export default function Quantity(props: PropsType) {
 
       //Client logic
       dispatch(
-        increaseItem({ id: data.id, quantity, size: data.size.size.toString() })
+        increaseItem({ id: data.id, quantity, size: data.size.size })
       );
       changeTotal();
     }, 700);

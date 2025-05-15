@@ -47,7 +47,8 @@ export const cart = createSlice({
     ) => {
       const increaseItem = state.cart.filter(
         (item) =>
-          item.id === action.payload.id && item.size.size.toString() === action.payload.size
+          item.id === action.payload.id &&
+          item.size.size === action.payload.size
       )[0];
 
       increaseItem.quantity = action.payload.quantity;

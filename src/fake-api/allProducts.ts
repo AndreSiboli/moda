@@ -124,7 +124,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry1,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -157,7 +156,6 @@ const jewelry: ProductType[] = [
     ],
     price: 29.99,
     sizes: [{ size: "TU", stock: 12 }],
-
     rating: {
       score: 5,
       votes: 98,
@@ -187,7 +185,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry2,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -220,7 +217,6 @@ const jewelry: ProductType[] = [
     ],
     price: 59.99,
     sizes: [{ size: "TU", stock: 12 }],
-
     rating: {
       score: 4.7,
       votes: 200,
@@ -250,7 +246,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry3,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -283,7 +278,6 @@ const jewelry: ProductType[] = [
     ],
     price: 39.99,
     sizes: [{ size: "TU", stock: 12 }],
-
     rating: {
       score: 4.1,
       votes: 85,
@@ -313,7 +307,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry4,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -346,7 +339,6 @@ const jewelry: ProductType[] = [
     ],
     price: 69.99,
     sizes: [{ size: "TU", stock: 12 }],
-
     rating: {
       score: 4.9,
       votes: 300,
@@ -376,7 +368,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry5,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -409,7 +400,6 @@ const jewelry: ProductType[] = [
     ],
     price: 55.99,
     sizes: [{ size: "TU", stock: 12 }],
-
     rating: {
       score: 4.2,
       votes: 110,
@@ -439,7 +429,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry6,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -502,19 +491,19 @@ const jewelry: ProductType[] = [
     ],
     sizes: [
       {
-        size: 16,
+        size: "16",
         stock: 6,
       },
       {
-        size: 18,
+        size: "18",
         stock: 8,
       },
       {
-        size: 20,
+        size: "20",
         stock: 2,
       },
       {
-        size: 22,
+        size: "22",
         stock: 5,
       },
     ],
@@ -550,7 +539,6 @@ const jewelry: ProductType[] = [
     ],
     price: 47.99,
     sizes: [{ size: "TU", stock: 12 }],
-
     rating: {
       score: 4.5,
       votes: 150,
@@ -580,7 +568,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry8,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -613,7 +600,6 @@ const jewelry: ProductType[] = [
     ],
     price: 62.99,
     sizes: [{ size: "TU", stock: 12 }],
-
     rating: {
       score: 4.6,
       votes: 210,
@@ -643,7 +629,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry9,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -675,7 +660,6 @@ const jewelry: ProductType[] = [
       },
     ],
     price: 54.99,
-
     rating: {
       score: 4.4,
       votes: 140,
@@ -707,19 +691,19 @@ const jewelry: ProductType[] = [
     ],
     sizes: [
       {
-        size: 16,
+        size: "16",
         stock: 8,
       },
       {
-        size: 18,
+        size: "18",
         stock: 5,
       },
       {
-        size: 20,
+        size: "20",
         stock: 0,
       },
       {
-        size: 22,
+        size: "22",
         stock: 0,
       },
     ],
@@ -755,7 +739,6 @@ const jewelry: ProductType[] = [
     ],
     price: 48.99,
     sizes: [{ size: "TU", stock: 12 }],
-
     rating: {
       score: 5,
       votes: 120,
@@ -785,7 +768,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry11,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -818,7 +800,6 @@ const jewelry: ProductType[] = [
     ],
     price: 48.99,
     sizes: [{ size: "TU", stock: 8 }],
-
     rating: {
       score: 4.3,
       votes: 120,
@@ -848,7 +829,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry12,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -881,7 +861,6 @@ const jewelry: ProductType[] = [
     ],
     price: 41.99,
     sizes: [{ size: "TU", stock: 2 }],
-
     rating: {
       score: 4.2,
       votes: 107,
@@ -911,7 +890,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry13,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -944,7 +922,6 @@ const jewelry: ProductType[] = [
     ],
     price: 34.99,
     sizes: [{ size: "TU", stock: 7 }],
-
     rating: {
       score: 4.1,
       votes: 80,
@@ -974,7 +951,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry14,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1007,7 +983,6 @@ const jewelry: ProductType[] = [
     ],
     price: 65.99,
     sizes: [{ size: "TU", stock: 12 }],
-
     rating: {
       score: 4.8,
       votes: 97,
@@ -1037,7 +1012,6 @@ const jewelry: ProductType[] = [
         ],
       },
     ],
-
     thumbnail: {
       src: jewelry15,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1166,27 +1140,27 @@ const dresses: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 18,
       },
       {
-        size: 36,
+        size: "36",
         stock: 9,
       },
       {
-        size: 38,
+        size: "38",
         stock: 8,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 14,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -1253,27 +1227,27 @@ const dresses: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 6,
       },
       {
-        size: 36,
+        size: "36",
         stock: 14,
       },
       {
-        size: 38,
+        size: "38",
         stock: 7,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 17,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -1340,27 +1314,27 @@ const dresses: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 10,
       },
       {
-        size: 36,
+        size: "36",
         stock: 4,
       },
       {
-        size: 38,
+        size: "38",
         stock: 4,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 17,
       },
       {
-        size: 44,
+        size: "44",
         stock: 18,
       },
     ],
@@ -1427,27 +1401,27 @@ const dresses: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 2,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 9,
       },
       {
-        size: 44,
+        size: "44",
         stock: 6,
       },
     ],
@@ -1514,27 +1488,27 @@ const dresses: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 4,
       },
       {
-        size: 36,
+        size: "36",
         stock: 8,
       },
       {
-        size: 38,
+        size: "38",
         stock: 5,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 7,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -1601,27 +1575,27 @@ const dresses: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 11,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 19,
       },
       {
-        size: 42,
+        size: "42",
         stock: 1,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -1687,27 +1661,27 @@ const dresses: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 10,
       },
       {
-        size: 36,
+        size: "36",
         stock: 5,
       },
       {
-        size: 38,
+        size: "38",
         stock: 9,
       },
       {
-        size: 40,
+        size: "40",
         stock: 1,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 15,
       },
     ],
@@ -1776,27 +1750,27 @@ const intimate: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 16,
       },
       {
-        size: 36,
+        size: "36",
         stock: 6,
       },
       {
-        size: 38,
+        size: "38",
         stock: 7,
       },
       {
-        size: 40,
+        size: "40",
         stock: 15,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 18,
       },
     ],
@@ -1862,27 +1836,27 @@ const intimate: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 15,
       },
       {
-        size: 36,
+        size: "36",
         stock: 3,
       },
       {
-        size: 38,
+        size: "38",
         stock: 4,
       },
       {
-        size: 40,
+        size: "40",
         stock: 12,
       },
       {
-        size: 42,
+        size: "42",
         stock: 19,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -1948,27 +1922,27 @@ const intimate: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 3,
       },
       {
-        size: 36,
+        size: "36",
         stock: 4,
       },
       {
-        size: 38,
+        size: "38",
         stock: 14,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 2,
       },
       {
-        size: 44,
+        size: "44",
         stock: 6,
       },
     ],
@@ -2034,27 +2008,27 @@ const intimate: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 12,
       },
       {
-        size: 36,
+        size: "36",
         stock: 17,
       },
       {
-        size: 38,
+        size: "38",
         stock: 3,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 11,
       },
       {
-        size: 44,
+        size: "44",
         stock: 4,
       },
     ],
@@ -2120,27 +2094,27 @@ const intimate: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 3,
       },
       {
-        size: 36,
+        size: "36",
         stock: 2,
       },
       {
-        size: 38,
+        size: "38",
         stock: 6,
       },
       {
-        size: 40,
+        size: "40",
         stock: 1,
       },
       {
-        size: 42,
+        size: "42",
         stock: 7,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2206,27 +2180,27 @@ const intimate: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 4,
       },
       {
-        size: 38,
+        size: "38",
         stock: 9,
       },
       {
-        size: 40,
+        size: "40",
         stock: 11,
       },
       {
-        size: 42,
+        size: "42",
         stock: 16,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2292,27 +2266,27 @@ const intimate: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 1,
       },
       {
-        size: 36,
+        size: "36",
         stock: 5,
       },
       {
-        size: 38,
+        size: "38",
         stock: 3,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 3,
       },
     ],
@@ -2381,27 +2355,27 @@ const shirt: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 3,
       },
       {
-        size: 36,
+        size: "36",
         stock: 8,
       },
       {
-        size: 38,
+        size: "38",
         stock: 20,
       },
       {
-        size: 40,
+        size: "40",
         stock: 18,
       },
       {
-        size: 42,
+        size: "42",
         stock: 2,
       },
       {
-        size: 44,
+        size: "44",
         stock: 9,
       },
     ],
@@ -2467,27 +2441,27 @@ const shirt: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 10,
       },
       {
-        size: 36,
+        size: "36",
         stock: 17,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 2,
       },
       {
-        size: 42,
+        size: "42",
         stock: 5,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2553,27 +2527,27 @@ const shirt: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 9,
       },
       {
-        size: 36,
+        size: "36",
         stock: 12,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 19,
       },
       {
-        size: 42,
+        size: "42",
         stock: 6,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2639,27 +2613,27 @@ const shirt: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 16,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 12,
       },
       {
-        size: 42,
+        size: "42",
         stock: 18,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2725,27 +2699,27 @@ const shirt: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 15,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 6,
       },
       {
-        size: 42,
+        size: "42",
         stock: 2,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2814,27 +2788,27 @@ const shorts: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 5,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 4,
       },
       {
-        size: 42,
+        size: "42",
         stock: 10,
       },
       {
-        size: 44,
+        size: "44",
         stock: 15,
       },
     ],
@@ -2900,27 +2874,27 @@ const shorts: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 8,
       },
       {
-        size: 38,
+        size: "38",
         stock: 4,
       },
       {
-        size: 40,
+        size: "40",
         stock: 7,
       },
       {
-        size: 42,
+        size: "42",
         stock: 15,
       },
       {
-        size: 44,
+        size: "44",
         stock: 9,
       },
     ],
@@ -2986,27 +2960,27 @@ const shorts: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 7,
       },
       {
-        size: 36,
+        size: "36",
         stock: 4,
       },
       {
-        size: 38,
+        size: "38",
         stock: 13,
       },
       {
-        size: 40,
+        size: "40",
         stock: 6,
       },
       {
-        size: 42,
+        size: "42",
         stock: 7,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -3072,27 +3046,27 @@ const shorts: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 9,
       },
       {
-        size: 36,
+        size: "36",
         stock: 8,
       },
       {
-        size: 38,
+        size: "38",
         stock: 2,
       },
       {
-        size: 40,
+        size: "40",
         stock: 20,
       },
       {
-        size: 42,
+        size: "42",
         stock: 18,
       },
       {
-        size: 44,
+        size: "44",
         stock: 6,
       },
     ],
@@ -3158,27 +3132,27 @@ const shorts: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 19,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 12,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 4,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -3247,27 +3221,27 @@ const pants: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 5,
       },
       {
-        size: 36,
+        size: "36",
         stock: 11,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 14,
       },
       {
-        size: 42,
+        size: "42",
         stock: 18,
       },
       {
-        size: 44,
+        size: "44",
         stock: 15,
       },
     ],
@@ -3333,27 +3307,27 @@ const pants: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 11,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 10,
       },
       {
-        size: 40,
+        size: "40",
         stock: 7,
       },
       {
-        size: 42,
+        size: "42",
         stock: 12,
       },
       {
-        size: 44,
+        size: "44",
         stock: 5,
       },
     ],
@@ -3419,27 +3393,27 @@ const pants: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 4,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 15,
       },
       {
-        size: 42,
+        size: "42",
         stock: 13,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -3505,27 +3479,27 @@ const pants: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 7,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 14,
       },
       {
-        size: 40,
+        size: "40",
         stock: 15,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -3594,27 +3568,27 @@ const tops: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 12,
       },
       {
-        size: 36,
+        size: "36",
         stock: 15,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 18,
       },
       {
-        size: 44,
+        size: "44",
         stock: 2,
       },
     ],
@@ -3680,27 +3654,27 @@ const tops: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 13,
       },
       {
-        size: 36,
+        size: "36",
         stock: 20,
       },
       {
-        size: 38,
+        size: "38",
         stock: 13,
       },
       {
-        size: 40,
+        size: "40",
         stock: 5,
       },
       {
-        size: 42,
+        size: "42",
         stock: 8,
       },
       {
-        size: 44,
+        size: "44",
         stock: 5,
       },
     ],
@@ -3766,27 +3740,27 @@ const tops: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 1,
       },
       {
-        size: 36,
+        size: "36",
         stock: 8,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 9,
       },
       {
-        size: 42,
+        size: "42",
         stock: 12,
       },
       {
-        size: 44,
+        size: "44",
         stock: 14,
       },
     ],
@@ -3852,27 +3826,27 @@ const tops: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 16,
       },
       {
-        size: 40,
+        size: "40",
         stock: 8,
       },
       {
-        size: 42,
+        size: "42",
         stock: 11,
       },
       {
-        size: 44,
+        size: "44",
         stock: 4,
       },
     ],
@@ -3938,27 +3912,27 @@ const tops: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 13,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 7,
       },
       {
-        size: 44,
+        size: "44",
         stock: 19,
       },
     ],
@@ -4024,27 +3998,27 @@ const tops: ProductType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 15,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 15,
       },
       {
-        size: 42,
+        size: "42",
         stock: 19,
       },
       {
-        size: 44,
+        size: "44",
         stock: 20,
       },
     ],

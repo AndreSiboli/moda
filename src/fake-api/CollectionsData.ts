@@ -118,27 +118,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 13,
       },
       {
-        size: 38,
+        size: "38",
         stock: 11,
       },
       {
-        size: 40,
+        size: "40",
         stock: 11,
       },
       {
-        size: 42,
+        size: "42",
         stock: 9,
       },
       {
-        size: 44,
+        size: "44",
         stock: 9,
       },
     ],
@@ -205,27 +205,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 20,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 14,
       },
       {
-        size: 40,
+        size: "40",
         stock: 19,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 17,
       },
     ],
@@ -292,27 +292,27 @@ const summer25: CollectionType[] = [
     },
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 12,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -379,27 +379,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 5,
       },
       {
-        size: 36,
+        size: "36",
         stock: 14,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 9,
       },
       {
-        size: 42,
+        size: "42",
         stock: 10,
       },
       {
-        size: 44,
+        size: "44",
         stock: 10,
       },
     ],
@@ -466,27 +466,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 5,
       },
       {
-        size: 36,
+        size: "36",
         stock: 19,
       },
       {
-        size: 38,
+        size: "38",
         stock: 14,
       },
       {
-        size: 40,
+        size: "40",
         stock: 18,
       },
       {
-        size: 42,
+        size: "42",
         stock: 4,
       },
       {
-        size: 44,
+        size: "44",
         stock: 17,
       },
     ],
@@ -553,27 +553,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 18,
       },
       {
-        size: 36,
+        size: "36",
         stock: 4,
       },
       {
-        size: 38,
+        size: "38",
         stock: 8,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 17,
       },
     ],
@@ -640,27 +640,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 4,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 7,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -727,27 +727,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 20,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 5,
       },
       {
-        size: 42,
+        size: "42",
         stock: 18,
       },
       {
-        size: 44,
+        size: "44",
         stock: 4,
       },
     ],
@@ -814,27 +814,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 9,
       },
       {
-        size: 36,
+        size: "36",
         stock: 17,
       },
       {
-        size: 38,
+        size: "38",
         stock: 3,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 16,
       },
     ],
@@ -901,27 +901,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 16,
       },
       {
-        size: 36,
+        size: "36",
         stock: 3,
       },
       {
-        size: 38,
+        size: "38",
         stock: 12,
       },
       {
-        size: 40,
+        size: "40",
         stock: 16,
       },
       {
-        size: 42,
+        size: "42",
         stock: 16,
       },
       {
-        size: 44,
+        size: "44",
         stock: 6,
       },
     ],
@@ -988,27 +988,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 10,
       },
       {
-        size: 36,
+        size: "36",
         stock: 2,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 7,
       },
       {
-        size: 42,
+        size: "42",
         stock: 7,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -1075,27 +1075,27 @@ const summer25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 5,
       },
       {
-        size: 38,
+        size: "38",
         stock: 14,
       },
       {
-        size: 40,
+        size: "40",
         stock: 3,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 14,
       },
     ],
@@ -1165,27 +1165,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 7,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 16,
       },
       {
-        size: 42,
+        size: "42",
         stock: 8,
       },
       {
-        size: 44,
+        size: "44",
         stock: 12,
       },
     ],
@@ -1252,27 +1252,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 1,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 12,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 10,
       },
     ],
@@ -1339,27 +1339,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 6,
       },
       {
-        size: 36,
+        size: "36",
         stock: 18,
       },
       {
-        size: 38,
+        size: "38",
         stock: 19,
       },
       {
-        size: 40,
+        size: "40",
         stock: 7,
       },
       {
-        size: 42,
+        size: "42",
         stock: 6,
       },
       {
-        size: 44,
+        size: "44",
         stock: 11,
       },
     ],
@@ -1426,27 +1426,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 18,
       },
       {
-        size: 36,
+        size: "36",
         stock: 6,
       },
       {
-        size: 38,
+        size: "38",
         stock: 15,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -1513,27 +1513,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 4,
       },
       {
-        size: 36,
+        size: "36",
         stock: 10,
       },
       {
-        size: 38,
+        size: "38",
         stock: 16,
       },
       {
-        size: 40,
+        size: "40",
         stock: 2,
       },
       {
-        size: 42,
+        size: "42",
         stock: 1,
       },
       {
-        size: 44,
+        size: "44",
         stock: 20,
       },
     ],
@@ -1600,27 +1600,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 12,
       },
       {
-        size: 40,
+        size: "40",
         stock: 16,
       },
       {
-        size: 42,
+        size: "42",
         stock: 11,
       },
       {
-        size: 44,
+        size: "44",
         stock: 16,
       },
     ],
@@ -1687,27 +1687,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 12,
       },
       {
-        size: 38,
+        size: "38",
         stock: 3,
       },
       {
-        size: 40,
+        size: "40",
         stock: 12,
       },
       {
-        size: 42,
+        size: "42",
         stock: 12,
       },
       {
-        size: 44,
+        size: "44",
         stock: 3,
       },
     ],
@@ -1774,27 +1774,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 5,
       },
       {
-        size: 36,
+        size: "36",
         stock: 19,
       },
       {
-        size: 38,
+        size: "38",
         stock: 3,
       },
       {
-        size: 40,
+        size: "40",
         stock: 4,
       },
       {
-        size: 42,
+        size: "42",
         stock: 8,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -1861,27 +1861,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 13,
       },
       {
-        size: 36,
+        size: "36",
         stock: 4,
       },
       {
-        size: 38,
+        size: "38",
         stock: 1,
       },
       {
-        size: 40,
+        size: "40",
         stock: 20,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -1948,27 +1948,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 20,
       },
       {
-        size: 36,
+        size: "36",
         stock: 3,
       },
       {
-        size: 38,
+        size: "38",
         stock: 6,
       },
       {
-        size: 40,
+        size: "40",
         stock: 10,
       },
       {
-        size: 42,
+        size: "42",
         stock: 19,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2035,27 +2035,27 @@ const spring25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 17,
       },
       {
-        size: 36,
+        size: "36",
         stock: 8,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 18,
       },
       {
-        size: 42,
+        size: "42",
         stock: 2,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2125,27 +2125,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 16,
       },
       {
-        size: 36,
+        size: "36",
         stock: 8,
       },
       {
-        size: 38,
+        size: "38",
         stock: 13,
       },
       {
-        size: 40,
+        size: "40",
         stock: 11,
       },
       {
-        size: 42,
+        size: "42",
         stock: 9,
       },
       {
-        size: 44,
+        size: "44",
         stock: 12,
       },
     ],
@@ -2212,27 +2212,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 18,
       },
       {
-        size: 38,
+        size: "38",
         stock: 17,
       },
       {
-        size: 40,
+        size: "40",
         stock: 14,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 2,
       },
     ],
@@ -2299,27 +2299,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 16,
       },
       {
-        size: 36,
+        size: "36",
         stock: 12,
       },
       {
-        size: 38,
+        size: "38",
         stock: 16,
       },
       {
-        size: 40,
+        size: "40",
         stock: 19,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2386,27 +2386,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 13,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 18,
       },
       {
-        size: 40,
+        size: "40",
         stock: 2,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2473,27 +2473,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 9,
       },
       {
-        size: 40,
+        size: "40",
         stock: 5,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 11,
       },
     ],
@@ -2560,27 +2560,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 13,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 8,
       },
       {
-        size: 42,
+        size: "42",
         stock: 13,
       },
       {
-        size: 44,
+        size: "44",
         stock: 16,
       },
     ],
@@ -2647,27 +2647,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 6,
       },
       {
-        size: 36,
+        size: "36",
         stock: 20,
       },
       {
-        size: 38,
+        size: "38",
         stock: 13,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 10,
       },
     ],
@@ -2734,27 +2734,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 14,
       },
       {
-        size: 38,
+        size: "38",
         stock: 10,
       },
       {
-        size: 40,
+        size: "40",
         stock: 13,
       },
       {
-        size: 42,
+        size: "42",
         stock: 19,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2821,27 +2821,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 15,
       },
       {
-        size: 38,
+        size: "38",
         stock: 7,
       },
       {
-        size: 40,
+        size: "40",
         stock: 11,
       },
       {
-        size: 42,
+        size: "42",
         stock: 11,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2908,27 +2908,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 7,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -2995,27 +2995,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 16,
       },
       {
-        size: 36,
+        size: "36",
         stock: 6,
       },
       {
-        size: 38,
+        size: "38",
         stock: 8,
       },
       {
-        size: 40,
+        size: "40",
         stock: 8,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 9,
       },
     ],
@@ -3082,27 +3082,27 @@ const genz25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 19,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 20,
       },
       {
-        size: 40,
+        size: "40",
         stock: 18,
       },
       {
-        size: 42,
+        size: "42",
         stock: 5,
       },
       {
-        size: 44,
+        size: "44",
         stock: 11,
       },
     ],
@@ -3172,27 +3172,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 11,
       },
       {
-        size: 36,
+        size: "36",
         stock: 3,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 2,
       },
     ],
@@ -3259,27 +3259,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 7,
       },
       {
-        size: 40,
+        size: "40",
         stock: 3,
       },
       {
-        size: 42,
+        size: "42",
         stock: 4,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -3346,27 +3346,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 2,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 16,
       },
       {
-        size: 44,
+        size: "44",
         stock: 16,
       },
     ],
@@ -3433,27 +3433,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 3,
       },
       {
-        size: 38,
+        size: "38",
         stock: 3,
       },
       {
-        size: 40,
+        size: "40",
         stock: 7,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 17,
       },
     ],
@@ -3520,27 +3520,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 4,
       },
       {
-        size: 36,
+        size: "36",
         stock: 18,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 6,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 15,
       },
     ],
@@ -3607,27 +3607,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 9,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 7,
       },
       {
-        size: 40,
+        size: "40",
         stock: 10,
       },
       {
-        size: 42,
+        size: "42",
         stock: 17,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -3694,27 +3694,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 7,
       },
       {
-        size: 36,
+        size: "36",
         stock: 0,
       },
       {
-        size: 38,
+        size: "38",
         stock: 13,
       },
       {
-        size: 40,
+        size: "40",
         stock: 20,
       },
       {
-        size: 42,
+        size: "42",
         stock: 7,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -3781,27 +3781,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 10,
       },
       {
-        size: 36,
+        size: "36",
         stock: 12,
       },
       {
-        size: 38,
+        size: "38",
         stock: 10,
       },
       {
-        size: 40,
+        size: "40",
         stock: 15,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 0,
       },
     ],
@@ -3868,27 +3868,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 8,
       },
       {
-        size: 36,
+        size: "36",
         stock: 8,
       },
       {
-        size: 38,
+        size: "38",
         stock: 14,
       },
       {
-        size: 40,
+        size: "40",
         stock: 8,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 19,
       },
     ],
@@ -3955,27 +3955,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 10,
       },
       {
-        size: 36,
+        size: "36",
         stock: 11,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 0,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 11,
       },
     ],
@@ -4042,27 +4042,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 0,
       },
       {
-        size: 36,
+        size: "36",
         stock: 17,
       },
       {
-        size: 38,
+        size: "38",
         stock: 0,
       },
       {
-        size: 40,
+        size: "40",
         stock: 10,
       },
       {
-        size: 42,
+        size: "42",
         stock: 0,
       },
       {
-        size: 44,
+        size: "44",
         stock: 9,
       },
     ],
@@ -4129,27 +4129,27 @@ const sport25: CollectionType[] = [
     ],
     sizes: [
       {
-        size: 34,
+        size: "34",
         stock: 18,
       },
       {
-        size: 36,
+        size: "36",
         stock: 18,
       },
       {
-        size: 38,
+        size: "38",
         stock: 5,
       },
       {
-        size: 40,
+        size: "40",
         stock: 2,
       },
       {
-        size: 42,
+        size: "42",
         stock: 10,
       },
       {
-        size: 44,
+        size: "44",
         stock: 17,
       },
     ],
