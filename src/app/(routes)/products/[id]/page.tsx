@@ -10,6 +10,7 @@ import Portraits from "@/components/products/Portraits";
 import ProductInformation from "@/components/products/ProductInformation";
 import ProductCarousel from "@/components/products/ProductCarousel";
 import { PiHandSwipeLeft } from "react-icons/pi";
+import Loading from "@/components/utils/Loading";
 
 export default function Products() {
   const { id } = useParams();
@@ -36,13 +37,15 @@ export default function Products() {
     };
   }, []);
 
-  useEffect(()=>{
-    alert("How I don't have similar images to each product. Some of them are duplicate, just to fit the visual.")
-  },[])
+  useEffect(() => {
+    alert(
+      "How I don't have similar images to each product. Some of them are duplicate, just to fit the visual."
+    );
+  }, []);
 
   return (
     <main className={styles.products}>
-      {product && (
+      {product ? (
         <article className={styles.products_container}>
           <section
             className={
@@ -65,6 +68,12 @@ export default function Products() {
             <ProductInformation product={product} />
           </section>
         </article>
+      ) : (
+        <div className={styles.loading}>
+          <div className={styles.loading_container}>
+            <Loading />
+          </div>
+        </div>
       )}
     </main>
   );

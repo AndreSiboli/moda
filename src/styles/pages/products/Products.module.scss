@@ -39,4 +39,14 @@
       color: var.$clr-dark-soft;
     }
   }
+
+  .loading{
+    @include mix.Flex;
+    min-height: 100dvh;
+
+    &_container{
+      width: 125px;
+      aspect-ratio: 1/1;
+    }
+  }
 }
