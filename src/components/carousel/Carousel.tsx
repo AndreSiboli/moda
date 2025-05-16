@@ -58,7 +58,9 @@ export default function Carousel({ children, parentConfig }: CarouselProps) {
   const animationTimeout = useRef<NodeJS.Timeout>(undefined);
 
   const fixItemsWhenResize = useCallback(() => {
-    if (config.controllLayout) {
+    if (config.controllLayout === null) return;
+
+    if (typeof config.controllLayout === "function") {
       return setConfig((prev) => ({ ...prev, ...config.controllLayout!() }));
     }
 

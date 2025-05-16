@@ -10,5 +10,5 @@ export interface CarouselConfigTypes {
   isButton?: boolean;
   isRadio?: boolean;
   isAutoSlide?: boolean;
-  controllLayout?: () => Omit<CarouselConfigTypes, "controllLayout">;
+  controllLayout?: (() => Omit<CarouselConfigTypes, "controllLayout">) | null;
 }

@@ -17,16 +17,10 @@ export default function ProductCarousel(props: PropsType) {
     itemsPerView: 1,
     isSlide: true,
     animationTime: 200,
-    controllLayout: controllCarousel,
+    itemsAppearance: 1,
+    gap: 0,
+    controllLayout: null,
   };
-
-  function controllCarousel(): Omit<CarouselConfigTypes, "controllLayout"> {
-    return {
-      itemsPerView: 1,
-      itemsAppearance: 1,
-      gap: 0,
-    };
-  }
 
   return (
     <section className={styles.carousel}>
