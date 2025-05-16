@@ -11,13 +11,15 @@
   border-top: 1px solid var.$clr-dark-normal;
   padding: 1em;
   color: var.$clr-dark-normal;
+  
+  overflow-x: clip;
+  text-wrap: nowrap;
 
   &_total {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1em;
-    flex-wrap: wrap;
     margin-bottom: 1em;
 
     p {

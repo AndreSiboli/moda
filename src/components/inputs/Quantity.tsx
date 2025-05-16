@@ -4,7 +4,7 @@ import { ChangeEvent, useRef, useState } from "react";
 import styles from "@/styles/inputs/Quantity.module.scss";
 
 import { FaPlus, FaMinus } from "react-icons/fa6";
-import { increaseItem, increaseTotal } from "@/redux/features/cart-slice";
+import { updateQuantity, increaseTotal } from "@/redux/features/cart-slice";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
 import { CartUserType } from "@/_types/CartType";
@@ -52,9 +52,7 @@ export default function Quantity(props: PropsType) {
       //...
 
       //Client logic
-      dispatch(
-        increaseItem({ id: data.id, quantity, size: data.size.size })
-      );
+      dispatch(updateQuantity({ id: data.id, quantity, size: data.size.size }));
       changeTotal();
     }, 700);
   }

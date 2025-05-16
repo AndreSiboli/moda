@@ -1,9 +1,9 @@
 @use "@/styles/_dirs/variables" as var;
 @use "@/styles/_dirs/mixins" as mix;
 
-.body {
+.cart_body {
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: clip;
   height: 100%;
   position: relative;
 

@@ -33,38 +33,44 @@ export default function CartCard(props: PropsType) {
   }
 
   return (
-    <div className={styles.card} ref={cardRef}>
+    <article className={styles.card} ref={cardRef}>
       <figure className={styles.card_image}>
         <Img src={thumbnail.src} alt={thumbnail.alt} />
       </figure>
 
-      <div className={styles.card_info}>
+      <section className={styles.card_info}>
         <div className={styles.info_wrapper}>
-          <div className={styles.info_some}>
-            <p className={styles.info_title}>{title}</p>
-            <div className={styles.card_delete}>
+          <header className={styles.info_header}>
+            <div className={styles.header_title}>
+              <h2>{title}</h2>
+            </div>
+
+            <div className={styles.header_delete}>
               <button
                 className={styles.trash}
                 onClick={() => setAreYouSure(true)}
+                aria-label="Delete item"
               >
                 <PiTrash />
               </button>
             </div>
-          </div>
-          <div>
-            <Rating rating={data.rating} />
-          </div>
-          <div className={styles.info_sizes}>
-            <p className={styles.info_size}>Size: {data.size.size}</p>
-            <p className={styles.info_stock}>Stock: {data.size.stock}</p>
-          </div>
+          </header>
+
+          <Rating rating={data.rating} />
+
+          <section className={styles.info_sizes}>
+            <p>Size: {data.size.size}</p>
+            <p>Stock: {data.size.stock}</p>
+          </section>
         </div>
 
-        <div className={styles.info_buttons}>
-          <p className={styles.info_price}>${formatToDecimal(price, 2)}</p>
+        <footer className={styles.info_footer}>
+          <div className={styles.footer_price}>
+            <p>${formatToDecimal(price, 2)}</p>
+          </div>
           <Quantity data={data} />
-        </div>
-      </div>
+        </footer>
+      </section>
 
       {areYouSure && (
         <Confirm
@@ -75,6 +81,6 @@ export default function CartCard(props: PropsType) {
           isOpened={areYouSure}
         />
       )}
-    </div>
+    </article>
   );
 }
