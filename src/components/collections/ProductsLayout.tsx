@@ -5,7 +5,7 @@ import { RoutesCollectionType, RoutesStoreType } from "@/_types/RoutesType";
 import styles from "@/styles/collections/ProductLayout.module.scss";
 import HeroCollections from "@/components/collections/HeroCollections";
 import Collection from "@/components/collections/Collections";
-import Loading from "../utils/Loading";
+import StoreSkeleton from "../ui/loading/StoreSkeleton";
 
 interface PropsType {
   page: RoutesCollectionType | RoutesStoreType | null;
@@ -23,11 +23,7 @@ export default function ProductsLayout(props: PropsType) {
           <Collection data={products} title={page.title} />
         </>
       ) : (
-        <div className={styles.layout_loading}>
-          <div className={styles.loading_container}>
-            <Loading />
-          </div>
-        </div>
+        <StoreSkeleton />
       )}
     </div>
   );

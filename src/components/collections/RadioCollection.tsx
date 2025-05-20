@@ -1,22 +1,18 @@
-import styles from "@/styles/collections/Radio.module.scss";
+import styles from "@/styles/collections/RadioCollection.module.scss";
+import { ComponentProps } from "react";
 import { TbRectangleVertical, TbRectangleVerticalFilled } from "react-icons/tb";
 
-interface PropsType {
+interface PropsType extends ComponentProps<"input"> {
   id: string;
   grid: string;
-  handleValue: (str: string) => void;
 }
 
-export default function Radio(props: PropsType) {
-  const { id, grid, handleValue } = props;
-
-  function change() {
-    handleValue(id);
-  }
+export default function RadioCollection(props: PropsType) {
+  const { id, grid, ...rest } = props;
 
   return (
     <div className={styles.radio}>
-      <input type="radio" name="grid" id={id} value={id} onChange={change} />
+      <input {...rest} type="radio" name="grid" id={id} value={id} />
       <label htmlFor={id}>
         {Array.from({ length: Number(id) }, (_, index) => index + 1).map(
           (svg) =>

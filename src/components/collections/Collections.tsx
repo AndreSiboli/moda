@@ -12,7 +12,7 @@ import { useDispatch } from "react-redux";
 import { insertItem } from "@/redux/features/cart-slice";
 
 import Sort from "@/components/collections/Sort";
-import Radio from "@/components/collections/Radio";
+import RadioCollection from "@/components/collections/RadioCollection";
 import ProductCard from "@/components/cards/ProductCard";
 
 interface PropsType {
@@ -49,7 +49,7 @@ export default function Collection(props: PropsType) {
 
   return (
     <section className={styles.collection}>
-      <div className={styles.collection_manager}>
+      <header className={styles.collection_manager}>
         <div className={styles.manager_title}>
           <p>{title}</p>
         </div>
@@ -58,14 +58,26 @@ export default function Collection(props: PropsType) {
             <Sort handleValue={defineSort} sort={sort} />
           </div>
           <div className={styles.manager_radios}>
-            <Radio handleValue={defineGrid} grid={grid} id={"4"} />
-            <Radio handleValue={defineGrid} grid={grid} id={"2"} />
+            <RadioCollection
+              id={"4"}
+              name="grid-collection"
+              grid={grid}
+              onChange={(e) => defineGrid(e.target.value)}
+              aria-label="Grid colection 4 column"
+            />
+            <RadioCollection
+              id={"2"}
+              name="grid-collection"
+              grid={grid}
+              onChange={(e) => defineGrid(e.target.value)}
+              aria-label="Grid colection 2 column"
+            />
           </div>
         </div>
-      </div>
+      </header>
       <div className={`${styles.collection_group} ${styles[grid]}`}>
         {products.map((item) => (
-          <ProductCard product={item} key={item.id} handleItem={()=>{}} />
+          <ProductCard product={item} key={item.id} handleItem={() => {}} />
         ))}
       </div>
     </section>

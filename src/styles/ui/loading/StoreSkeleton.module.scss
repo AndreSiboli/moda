@@ -1,0 +1,128 @@
+@use "@/styles/_dirs/variables" as var;
+@use "@/styles/_dirs/mixins" as mix;
+
+.skeleton {
+  position: relative;
+  padding: 0 2em;
+  background: var.$brand_color_500;
+  position: relative;
+  overflow: hidden;
+  animation: 1s linear infinite alternate-reverse fadeBefore;
+
+  //   &::before {
+  //     content: "";
+  //     width: 0%;
+  //     height: 100%;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     background: #fff;
+  //     opacity: 0.2;
+  //     // transform: rotate(3deg);
+  //     animation: 1s linear infinite fadeBefore;
+  //   }
+
+  &_wallpaper {
+    pointer-events: none;
+  }
+
+  &_container {
+    display: flex;
+    align-items: flex-end;
+    padding: 7em 0;
+    min-height: 100vh;
+  }
+
+  &_content {
+    color: var.$clr-light-hard;
+    max-width: 400px;
+    width: 100%;
+
+    .skeleton_text,
+    .skeleton_title {
+      background: var.$neutral_color_100;
+      border-radius: 1em;
+      animation: 1s linear infinite alternate-reverse fade;
+    }
+
+    .content_title {
+      margin-bottom: 1em;
+
+      .skeleton_title {
+        width: 60%;
+        height: 1.5em;
+      }
+    }
+
+    .content_text {
+      .skeleton_text {
+        width: 100%;
+        height: 0.9em;
+        animation: 1s linear infinite alternate-reverse fade;
+
+        &:not(:first-child) {
+          margin-top: 0.5em;
+        }
+
+        &:last-child {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeBefore {
+  to {
+    opacity: 0.8;
+  }
+}
+
+.collection {
+  min-height: 500px;
+  padding: 3em 0.5em;
+
+  &_manager {
+    @include mix.Flex($jc: space-between, $gap: 2em);
+    padding: 0 0.5em;
+    margin-bottom: 2em;
+
+    .skeleton_title {
+      background: var.$neutral_color_300;
+      border-radius: 1em;
+      width: 200px;
+      height: 1.5em;
+      animation: 1s linear infinite alternate-reverse fade;
+    }
+
+    .skeleton_default {
+      background: var.$neutral_color_300;
+      width: 200px;
+      height: 1em;
+      border-radius: 1em;
+      animation: 1s linear infinite alternate-reverse fade;
+    }
+  }
+
+  &_group {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75em;
+
+    .skeleton_card {
+      background: var.$neutral_color_300;
+      height: 530px;
+      animation: 1s linear infinite alternate-reverse fade;
+    }
+
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+}

@@ -13,23 +13,23 @@ export default function HeroCollections(props: PropsType) {
   const { image, title, text } = data;
 
   return (
-    <div className={styles.hero}>
+    <main className={styles.hero}>
       <figure className={styles.hero_wallpaper}>
         <Img src={image.src} styles={image.styles} />
       </figure>
 
       <Container>
         <div className={styles.hero_container}>
-          <section className={styles.hero_content}>
+          <article className={styles.hero_content}>
             <div className={styles.content_title}>
               <h1>{title}</h1>
             </div>
             <div className={styles.content_text}>
               <p>{text}</p>
             </div>
-          </section>
+          </article>
         </div>
       </Container>
-    </div>
+    </main>
   );
 }
