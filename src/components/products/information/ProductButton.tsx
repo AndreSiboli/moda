@@ -17,30 +17,31 @@ export default function ProductButton(props: PropsType) {
   const state = useAppSelector((state) => state.cartReducer);
   const dispatch = useDispatch();
 
-  function add2Cart() {
+  function addToCart(): Promise<string> {
     return new Promise((res, rej) => {
       simulateDelay(() => {
+        if (!selectedSize) return rej("SIZE NEEDED");
         const formatted = formatingProduct(product);
-        if (!formatted || isThereInCart(state.cart, formatted))
-          return rej(false);
+        if (!formatted) return rej("AN ERROR HAS OCURRED");
+        if (isThereInCart(state.cart, formatted))
+          return rej("ITEM ALREADY IN CART");
 
         dispatch(insertItem({ ...formatted }));
-        res(true);
+        res("ITEM ADDED");
       });
     });
   }
 
   function formatingProduct(product: ProductType) {
-    if (!selectedSize) return null;
-    const find = findSize();
-    if (!find) return null;
+    const sizeFound = findSize();
+    if (!sizeFound) return null;
 
     //Pass less content to cart
     const { sizes, details, images, description, ...rest } = product;
-    
+
     return {
       ...rest,
-      size: find,
+      size: sizeFound,
       quantity: 1,
     } as CartUserType;
   }
@@ -55,12 +56,7 @@ export default function ProductButton(props: PropsType) {
 
   return (
     <div className={styles.product_button}>
-      <ButtonLoading
-        text="ADD TO CART"
-        message="PRODUCT ADDED"
-        handleClick={add2Cart}
-        variant="v2"
-      />
+      <ButtonLoading text="ADD TO CART" handleClick={addToCart} variant="v2" />
     </div>
   );
 }

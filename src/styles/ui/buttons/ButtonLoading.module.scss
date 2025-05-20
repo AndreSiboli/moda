@@ -16,12 +16,12 @@
   transition: background 0.2s ease-in-out;
 
   &_text,
-  &_info,
+  &_message,
   &_loading {
     transition: 0.2s ease-in-out;
   }
 
-  &_info,
+  &_message,
   &_loading {
     @include mix.Flex;
     width: 100%;
@@ -32,9 +32,8 @@
   }
 
   &_text,
-  &_info {
+  &_message {
     font-weight: 500;
-
     transform: translateY(100px);
   }
 
@@ -44,7 +43,8 @@
     }
   }
 
-  &_info {
+  &_message,
+  &_error {
     &.active {
       transform: translateY(0);
     }
@@ -93,11 +93,20 @@
     }
   }
 
+  &_success {
+    background: var.$support_color_scss;
+  }
+
+  &_error {
+    background: var.$support_color_err;
+  }
+
   &.v1 {
     background: var.$clr_light_hard;
 
+    .button_error,
     .button_text,
-    .button_info {
+    .button_success {
       color: var.$clr_dark_normal;
     }
 
@@ -111,8 +120,9 @@
   &.v2 {
     background: var.$clr_dark_normal;
 
+    .button_error,
     .button_text,
-    .button_info {
+    .button_success {
       color: var.$clr_light_hard;
     }
 

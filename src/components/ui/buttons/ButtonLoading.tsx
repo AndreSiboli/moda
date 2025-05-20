@@ -1,36 +1,42 @@
 import { ComponentProps, useState } from "react";
 import styles from "@/styles/ui/buttons/ButtonLoading.module.scss";
+import clsx from "clsx";
 
-interface PropsType extends ComponentProps<"button"> {
+interface PropsType extends Omit<ComponentProps<"button">, "onClick"> {
   text: string;
-  message?: string;
-  handleClick: () => Promise<unknown>;
+  message?: { success: string; error: string };
+  handleClick: () => Promise<string>;
   variant?: "v1" | "v2";
 }
 
 export default function ButtonLoading(props: PropsType) {
-  const { text, message, handleClick, variant = "v1", ...rest } = props;
-  const [isLoading, setIsLoading] = useState<"normal" | "loading" | "info">(
-    "normal"
-  );
-  const isNormal = isLoading === "normal" ? styles.active : "";
-  const isItLoading = isLoading === "loading" ? styles.active : "";
-  const isInfo = isLoading === "info" ? styles.active : "";
+  const { text, handleClick, variant = "v1", ...rest } = props;
+  const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState<
+    "normal" | "loading" | "success" | "error"
+  >("normal");
 
   async function handleOnClick() {
     if (isLoading !== "normal") return;
 
     try {
       setIsLoading("loading");
-      await handleClick();
+      const response = await handleClick();
 
-      if (message) {
-        setIsLoading("info");
-        setTimeout(() => setIsLoading("normal"), 1000);
+      if (typeof response === "string") {
+        setMessage(response);
+        setIsLoading("success");
+        setTimeout(() => setIsLoading("normal"), 2000);
         return;
       }
       setIsLoading("normal");
     } catch (err) {
+      if (typeof err === "string") {
+        setMessage(err);
+        setIsLoading("error");
+        setTimeout(() => setIsLoading("normal"), 2000);
+        return;
+      }
       setIsLoading("normal");
     }
   }
@@ -42,15 +48,33 @@ export default function ButtonLoading(props: PropsType) {
       aria-busy={isLoading === "loading"}
       onClick={handleOnClick}
     >
-      <p className={`${styles.button_text} ${isNormal}`}>{text}</p>
+      <p
+        className={clsx(styles.button_text, {
+          [styles.active]: isLoading === "normal",
+        })}
+      >
+        {text}
+      </p>
 
-      <div className={`${styles.button_loading} ${isItLoading}`}>
+      <div
+        className={clsx(styles.button_loading, {
+          [styles.active]: isLoading === "loading",
+        })}
+      >
         <span className={styles.dot} />
         <span className={styles.dot} />
         <span className={styles.dot} />
       </div>
 
-      <p className={`${styles.button_info} ${isInfo}`}>{message}</p>
+      <p
+        className={clsx(styles.button_message, {
+          [styles.active]: isLoading === "error" || isLoading === "success",
+          [styles.button_success]: isLoading === "success",
+          [styles.button_error]: isLoading === "error",
+        })}
+      >
+        {message}
+      </p>
     </button>
   );
 }
