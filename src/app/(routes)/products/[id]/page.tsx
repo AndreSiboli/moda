@@ -3,7 +3,7 @@
 import { ProductType } from "@/_types/ProductsType";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { products } from "@/fake-api/allProducts";
+import { products } from "@/fake-api/ProductsData";
 import styles from "@/styles/pages/products/Products.module.scss";
 
 import Portraits from "@/components/products/Portraits";

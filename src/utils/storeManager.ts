@@ -1,7 +1,7 @@
 import { ProductType } from "@/_types/ProductsType";
 import { routesCollections, routesStore } from "@/data/routes";
 import { collections } from "@/fake-api/CollectionsData";
-import { products } from "@/fake-api/allProducts";
+import { products } from "@/fake-api/ProductsData";
 
 export function chooseCollection(type: string): ProductType[] {
   return collections.filter((product) => product.collection === type);

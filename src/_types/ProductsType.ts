@@ -26,4 +26,5 @@ export interface ProductType {
     title: string;
     contents: string[];
   }[];
+  collection?: string
 }

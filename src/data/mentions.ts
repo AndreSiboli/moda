@@ -1,4 +1,4 @@
-import { products } from "@/fake-api/allProducts";
+import { products } from "@/fake-api/ProductsData";
 import { collections } from "@/fake-api/CollectionsData";
 
 import intimate from "@/assets/products/thumbnails/intimate.jpg";

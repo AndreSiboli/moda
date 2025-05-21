@@ -76,22 +76,6 @@ const jewelry: ProductType[] = [
         src: jewelry1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: jewelry1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 49.99,
     sizes: [{ size: "TU", stock: 12 }],
@@ -133,22 +117,6 @@ const jewelry: ProductType[] = [
     id: "01963988-e183-72e2-9c59-4e625f86f0af",
     title: "Suspendisse Potenti",
     images: [
-      {
-        src: jewelry2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: jewelry2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -198,22 +166,6 @@ const jewelry: ProductType[] = [
         src: jewelry3,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: jewelry3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 59.99,
     sizes: [{ size: "TU", stock: 12 }],
@@ -255,22 +207,6 @@ const jewelry: ProductType[] = [
     id: "01963988-e183-7ab8-945b-dcc7cecef56c",
     title: "Curabitur Mattis",
     images: [
-      {
-        src: jewelry4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: jewelry4,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -320,22 +256,6 @@ const jewelry: ProductType[] = [
         src: jewelry5,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: jewelry5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 69.99,
     sizes: [{ size: "TU", stock: 12 }],
@@ -381,22 +301,6 @@ const jewelry: ProductType[] = [
         src: jewelry6,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: jewelry6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 55.99,
     sizes: [{ size: "TU", stock: 12 }],
@@ -438,22 +342,6 @@ const jewelry: ProductType[] = [
     id: "01963988-e183-7ddc-bcc7-a73bdb3c1eb7",
     title: "Donec Sodales",
     images: [
-      {
-        src: jewelry7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: jewelry7,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -520,22 +408,6 @@ const jewelry: ProductType[] = [
         src: jewelry8,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: jewelry8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 47.99,
     sizes: [{ size: "TU", stock: 12 }],
@@ -581,22 +453,6 @@ const jewelry: ProductType[] = [
         src: jewelry9,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: jewelry9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 62.99,
     sizes: [{ size: "TU", stock: 12 }],
@@ -638,22 +494,6 @@ const jewelry: ProductType[] = [
     id: "01963988-e183-7988-bb51-6d12ba549a6b",
     title: "Phasellus Ultrices",
     images: [
-      {
-        src: jewelry10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: jewelry10,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -720,22 +560,6 @@ const jewelry: ProductType[] = [
         src: jewelry11,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: jewelry11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 48.99,
     sizes: [{ size: "TU", stock: 12 }],
@@ -777,22 +601,6 @@ const jewelry: ProductType[] = [
     id: "01963f54-3a89-796c-8b91-5707028859ef",
     title: "Vestibulum Ante",
     images: [
-      {
-        src: jewelry12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: jewelry12,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -842,22 +650,6 @@ const jewelry: ProductType[] = [
         src: jewelry13,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: jewelry13,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry13,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry13,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry13,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 41.99,
     sizes: [{ size: "TU", stock: 2 }],
@@ -899,22 +691,6 @@ const jewelry: ProductType[] = [
     id: "01963f54-6b89-73e4-8b96-1ab4721ca47f",
     title: "Vestibulum Ante",
     images: [
-      {
-        src: jewelry14,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry14,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry14,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry14,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: jewelry14,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -964,22 +740,6 @@ const jewelry: ProductType[] = [
         src: jewelry15,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: jewelry15,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry15,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry15,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry15,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 65.99,
     sizes: [{ size: "TU", stock: 12 }],
@@ -1021,22 +781,6 @@ const jewelry: ProductType[] = [
     id: "01963988-e183-7a5f-8ef4-26fba6187e03",
     title: "Mauris Finibus",
     images: [
-      {
-        src: jewelry16,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry16,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry16,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: jewelry16,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: jewelry16,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1086,22 +830,6 @@ const dresses: ProductType[] = [
     id: "01963988-e183-7093-bcdd-a5e4a40f7646",
     title: "Lorem Ipsum Dolor Sit",
     images: [
-      {
-        src: dress1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: dress1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1177,22 +905,6 @@ const dresses: ProductType[] = [
         src: dress2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: dress2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 32.5,
 
@@ -1264,22 +976,6 @@ const dresses: ProductType[] = [
         src: dress3,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: dress3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 52.99,
 
@@ -1347,22 +1043,6 @@ const dresses: ProductType[] = [
     id: "01963988-e183-7488-bd2a-c2807237d175",
     title: "Curabitur Mattis",
     images: [
-      {
-        src: dress4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: dress4,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1442,18 +1122,6 @@ const dresses: ProductType[] = [
         src: dress5p2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: dress5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 65,
 
@@ -1525,22 +1193,6 @@ const dresses: ProductType[] = [
         src: dress6,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: dress6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 41.99,
 
@@ -1608,22 +1260,6 @@ const dresses: ProductType[] = [
     id: "01963f6e-7f4a-73e1-afca-582036f03878",
     title: "Mauris Finibus",
     images: [
-      {
-        src: dress7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: dress7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: dress7,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1701,22 +1337,6 @@ const intimate: ProductType[] = [
         src: intimate1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: intimate1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 29.99,
     rating: {
@@ -1783,22 +1403,6 @@ const intimate: ProductType[] = [
     id: "01963988-e183-708d-930f-cca9832d6172",
     title: "Suspendisse Potenti",
     images: [
-      {
-        src: intimate2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: intimate2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1873,22 +1477,6 @@ const intimate: ProductType[] = [
         src: intimate3,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: intimate3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 41.99,
     rating: {
@@ -1955,22 +1543,6 @@ const intimate: ProductType[] = [
     id: "01963988-e183-7440-8203-d6df60c6ee79",
     title: "Curabitur Mattis",
     images: [
-      {
-        src: intimate4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: intimate4,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2045,22 +1617,6 @@ const intimate: ProductType[] = [
         src: intimate5,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: intimate5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 44,
     rating: {
@@ -2127,22 +1683,6 @@ const intimate: ProductType[] = [
     id: "01963988-e183-7279-abda-4f9589ecabfa",
     title: "Mauris Finibus",
     images: [
-      {
-        src: intimate6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: intimate6,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2221,18 +1761,6 @@ const intimate: ProductType[] = [
         src: intimate7p2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: intimate7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: intimate7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 39.99,
     rating: {
@@ -2302,22 +1830,6 @@ const shirt: ProductType[] = [
     id: "019643ce-dfb7-7173-84ac-e444c856d5db",
     title: "Aenean Auctor",
     images: [
-      {
-        src: shirt1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: shirt1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2392,22 +1904,6 @@ const shirt: ProductType[] = [
         src: shirt2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: shirt2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 52.99,
     rating: {
@@ -2474,22 +1970,6 @@ const shirt: ProductType[] = [
     id: "0196407c-2a49-736e-8918-72d0ebc91445",
     title: "Aenean Auctor",
     images: [
-      {
-        src: shirt3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: shirt3,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2564,22 +2044,6 @@ const shirt: ProductType[] = [
         src: shirt4,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: shirt4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 45.99,
     rating: {
@@ -2646,22 +2110,6 @@ const shirt: ProductType[] = [
     id: "0196407c-2c18-70fb-afb0-d8df8153a609",
     title: "Aenean Auctor",
     images: [
-      {
-        src: shirt5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: shirt5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: shirt5,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2739,22 +2187,6 @@ const shorts: ProductType[] = [
         src: short1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: short1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 45.99,
     rating: {
@@ -2821,22 +2253,6 @@ const shorts: ProductType[] = [
     id: "019643cf-b6fe-70f5-8c93-2f65fd841d07",
     title: "Aenean Auctor",
     images: [
-      {
-        src: short2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: short2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2911,22 +2327,6 @@ const shorts: ProductType[] = [
         src: short3,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: short3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 58.99,
     rating: {
@@ -2997,22 +2397,6 @@ const shorts: ProductType[] = [
         src: short4,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: short4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 39.99,
     rating: {
@@ -3079,22 +2463,6 @@ const shorts: ProductType[] = [
     id: "019643cf-bc47-7e2e-b6ff-8452ab0f5d99",
     title: "Aenean Auctor",
     images: [
-      {
-        src: short5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: short5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: short5,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -3172,22 +2540,6 @@ const pants: ProductType[] = [
         src: pants1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: pants1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 47.99,
     rating: {
@@ -3254,22 +2606,6 @@ const pants: ProductType[] = [
     id: "01964401-ea37-750a-93ba-d2079bf072c4",
     title: "Aenean Auctor",
     images: [
-      {
-        src: pants2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: pants2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -3344,22 +2680,6 @@ const pants: ProductType[] = [
         src: pants3,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: pants3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 48.99,
     rating: {
@@ -3426,22 +2746,6 @@ const pants: ProductType[] = [
     id: "01964401-ed94-7426-be03-0ecaf724069c",
     title: "Aenean Auctor",
     images: [
-      {
-        src: pants4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: pants4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: pants4,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -3519,22 +2823,6 @@ const tops: ProductType[] = [
         src: tops1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: tops1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 39.99,
     rating: {
@@ -3601,22 +2889,6 @@ const tops: ProductType[] = [
     id: "0196442d-972b-7696-88a0-11c3c6c416e7",
     title: "Aenean Auctor",
     images: [
-      {
-        src: tops2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: tops2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -3691,22 +2963,6 @@ const tops: ProductType[] = [
         src: tops3,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: tops3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 44.99,
     rating: {
@@ -3773,22 +3029,6 @@ const tops: ProductType[] = [
     id: "0196442d-9ade-70a9-8ed6-90c6822433e3",
     title: "Aenean Auctor",
     images: [
-      {
-        src: tops4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: tops4,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -3863,22 +3103,6 @@ const tops: ProductType[] = [
         src: tops5,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: tops5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 56.99,
     rating: {
@@ -3949,22 +3173,6 @@ const tops: ProductType[] = [
         src: tops6,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: tops6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: tops6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 42.99,
     rating: {
@@ -4029,7 +3237,7 @@ const tops: ProductType[] = [
   },
 ];
 
-export const products: ProductType[] = [
+export const products: ProductType[]  = [
   ...jewelry,
   ...dresses,
   ...intimate,

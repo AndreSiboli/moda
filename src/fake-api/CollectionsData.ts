@@ -1,4 +1,4 @@
-import { CollectionType } from "@/_types/CollectionType";
+import { ProductType } from "@/_types/ProductsType";
 
 import summer1 from "@/assets/collections/summer/sexto-abismo-ginebra-aEi9gK09kT4-unsplash.jpg";
 import summer2 from "@/assets/collections/summer/gus-tu-njana-stWKm45jVds-unsplash.jpg";
@@ -58,27 +58,11 @@ import spring9 from "@/assets/collections/spring/pexels-vitoriasantos-3050943.jp
 import spring10 from "@/assets/collections/spring/sam-chapman-rEA2MzwxGmY-unsplash.jpg";
 import spring11 from "@/assets/collections/spring/vitalii-khodzinskyi-nYM9SSk7vC8-unsplash.jpg";
 
-const summer25: CollectionType[] = [
+const summer25: ProductType[] = [
   {
     id: "01963a34-5d6a-7bc7-a4c7-a88a08ef8c7f",
     title: "Lorem Ipsum Dolor Sit",
     images: [
-      {
-        src: summer1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: summer1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -151,22 +135,6 @@ const summer25: CollectionType[] = [
     id: "01963a34-5d6a-709d-8b92-8419958bf6c9",
     title: "Suspendisse Potenti",
     images: [
-      {
-        src: summer2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: summer2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -329,22 +297,6 @@ const summer25: CollectionType[] = [
         src: summer4,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: summer4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 47.99,
     rating: {
@@ -412,22 +364,6 @@ const summer25: CollectionType[] = [
     id: "01963a34-5d6a-7844-b052-da0641c2fa8f",
     title: "Vivamus Ultricies",
     images: [
-      {
-        src: summer5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: summer5,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -503,22 +439,6 @@ const summer25: CollectionType[] = [
         src: summer6,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: summer6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 42.99,
     rating: {
@@ -586,22 +506,6 @@ const summer25: CollectionType[] = [
     id: "01963a34-5d6a-71e6-8250-f402f21916d1",
     title: "Aenean Auctor",
     images: [
-      {
-        src: summer7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: summer7,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -677,22 +581,6 @@ const summer25: CollectionType[] = [
         src: summer8,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: summer8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 38.99,
     rating: {
@@ -760,22 +648,6 @@ const summer25: CollectionType[] = [
     id: "01963a34-5d6a-77bd-9123-ca1d58c8367e",
     title: "Pellentesque Fermentum",
     images: [
-      {
-        src: summer9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: summer9,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -851,22 +723,6 @@ const summer25: CollectionType[] = [
         src: summer10,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: summer10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 49.99,
     rating: {
@@ -934,22 +790,6 @@ const summer25: CollectionType[] = [
     id: "01963a34-5d6a-7ba0-ae86-7e1e011b9648",
     title: "Phasellus Ultrices",
     images: [
-      {
-        src: summer11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: summer11,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1025,22 +865,6 @@ const summer25: CollectionType[] = [
         src: summer12,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: summer12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: summer12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 51.99,
     rating: {
@@ -1106,27 +930,11 @@ const summer25: CollectionType[] = [
   },
 ];
 
-const spring25: CollectionType[] = [
+const spring25: ProductType[] = [
   {
     id: "01963a34-5d6a-7885-9934-4dba2d1101e2",
     title: "Lorem Ipsum Dolor Sit",
     images: [
-      {
-        src: spring1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: spring1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1202,22 +1010,6 @@ const spring25: CollectionType[] = [
         src: spring2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: spring2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 53.75,
     rating: {
@@ -1285,22 +1077,6 @@ const spring25: CollectionType[] = [
     id: "01963a34-5d6a-7449-a4b8-06096c7014b4",
     title: "Cras Blandit",
     images: [
-      {
-        src: spring3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: spring3,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1376,22 +1152,6 @@ const spring25: CollectionType[] = [
         src: spring4,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: spring4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 49.99,
     rating: {
@@ -1459,22 +1219,6 @@ const spring25: CollectionType[] = [
     id: "01963a34-5d6b-7cd0-b240-64b4139d2d8e",
     title: "Vivamus Ultricies",
     images: [
-      {
-        src: spring5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: spring5,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1550,22 +1294,6 @@ const spring25: CollectionType[] = [
         src: spring6,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: spring6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 43.99,
     rating: {
@@ -1633,22 +1361,6 @@ const spring25: CollectionType[] = [
     id: "01963a34-5d6b-7301-b1d9-0f17d0c3eb08",
     title: "Aenean Auctor",
     images: [
-      {
-        src: spring7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: spring7,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1724,22 +1436,6 @@ const spring25: CollectionType[] = [
         src: spring8,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: spring8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 48.99,
     rating: {
@@ -1807,22 +1503,6 @@ const spring25: CollectionType[] = [
     id: "01963a34-5d6b-75f7-8bb7-bebc77360fd9",
     title: "Pellentesque Fermentum",
     images: [
-      {
-        src: spring9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: spring9,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -1898,22 +1578,6 @@ const spring25: CollectionType[] = [
         src: spring10,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: spring10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 61.99,
     rating: {
@@ -1985,22 +1649,6 @@ const spring25: CollectionType[] = [
         src: spring11,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: spring11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: spring11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 56.5,
     rating: {
@@ -2066,27 +1714,11 @@ const spring25: CollectionType[] = [
   },
 ];
 
-const genz25: CollectionType[] = [
+const genz25: ProductType[] = [
   {
     id: "01963a34-5d6a-7917-bd72-f8a5f77cf70f",
     title: "Lorem Ipsum Dolor Sit",
     images: [
-      {
-        src: genz1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: genz1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2162,22 +1794,6 @@ const genz25: CollectionType[] = [
         src: genz2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: genz2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 52.5,
     rating: {
@@ -2245,22 +1861,6 @@ const genz25: CollectionType[] = [
     id: "01963a34-5d6a-77d5-93d3-b6175a160f57",
     title: "Cras Blandit",
     images: [
-      {
-        src: genz3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: genz3,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2340,18 +1940,6 @@ const genz25: CollectionType[] = [
         src: genz4p2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: genz4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 39.99,
     rating: {
@@ -2420,23 +2008,7 @@ const genz25: CollectionType[] = [
     title: "Vivamus Ultricies",
     images: [
       {
-        src: genz5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
         src: genz5p2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz5,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -2506,22 +2078,6 @@ const genz25: CollectionType[] = [
     id: "01963a34-5d6a-7d6d-a311-214f8bbe7da8",
     title: "Mauris Finibus",
     images: [
-      {
-        src: genz6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: genz6,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2601,18 +2157,6 @@ const genz25: CollectionType[] = [
         src: genz7p2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: genz7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 59.5,
     rating: {
@@ -2680,22 +2224,6 @@ const genz25: CollectionType[] = [
     id: "01963a34-5d6a-718b-ac5c-89e0c454032f",
     title: "Donec Sodales",
     images: [
-      {
-        src: genz8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: genz8,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2771,22 +2299,6 @@ const genz25: CollectionType[] = [
         src: genz9,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: genz9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 42.25,
     rating: {
@@ -2854,22 +2366,6 @@ const genz25: CollectionType[] = [
     id: "01963a34-5d6a-72dd-9633-265b28844423",
     title: "Aliquam Pharetra",
     images: [
-      {
-        src: genz10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: genz10,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -2945,22 +2441,6 @@ const genz25: CollectionType[] = [
         src: genz11,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: genz11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 58.5,
     rating: {
@@ -3032,22 +2512,6 @@ const genz25: CollectionType[] = [
         src: genz12,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: genz12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: genz12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 62.99,
     rating: {
@@ -3113,27 +2577,11 @@ const genz25: CollectionType[] = [
   },
 ];
 
-const sport25: CollectionType[] = [
+const sport25: ProductType[] = [
   {
     id: "01963a34-5d6a-7816-94bc-9d8977df11dc",
     title: "Lorem Ipsum Dolor Sit",
     images: [
-      {
-        src: sport1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport1,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: sport1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -3209,22 +2657,6 @@ const sport25: CollectionType[] = [
         src: sport2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: sport2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport2,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 48.5,
     rating: {
@@ -3292,22 +2724,6 @@ const sport25: CollectionType[] = [
     id: "01963a34-5d6a-75e6-84f6-1adbbcf90e3f",
     title: "Cras Blandit",
     images: [
-      {
-        src: sport3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport3,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: sport3,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -3383,22 +2799,6 @@ const sport25: CollectionType[] = [
         src: sport4,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: sport4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport4,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 52.99,
     rating: {
@@ -3466,22 +2866,6 @@ const sport25: CollectionType[] = [
     id: "01963a34-5d6a-7982-b6c3-0d518a8c7c07",
     title: "Vivamus Ultricies",
     images: [
-      {
-        src: sport5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport5,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: sport5,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -3557,22 +2941,6 @@ const sport25: CollectionType[] = [
         src: sport6,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: sport6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport6,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 45.99,
     rating: {
@@ -3640,22 +3008,6 @@ const sport25: CollectionType[] = [
     id: "01963a34-5d6a-754b-aef8-84f7056f40fe",
     title: "Aenean Auctor",
     images: [
-      {
-        src: sport7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport7,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: sport7,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -3731,22 +3083,6 @@ const sport25: CollectionType[] = [
         src: sport8,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: sport8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport8,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 42.99,
     rating: {
@@ -3814,22 +3150,6 @@ const sport25: CollectionType[] = [
     id: "01963a34-5d6a-7ded-8457-507c9f1158cb",
     title: "Pellentesque Fermentum",
     images: [
-      {
-        src: sport9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport9,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: sport9,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -3905,22 +3225,6 @@ const sport25: CollectionType[] = [
         src: sport10,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: sport10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport10,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 58.99,
     rating: {
@@ -3988,22 +3292,6 @@ const sport25: CollectionType[] = [
     id: "01963a34-5d6a-7e0f-916e-d1685cf09b5d",
     title: "Phasellus Ultrices",
     images: [
-      {
-        src: sport11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport11,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
       {
         src: sport11,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -4079,22 +3367,6 @@ const sport25: CollectionType[] = [
         src: sport12,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
-      {
-        src: sport12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        src: sport12,
-        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
     ],
     price: 56.99,
     rating: {
@@ -4160,7 +3432,7 @@ const sport25: CollectionType[] = [
   },
 ];
 
-export const collections: CollectionType[] = [
+export const collections: ProductType[] = [
   ...summer25,
   ...spring25,
   ...genz25,
