@@ -1,6 +1,8 @@
 import { ProductType } from "@/_types/ProductsType";
 
 import summer1 from "@/assets/collections/summer/sexto-abismo-ginebra-aEi9gK09kT4-unsplash.jpg";
+import summer1p1 from "@/assets/collections/summer/sexto-abismo-ginebra-JnXqDpzKx9I-unsplash.jpg";
+import summer1p2 from "@/assets/collections/summer/sexto-abismo-ginebra-TichIPZ5NgU-unsplash.jpg";
 import summer2 from "@/assets/collections/summer/gus-tu-njana-stWKm45jVds-unsplash.jpg";
 import summer3 from "@/assets/collections/summer/dmitry-ganin-LDM-hkWsoOQ-unsplash.jpg";
 import summer3p1 from "@/assets/collections/summer/dmitry-ganin-JapUCMSlWj4-unsplash.jpg";
@@ -9,13 +11,21 @@ import summer3p3 from "@/assets/collections/summer/dmitry-ganin-eJpq8VL5MmU-unsp
 import summer3p4 from "@/assets/collections/summer/dmitry-ganin-toCNtcxbgEI-unsplash.jpg";
 import summer4 from "@/assets/collections/summer/keith-tanner-dxdASzd-bu0-unsplash.jpg";
 import summer5 from "@/assets/collections/summer/pexels-eduardordone-2602717.jpg";
+import summer5p2 from "@/assets/collections/summer/pexels-eduardordone-2602718.jpg";
 import summer6 from "@/assets/collections/summer/sexto-abismo-ginebra-uFXXP1hwsvs-unsplash.jpg";
 import summer7 from "@/assets/collections/summer/pexels-alesiakozik-6637450.jpg";
+import summer7p2 from "@/assets/collections/summer/pexels-alesiakozik-6638228.jpg";
+import summer7p3 from "@/assets/collections/summer/pexels-alesiakozik-6637448.jpg";
 import summer8 from "@/assets/collections/summer/diego-acosta-irZxUnbcR9g-unsplash.jpg";
 import summer9 from "@/assets/collections/summer/pexels-alesiakozik-6641970.jpg";
+import summer9p1 from "@/assets/collections/summer/pexels-alesiakozik-6641976.jpg";
+import summer9p2 from "@/assets/collections/summer/pexels-alesiakozik-6641971.jpg";
 import summer10 from "@/assets/collections/summer/jasmin-chew-43iuA0mu4L8-unsplash.jpg";
-import summer11 from "@/assets/collections/summer/tamara-bellis-yAsdIQKrXfU-unsplash.jpg";
+import summer10p1 from "@/assets/collections/summer/jasmin-chew-_gVciH6HpuQ-unsplash.jpg";
+import summer11 from "@/assets/collections/summer/sexto-abismo-ginebra-cf5tkmJE6x8-unsplash.jpg";
+import summer11p1 from "@/assets/collections/summer/sexto-abismo-ginebra-obBhfMa6D6Y-unsplash.jpg";
 import summer12 from "@/assets/collections/summer/tudor-adrian-gloe7HNn4g4-unsplash.jpg";
+import summer12p1 from "@/assets/collections/summer/tudor-adrian-JlYvSD4Pnvo-unsplash.jpg";
 
 import sport1 from "@/assets/collections/sport/alonso-reyes-xd4tmzR8Uog-unsplash.jpg";
 import sport2 from "@/assets/collections/sport/anastase-maragos-J7IBavYCdUA-unsplash.jpg";
@@ -49,6 +59,8 @@ import genz12 from "@/assets/collections/genz/sule-makaroglu-qktiaNv700Y-unsplas
 import spring1 from "@/assets/collections/spring/bailey-burton-jN8PVzZQ9iQ-unsplash.jpg";
 import spring2 from "@/assets/collections/spring/benigno-hoyuela-kBzGRtgJhPo-unsplash.jpg";
 import spring3 from "@/assets/collections/spring/jasmin-chew-e_fwWMPw97Y-unsplash.jpg";
+import spring3p1 from "@/assets/collections/spring/jasmin-chew-qn9usOaRSnI-unsplash.jpg";
+import spring3p2 from "@/assets/collections/spring/jasmin-chew-RByfTMd6d9g-unsplash.jpg";
 import spring4 from "@/assets/collections/spring/jasmin-chew-txy8AZU04iw-unsplash.jpg";
 import spring5 from "@/assets/collections/spring/lance-reis-E0DmI5Elrjs-unsplash.jpg";
 import spring6 from "@/assets/collections/spring/pexels-anastasia-nagibina-1116204043-24342718.jpg";
@@ -57,6 +69,7 @@ import spring8 from "@/assets/collections/spring/pexels-kowalievska-1055691.jpg"
 import spring9 from "@/assets/collections/spring/pexels-vitoriasantos-3050943.jpg";
 import spring10 from "@/assets/collections/spring/sam-chapman-rEA2MzwxGmY-unsplash.jpg";
 import spring11 from "@/assets/collections/spring/vitalii-khodzinskyi-nYM9SSk7vC8-unsplash.jpg";
+import spring12 from "@/assets/collections/spring/jasmin-chew-TJZh_-9Xmv8-unsplash.jpg";
 
 const summer25: ProductType[] = [
   {
@@ -65,6 +78,14 @@ const summer25: ProductType[] = [
     images: [
       {
         src: summer1,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        src: summer1p1,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        src: summer1p2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -368,6 +389,10 @@ const summer25: ProductType[] = [
         src: summer5,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
+      {
+        src: summer5p2,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
     ],
     price: 55,
     rating: {
@@ -510,6 +535,14 @@ const summer25: ProductType[] = [
         src: summer7,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
+      {
+        src: summer7p2,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        src: summer7p3,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
     ],
     price: 50.5,
     rating: {
@@ -592,7 +625,7 @@ const summer25: ProductType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "diego acosta",
+      name: "Diego Acosta",
       url: "https://unsplash.com/pt-br/@djab1998",
     },
     details: [
@@ -650,6 +683,14 @@ const summer25: ProductType[] = [
     images: [
       {
         src: summer9,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        src: summer9p1,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        src: summer9p2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -723,6 +764,10 @@ const summer25: ProductType[] = [
         src: summer10,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
+      {
+        src: summer10p1,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
     ],
     price: 49.99,
     rating: {
@@ -794,6 +839,10 @@ const summer25: ProductType[] = [
         src: summer11,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
+      {
+        src: summer11p1,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
     ],
     price: 53.5,
     rating: {
@@ -805,8 +854,8 @@ const summer25: ProductType[] = [
     type: ["bikini"],
     collection: "summer",
     author: {
-      name: "Tamara Bellis",
-      url: "https://unsplash.com/pt-br/@tamarabellis",
+      name: "Sexto Abismo",
+      url: "https://unsplash.com/pt-br/@sextoabismo",
     },
     details: [
       {
@@ -856,13 +905,17 @@ const summer25: ProductType[] = [
       src: summer11,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     },
-  },
+  }, //
   {
     id: "01963a34-5d6a-7ea6-85ab-4c47d10355cd",
     title: "Vestibulum Ante",
     images: [
       {
         src: summer12,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        src: summer12p1,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -1022,7 +1075,7 @@ const spring25: ProductType[] = [
     collection: "spring",
     author: {
       name: "Benigno Hoyuela",
-      url: "https://unsplash.com/pt-br/@benignohoyuela ",
+      url: "https://unsplash.com/pt-br/@benignohoyuela",
     },
     details: [
       {
@@ -1079,6 +1132,14 @@ const spring25: ProductType[] = [
     images: [
       {
         src: spring3,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        src: spring3p1,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        src: spring3p2,
         alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -1709,6 +1770,78 @@ const spring25: ProductType[] = [
     ],
     thumbnail: {
       src: spring11,
+      alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    },
+  },
+  {
+    id: "01963a34-5d6a-7449-a4b8-06096c7025b4",
+    title: "Adipsing Elit",
+    images: [
+      {
+        src: spring12,
+        alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      },
+      
+    ],
+    price: 60.99,
+    rating: {
+      score: 4.7,
+      votes: 220,
+    },
+    description:
+      "Cras blandit aut perferendis facere qui eius voluptas et minima perferendis. A beatae eaque qui architecto accusamus eum reiciendis aspernatur est atque autem et ipsa galisum est fugiat iste ut neque laboriosam. Nam dolores voluptatum sed provident suscipit non dolorem ipsam sed molestiae assumenda aut Quis quam est natus explicabo.",
+    type: ["clothes"],
+    collection: "spring",
+    author: {
+      name: "Jasmin Chew",
+      url: "https://unsplash.com/pt-br/@majestical_jasmin",
+    },
+    details: [
+      {
+        title: "Composition",
+        contents: [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quo.",
+          "Ea itaque sequi sit animi minus aut dolor sint ut dolores perferendis.",
+          "Vel reiciendis laborum et perferendis voluptatem non temporibus eligendi.",
+        ],
+      },
+      {
+        title: "Care",
+        contents: [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quo.",
+          "Ea itaque sequi sit animi minus aut dolor sint ut dolores perferendis.",
+          "Vel reiciendis laborum et perferendis voluptatem non temporibus eligendi.",
+        ],
+      },
+    ],
+    sizes: [
+      {
+        size: "34",
+        stock: 6,
+      },
+      {
+        size: "36",
+        stock: 18,
+      },
+      {
+        size: "38",
+        stock: 19,
+      },
+      {
+        size: "40",
+        stock: 7,
+      },
+      {
+        size: "42",
+        stock: 6,
+      },
+      {
+        size: "44",
+        stock: 11,
+      },
+    ],
+    thumbnail: {
+      src: spring12,
       alt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     },
   },

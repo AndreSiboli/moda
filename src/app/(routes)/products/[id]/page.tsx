@@ -2,7 +2,7 @@
 
 import { ProductType } from "@/_types/ProductsType";
 import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { products } from "@/fake-api/ProductsData";
 import styles from "@/styles/pages/products/Products.module.scss";
 
@@ -11,11 +11,13 @@ import ProductInformation from "@/components/products/ProductInformation";
 import ProductCarousel from "@/components/products/ProductCarousel";
 import { PiHandSwipeLeft } from "react-icons/pi";
 import Loading from "@/components/utils/Loading";
+import { MessageContext } from "@/context/Message";
 
 export default function Products() {
   const { id } = useParams();
   const [product, setProduct] = useState<ProductType | null>(null);
   const [handleCarousel, setHandleCarousel] = useState(false);
+  const { defineMessage } = useContext(MessageContext);
 
   useEffect(() => {
     const prod = products.find((product) => product.id === id) || null;
@@ -38,9 +40,12 @@ export default function Products() {
   }, []);
 
   useEffect(() => {
-    alert(
-      "How I don't have similar images to each product. Some of them are duplicate, just to fit the visual."
-    );
+    defineMessage({
+      title: "Attention",
+      message:
+        "This is a demo site. The images are not real products. All the author are credited in mentions on the footer.",
+      type: "info",
+    });
   }, []);
 
   return (

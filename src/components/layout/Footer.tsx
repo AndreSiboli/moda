@@ -107,7 +107,7 @@ export default function Footer() {
           </div>
 
           <div className={styles.footer_footer}>
-            <p>Moda &copy; {new Date().getFullYear()}. All rights reserved.</p>
+            <p>Moda &copy; {new Date().getFullYear()}. This is not a real website.</p>
           </div>
         </div>
       </Container>
