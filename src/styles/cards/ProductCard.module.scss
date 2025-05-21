@@ -7,26 +7,75 @@
   aspect-ratio: 11/16;
   position: relative;
 
+  &_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .info_sizes {
+      @include mix.Flex($gap: 1em);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: #fffc;
+      transition: max-height 0.15s ease-in-out, opacity 0.15s ease-in-out,
+        visibility 0.15s ease-in-out;
+
+      @include mix.OnlyPc {
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: var(--font-courier);
+        font-size: 1em;
+        margin: 0.5em 0;
+
+        @include mix.OnlyPc {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .product_message {
+      visibility: none;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: #fffc;
+      font-size: 0.9em;
+      text-align: center;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.15s ease-in-out;
+
+      p {
+        padding: 0.5em 1em;
+      }
+
+      &.active {
+        visibility: visible;
+        max-height: 200px;
+      }
+    }
+  }
+
   &_image {
     position: relative;
     width: 100%;
     height: 100%;
     transition: filter 0.15s ease-in-out;
-    background: #222;
+    background: var.$brand_color_300;
   }
 
   &_info {
-    @include mix.OnlyPc {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background: #fffa;
-      overflow: hidden;
-      filter: blur(2px);
-      transition: 0.15s ease-in-out, filter 0.3s ease-in-out;
-      max-height: 0px;
-    }
-
     .info_wrapper {
       display: flex;
       justify-content: space-between;
@@ -40,12 +89,18 @@
       }
     }
 
-    .info_header {
+    .info_footer {
       display: flex;
-      flex-direction: column;
-      gap: 0.15em;
+      justify-content: space-between;
+      gap: 1em;
+      margin-top: 0.5em;
 
-      .header_title {
+      .footer_title,
+      .footer_price {
+        font-size: 0.9em;
+      }
+
+      .footer_title {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -55,23 +110,24 @@
         font-weight: bold;
       }
     }
-
-    .info_button {
-      width: fit-content;
-      height: fit-content;
-    }
   }
 
   @include mix.OnlyPc {
     &:hover {
       .product_image {
-        filter: brightness(0.6);
+        filter: brightness(0.7);
       }
 
-      .product_info {
-        max-height: 100%;
-        filter: blur(0);
+      .info_sizes {
+        max-height: 200px;
       }
+    }
+  }
+
+  &.loading {
+    .info_sizes {
+      visibility: hidden;
+      opacity: 0;
     }
   }
 }
