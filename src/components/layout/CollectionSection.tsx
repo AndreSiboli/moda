@@ -21,12 +21,12 @@ export default function CollectionSection(props: PropsType) {
   const { collection } = props;
 
   return (
-    <div className={styles.collection}>
+    <article className={styles.collection}>
       <div className={styles.collection_wrapper}>
-        <div className={styles.collection_header}>
+        <header className={styles.collection_header}>
           <h1>{collection.name}</h1>
           <p>{collection.text}</p>
-        </div>
+        </header>
 
         <div className={styles.collection_images}>
           {collection.images.slice(0, 2).map((image) => (
@@ -44,6 +44,6 @@ export default function CollectionSection(props: PropsType) {
           </figure>
         ))}
       </div>
-    </div>
+    </article>
   );
 }

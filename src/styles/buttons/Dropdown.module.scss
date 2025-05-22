@@ -2,8 +2,14 @@
 @use "@/styles/_dirs/mixins" as mix;
 
 .dropdown {
+  &.opened:not(:focus-within) .dropdown_content {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  } //Experimental
+
   &.opened {
-    .dropdown_title {
+    .dropdown_button {
       svg {
         transform: rotate(180deg);
       }
@@ -19,16 +25,13 @@
     }
   }
 
-  &_title {
+  &_button {
     display: flex;
     align-items: center;
     gap: 0.25em;
     cursor: pointer;
-
-    p {
-      text-transform: uppercase;
-      font-size: 0.9em;
-    }
+    font-size: 0.9em;
+    text-transform: uppercase;
 
     svg {
       font-size: 1em;

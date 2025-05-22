@@ -74,7 +74,7 @@ export default function Products() {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci, tenetur itaque officiis necessitatibus iste consectetur veniam nulla animi aperiam perferendis in ut optio deleniti cupiditate at sed temporibus quo!",
       images: [
         { src: sport1, alt: "", style: { objectPosition: "center 60%" } },
-        { src: sport2, alt: "", style: { objectPosition: "center 95%" }},
+        { src: sport2, alt: "", style: { objectPosition: "center 95%" } },
         { src: sport3, alt: "", style: { objectPosition: "center 35%" } },
         { src: sport4, alt: "", style: { objectPosition: "center 40%" } },
       ],
@@ -128,11 +128,13 @@ export default function Products() {
             className={`${styles.products_wrapper} ${
               animation ? styles.animated : ""
             }`}
+            aria-live="polite"
           >
             <CollectionSection collection={collection} />
           </div>
 
-          <div className={styles.products_manager}>
+          <fieldset className={styles.products_manager}>
+            <legend>Choose a collection: </legend>
             {radios.map((item) => (
               <Radio
                 {...item}
@@ -141,7 +143,7 @@ export default function Products() {
                 onChange={(e) => setCurrentCollection(e.target.value)}
               />
             ))}
-          </div>
+          </fieldset>
         </div>
       </Container>
     </div>

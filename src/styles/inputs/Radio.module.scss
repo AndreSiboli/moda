@@ -1,9 +1,10 @@
 @use "@/styles/_dirs/variables" as var;
 @use "@/styles/_dirs/mixins" as mix;
+@use "@/styles/_dirs/accessibility" as acc;
 
 .radio {
   input {
-    display: none;
+    @include acc.VisibleOnlyForScreenReaders;
 
     &:checked + label {
       color: var.$brand_color_500;
@@ -11,6 +12,10 @@
       &:after {
         opacity: 1;
       }
+    }
+
+    &:focus-visible + label {
+      @include acc.FocusVisible;
     }
   }
 

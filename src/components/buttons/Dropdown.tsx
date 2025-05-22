@@ -39,10 +39,10 @@ export default function Dropdown(props: PropsType) {
       className={`${styles.dropdown} ${isOpened && styles.opened}`}
       ref={ref}
     >
-      <div className={styles.dropdown_title} onClick={isDropdownOpened}>
-        <p>{text}</p>
+      <button className={styles.dropdown_button} onClick={isDropdownOpened}>
+        {text}
         <PiCaretDown />
-      </div>
+      </button>
       <div className={styles.dropdown_content}>
         <Container style={{ paddingTop: "6em" }}>
           <div className={styles.content_wrapper}>{children}</div>
